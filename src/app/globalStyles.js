@@ -26,7 +26,7 @@ const GlobalStyles = createGlobalStyle`
     --color-red-light: #e5383b;
     --color-red-dark: #da1e37;
 
-
+  
 
     /* --color-dark: #000;
     --color-dark-1: #101010;
@@ -93,11 +93,11 @@ html {
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Manrope', sans-serif;
-  color: var(--color-white);
+  color: var(--text-color);
+  background-color: var(--bg-color);
   min-height: 100dvh;
   max-width: 100dvw;
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
   line-height: 1.5;
   font-size: 1.5rem;
   box-sizing: border-box;
