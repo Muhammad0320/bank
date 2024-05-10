@@ -1,6 +1,6 @@
 import { Lexend } from "next/font/google";
-import GlobalStyles from "../globalStyles.js";
 import "../globals.css";
+import GlobalStyles from "../globalStyles.js";
 import Header from "../../../components/Header.jsx";
 
 const lexend = Lexend({ subsets: ["latin"] });
