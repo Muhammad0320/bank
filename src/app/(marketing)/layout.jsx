@@ -1,11 +1,11 @@
 import { Lexend } from "next/font/google";
-import "./globals.css";
-import GlobalStyles from "./globalStyles";
+import GlobalStyles from "../globalStyles.js";
+import "../globals.css";
 
 const lexend = Lexend({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "YourBank",
+  title: "YourBank | Home",
   description: "Empowering your financial journey",
 };
 
@@ -17,3 +17,4 @@ export default function RootLayout({ children }) {
     </html>
   );
 }
+
