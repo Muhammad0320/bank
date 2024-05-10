@@ -20,6 +20,7 @@
 
 body {
   color: rgb(var(--foreground-rgb));
+  /* color: hsl(280, 6%, 90%); */
   background: linear-gradient(
       to bottom,
       transparent,

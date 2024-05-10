@@ -6,11 +6,18 @@ module.exports = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+    theme: {
+      extend: {
+        colors: {
+          primary: "var(--primary-color)",
+          accent: "var(--accent-color)",
+          text: "var(--text-color)",
+          background: "var(--bg-color)",
+          dark: "var(--black-color)",
+          card: "var(--card-color)",
+
+          /* Add more color mappings as needed */
+        },
       },
     },
   },
