@@ -1,7 +1,8 @@
-import { Inter } from "next/font/google";
+import { Lexend } from "next/font/google";
 import "./globals.css";
+import GlobalStyles from "./globalStyles";
 
-const inter = Inter({ subsets: ["latin"] });
+const lexend = Lexend({ subsets: ["latin"] });
 
 export const metadata = {
   title: "YourBank",
@@ -11,7 +12,8 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <GlobalStyles />
+      <body className={lexend.className}>{children}</body>
     </html>
   );
 }
