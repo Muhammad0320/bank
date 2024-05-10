@@ -15,7 +15,6 @@ module.exports = {
           background: "var(--bg-color)",
           dark: "var(--black-color)",
           card: "var(--card-color)",
-
           /* Add more color mappings as needed */
         },
       },

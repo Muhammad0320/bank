@@ -7,39 +7,6 @@
 
 import { createGlobalStyle } from "styled-components";
 
-
-/*
-
-  const GlobalStyles = createGlobalStyle`
-
-:root {
-
-    --hue: 76;
-    --saturation: 100%;
-    --lightness: 60%;
-
-    --primary-color: hsl(var(--hue) var(--saturation) var(--lightness));    
-    --saturation: 16%;
-    --lightness: 13%;
-    --accent-color: hsl(var(--hue) var(--saturation) var(--lightness));
-
-    --lightness: 5%;
-    --bg-color:  hsl(var(--hue) var(--saturation) var(--lightness));
-    --text-color: hsl(280, 6%, 90%);
-    --card-color: hsl(0, 0%, 15%);
-    --black-color: hsl(0, 0%, 10%);
-
-}
-
-.... and some base stylings
-
-
-`;
-
-export default GlobalStyles;
-
-*/
-
 const GlobalStyles = createGlobalStyle`
 
 :root {
@@ -131,6 +98,7 @@ body {
   padding: 0;
   color: var(--text-color);
   background-color: var(--bg-color);
+  padding-top:2rem ;
   min-height: 100dvh;
   max-width: 100dvw;
   overflow-x: hidden;
