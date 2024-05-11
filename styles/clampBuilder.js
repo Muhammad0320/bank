@@ -16,5 +16,3 @@ export function clampBuilder(minWidthPx, maxWidthPx, minFontSize, maxFontSize) {
     }vw, ${maxFontSize}rem )`;
   }
   
-
-  

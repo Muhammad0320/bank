@@ -2,10 +2,11 @@
 'use client';
 
 import Image from "next/image";
-import Button from "./Button";
+
 
 import Hamburger from '/public/assets/icons/hamburger.svg';
 import styled from "styled-components";
+import { Button } from "./Button";
 
 
 const StyledHeader = styled.header`
@@ -30,13 +31,13 @@ const StyledHeader = styled.header`
 
 function Header() {
     return (
-        <StyledHeader className="flex w-full justify-between items-center px-8 py-6 bg-dark border-1 border-red-600"   >
-            <div className="h-10 w-20 overflow-hidden " >
+        <StyledHeader   >
+            <div   >
                 <img src='/assets/images/logo.png' alt="YourBank Logo " />
             </div>
 
                 <Button>
-                            <Hamburger   />
+                    <Hamburger   />
                 </Button> 
         </StyledHeader>
     )

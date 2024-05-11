@@ -12,6 +12,9 @@ export const metadata = {
 
 
 import Abstract from '/public/assets/icons/layout-sm.svg'
+import { StyledMain } from "../../../styles/StyledMain";
+
+
 
 
 export default function RootLayout({ children }) {
@@ -25,10 +28,9 @@ export default function RootLayout({ children }) {
         </div>
      
         <Header  />
-        <main>
-
+        <StyledMain>
         {children}
-        </main>
+        </StyledMain>
         
         </body>
     </html>
