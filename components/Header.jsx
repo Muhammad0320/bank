@@ -1,5 +1,5 @@
 
-'use client';
+// 'use client';
 
 import Image from "next/image";
 
@@ -7,6 +7,7 @@ import Image from "next/image";
 import Hamburger from '/public/assets/icons/hamburger.svg';
 import styled from "styled-components";
 import { Button } from "./ui/Button";
+import NavLinks from "./NavLinks";
 
 
 const StyledHeader = styled.header`
@@ -26,7 +27,6 @@ const StyledHeader = styled.header`
 
     border-radius: 3.6rem; 
 
-    
 
     border: 1px solid var(--card-color);
 
@@ -38,7 +38,11 @@ function Header() {
         <StyledHeader   >
             <div   >
                 <img src='/assets/images/logo.png' alt="YourBank Logo " />
+
             </div>
+
+
+                    <NavLinks />
 
                         <div className="space-x-3" >
                         <Button kind='null' >

@@ -1,6 +1,7 @@
 'use client'
 
 import Link from "next/link";
+import styled from "styled-components";
 import { usePathname } from "next/navigation";
 
 
@@ -34,7 +35,7 @@ function NavLink({href, children}) {
 
     const isActive = path === href ? 'active' : '' ;
 
-    
+
 
     return (
         <StyledNavLink href={href} className={isActive} >
