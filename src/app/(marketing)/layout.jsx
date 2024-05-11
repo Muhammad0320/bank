@@ -1,6 +1,6 @@
 import { Lexend } from 'next/font/google';
-import '../globals.css';
 import GlobalStyles from '../globalStyles.js';
+import '../globals.css';
 
 import Abstract from '/public/assets/icons/layout-sm.svg';
 import { StyledBody, StyledMain } from '../../../styles/StyledMain';

@@ -1,3 +1,5 @@
+'use client';
+
 import styled from 'styled-components';
 import { clampBuilder, ClampComponent } from '../../styles/clampBuilder';
 import { Button } from '../ui/Button';
@@ -22,7 +24,7 @@ const StyledTextContainer = styled.div`
   }
 `;
 
-const BenContainer = styled.spam`
+const BenContainer = styled.span`
   display: flex;
 
   background-color: var(--color-card);
@@ -31,15 +33,15 @@ const BenContainer = styled.spam`
 `;
 
 const TextH1 = styled.h1`
-  font-size: ${() => clampBuilder(920, 1200, 5, 6)};
+  font-size: ${() => ClampComponent(920, 1200, 4, 5)};
 
-  color: var(--primary-color);
+  color: var(--text-color);
 `;
 
 const Text = styled.p`
   color: var(--text-color);
 
-  font-size: ${() => clampBuilder(920, 1200, 1, 2)};
+  font-size: ${() => ClampComponent(920, 1200, 1, 1.4)};
 `;
 
 function Header() {

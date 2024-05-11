@@ -4,7 +4,7 @@ import styled from 'styled-components';
 
 import { clampBuilder } from './clampBuilder';
 
-export const StyledBody = styled.main`
+export const StyledBody = styled.body`
   display: grid;
 
   grid-template-columns: minmax(10rem, 1fr) 80dvw minmax(10rem, 1fr);
@@ -17,6 +17,6 @@ export const StyledBody = styled.main`
   }
 `;
 
-export const StyledMain = styled.div`
+export const StyledMain = styled.main`
   grid-column: 2 / 3;
 `;
