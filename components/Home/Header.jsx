@@ -5,6 +5,8 @@ import { clampBuilder, ClampComponent } from '../../styles/clampBuilder';
 import { Button } from '../ui/Button';
 
 const StyledHeader = styled.header`
+  margin-block-start: ${() => ClampComponent(920, 1200, 5, 10)};
+
   display: grid;
 
   grid-template-columns: repeat(2, 1fr);
@@ -20,7 +22,7 @@ const StyledTextContainer = styled.div`
   row-gap: 2rem;
 
   &:last-child {
-    align-self: flex-start;
+    align-items: flex-start;
   }
 `;
 

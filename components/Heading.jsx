@@ -6,8 +6,11 @@ import Hamburger from '/public/assets/icons/hamburger.svg';
 import styled from 'styled-components';
 import { Button } from './ui/Button';
 import NavLinks from './NavLinks';
+import { ClampComponent } from '../styles/clampBuilder';
 
 const StyledHeading = styled.header`
+  margin-block: ${() => ClampComponent(920, 1200, 4, 6)};
+
   display: flex;
   position: fixed;
   /* width: 100%; */

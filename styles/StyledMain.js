@@ -2,7 +2,7 @@
 
 import styled from 'styled-components';
 
-import { clampBuilder } from './clampBuilder';
+import { clampBuilder, ClampComponent } from './clampBuilder';
 
 export const StyledBody = styled.body`
   display: grid;
