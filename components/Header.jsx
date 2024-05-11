@@ -36,9 +36,20 @@ function Header() {
                 <img src='/assets/images/logo.png' alt="YourBank Logo " />
             </div>
 
+
+                        <div className="space-x-3" >
+
+
+                        <Button kind='null' >
+
+                            Signup
+
+                        </Button>
+
                 <Button>
-                    <Hamburger   />
+                    Login
                 </Button> 
+                        </div>
         </StyledHeader>
     )
 }
