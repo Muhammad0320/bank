@@ -10,14 +10,25 @@ export const metadata = {
   description: "Empowering your financial journey",
 };
 
+
+import Abstract from '/public/assets/icons/layout-sm.svg'
+
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <GlobalStyles />
-      <body className={lexend.className}>
+      <body className={lexend.className} >
+
+        <div className="absolute top-0 left-0 " >
+            <Abstract />
+        </div>
      
         <Header  />
+        <main>
+
         {children}
+        </main>
         
         </body>
     </html>
