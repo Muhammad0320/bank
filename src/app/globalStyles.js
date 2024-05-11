@@ -15,13 +15,14 @@ const GlobalStyles = createGlobalStyle`
     --saturation: 100%;
     --lightness: 60%;
 
-    --primary-color: hsl(var(--hue) var(--saturation) var(--lightness));    
+    --primary-color: hsl(var(--hue), var(--saturation), var(--lightness));  
+
     --saturation: 16%;
     --lightness: 13%;
-    --accent-color: hsl(var(--hue) var(--saturation) var(--lightness));
+    --accent-color: hsl(var(--hue), var(--saturation), var(--lightness));
 
     --lightness: 5%;
-    --bg-color:  hsl(var(--hue) var(--saturation) var(--lightness));
+    --bg-color:  hsl(var(--hue), var(--saturation), var(--lightness));
     --text-color: hsl(280, 6%, 90%);
     --card-color: hsl(0, 0%, 15%);
     --black-color: hsl(0, 0%, 10%);
