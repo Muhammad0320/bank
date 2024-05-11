@@ -10,18 +10,24 @@ export const Button = styled.button`
 
   align-items: center;
 
-  background-color: var(--primary-color)
+  /* background-color: var(--primary-color);
 
-  background-image: var(--color-gradient-dark);
+  background-image: var(--color-gradient-dark); */
+
+  background-image: var(--primary-color-t);
 
   border-radius: 3.6rem;
+
+  color: var(--black-color);
 
   font-size: ${() => ClampComponent(320, 1200, 1.2, 2)};
 
   ${props =>
     props.kind === 'null' &&
     css`
-      background-color: transparent;
+      background-image: none;
+
+      color: var(--tex-color);
     `}
 
   padding-inline: ${() => ClampComponent(950, 1200, 1.2, 1.7)};
