@@ -3,7 +3,7 @@
 // 'use client'
 
 import styled, {css} from "styled-components"
-import { clampBuilder } from "../styles/clampBuilder"
+import { clampBuilder } from "../../styles/clampBuilder"
 
 
 
@@ -24,7 +24,6 @@ import { clampBuilder } from "../styles/clampBuilder"
     border-radius: 3.6rem; 
 
     font-size:  ${() => clampBuilder(320, 1200, 1.2, 2)};
-
 
     
   ${(props) =>
