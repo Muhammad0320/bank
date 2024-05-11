@@ -1,9 +1,10 @@
 import { Lexend } from 'next/font/google';
 import '../globals.css';
 import GlobalStyles from '../globalStyles.js';
-import Header from '../../../components/Header.jsx';
+
 import Abstract from '/public/assets/icons/layout-sm.svg';
 import { StyledBody, StyledMain } from '../../../styles/StyledMain';
+import Heading from '../../../components/Heading';
 
 const lexend = Lexend({ subsets: ['latin'] });
 
@@ -22,7 +23,7 @@ export default function RootLayout({ children }) {
         </div>
 
         <StyledMain>
-          <Header />
+          <Heading />
           {children}
         </StyledMain>
       </StyledBody>
