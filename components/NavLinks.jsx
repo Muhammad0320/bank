@@ -1,8 +1,8 @@
 'use client';
 
+import NavLink from './ui/NavLink';
 import styled from 'styled-components';
 import { clampBuilder } from '../styles/clampBuilder';
-import NavLink from './ui/NavLink';
 
 const NavContainer = styled.ul`
   display: flex;

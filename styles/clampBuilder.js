@@ -17,12 +17,12 @@ export function clampBuilder(minWidthPx, maxWidthPx, minFontSize, maxFontSize) {
 
 import { useState, useEffect } from 'react';
 
-export function ClampComponent({
+export function ClampComponent(
   minWidthPx,
   maxWidthPx,
   minFontSize,
   maxFontSize,
-}) {
+) {
   const [clampValue, setClampValue] = useState('');
 
   useEffect(() => {

@@ -1,0 +1,54 @@
+'use client';
+
+import Image from 'next/image';
+
+import Hamburger from '/public/assets/icons/hamburger.svg';
+import styled from 'styled-components';
+import { Button } from './ui/Button';
+import NavLinks from './NavLinks';
+
+const StyledHeading = styled.header`
+  display: flex;
+  position: fixed;
+  /* width: 100%; */
+  backdrop-filter: blur(4px);
+
+  justify-content: space-between;
+  margin-inline: 1.5rem;
+  align-items: center;
+
+  padding-inline: 1.4rem;
+  /* margin-inline: 2rem; */
+  /* marginle */
+  padding-block: 1.6rem;
+
+  border-radius: 3.6rem;
+
+  border: 1px solid var(--card-color);
+`;
+
+const HeaderButtonContainer = styled.div`
+  display: flex;
+
+  column-gap: 2rem;
+`;
+
+function Heading() {
+  return (
+    <StyledHeading>
+      <div>
+        <img src="/assets/images/logo.png" alt="YourBank Logo " />
+      </div>
+
+      <NavLinks />
+
+      <HeaderButtonContainer className="space-x-3">
+        <Button kind="null">Signup</Button>
+
+        <Button>Login</Button>
+      </HeaderButtonContainer>
+    </StyledHeading>
+  );
+}
+
+export default Heading;
