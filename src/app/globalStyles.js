@@ -1,28 +1,29 @@
 'use client';
 
-
 // https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/configuring-issue-templates-for-your-repository
 
 // https://documenter.getpostman.com/view/29178674/2s9YJgTfzH
 
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyles = createGlobalStyle`
 
 :root {
 
+
     --hue: 76;
     --saturation: 100%;
     --lightness: 60%;
 
-    --primary-color: hsl(var(--hue), var(--saturation), var(--lightness));  
+    /* --g-saturation: 67%;
+    --g-lightness: 36%; */
 
-    --saturation: 16%;
-    --lightness: 13%;
-    --accent-color: hsl(var(--hue), var(--saturation), var(--lightness));
+    --primary-color:  hsl(var(--hue) var(--saturation) var(--lightness) );
 
-    --lightness: 5%;
-    --bg-color:  hsl(var(--hue), var(--saturation), var(--lightness));
+    /* --accent-color: hsl(var(--hue), var(--saturation), var(--lightness));
+
+    
+    --bg-color:  hsl(var(--hue), var(--saturation), var(--lightness)); */
     --text-color: hsl(280, 6%, 90%);
     --card-color: hsl(0, 0%, 15%);
     --black-color: hsl(0, 0%, 10%);
@@ -98,7 +99,7 @@ body {
   margin: 0;
   padding: 0;
   color: var(--text-color);
-  background-color: var(--bg-color);
+  background-color: var(--black-color);
   padding-top:2rem ;
   min-height: 100dvh;
   max-width: 100dvw;
@@ -178,7 +179,9 @@ input:disabled {
 
 
 input:focus {
-  outline: 2px solid var(--accent-color);
+
+  --lightness: 20%;
+  outline: 2px solid var(--primary-color);
   outline-offset: -1px;
 }
 

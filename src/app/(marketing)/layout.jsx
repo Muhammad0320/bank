@@ -4,7 +4,8 @@ import '../globals.css';
 
 import Abstract from '/public/assets/icons/layout-sm.svg';
 import { StyledBody, StyledMain } from '../../../styles/StyledMain';
-import Heading from '../../../components/Heading';
+
+import NavBar from '../../../components/NavBar.jsx';
 
 const lexend = Lexend({ subsets: ['latin'] });
 
@@ -23,7 +24,7 @@ export default function RootLayout({ children }) {
         </div>
 
         <StyledMain>
-          <Heading />
+          <NavBar />
           {children}
         </StyledMain>
       </StyledBody>
