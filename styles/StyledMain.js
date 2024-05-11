@@ -19,4 +19,10 @@ export const StyledBody = styled.body`
 
 export const StyledMain = styled.main`
   grid-column: 2 / 3;
+
+  /* display: grid;
+
+  grid-auto-flow: row;
+
+  row-gap: ${() => ClampComponent(920, 1200, 5, 7)}; */
 `;

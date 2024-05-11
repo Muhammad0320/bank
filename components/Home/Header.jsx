@@ -1,11 +1,11 @@
 'use client';
 
 import styled from 'styled-components';
-import { clampBuilder, ClampComponent } from '../../styles/clampBuilder';
+import { ClampComponent } from '../../styles/clampBuilder';
 import { Button } from '../ui/Button';
 
 const StyledHeader = styled.header`
-  margin-block-start: ${() => ClampComponent(920, 1200, 5, 10)};
+  margin-block-start: ${() => ClampComponent(920, 1200, 7, 10)};
 
   display: grid;
 

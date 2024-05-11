@@ -8,8 +8,8 @@ import { Button } from './ui/Button';
 import NavLinks from './NavLinks';
 import { ClampComponent } from '../styles/clampBuilder';
 
-const StyledHeading = styled.header`
-  margin-block: ${() => ClampComponent(920, 1200, 4, 6)};
+const StyledHeading = styled.nav`
+  margin-block-end: ${() => ClampComponent(920, 1200, 4, 10)};
 
   display: flex;
   position: fixed;

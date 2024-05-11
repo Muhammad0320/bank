@@ -1,7 +1,7 @@
 // 'use client'
 
 import styled, { css } from 'styled-components';
-import { clampBuilder } from '../../styles/clampBuilder';
+import { ClampComponent } from '../../styles/clampBuilder';
 
 export const Button = styled.button`
   display: flex;
@@ -14,7 +14,7 @@ export const Button = styled.button`
 
   border-radius: 3.6rem;
 
-  font-size: ${() => clampBuilder(320, 1200, 1.2, 2)};
+  font-size: ${() => ClampComponent(320, 1200, 1.2, 2)};
 
   ${props =>
     props.kind === 'null' &&
@@ -22,8 +22,8 @@ export const Button = styled.button`
       background-color: transparent;
     `}
 
-  padding-inline: ${() => clampBuilder(950, 1200, 1.2, 1.7)};
-  padding-block: ${() => clampBuilder(950, 1200, 1.1, 1.5)};
+  padding-inline: ${() => ClampComponent(950, 1200, 1.2, 1.7)};
+  padding-block: ${() => ClampComponent(950, 1200, 1.1, 1.5)};
 
   transition: background-color 350ms cubic-bezier(0.075, 0.82, 0.165, 1);
 

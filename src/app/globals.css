@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@import './custom-properties.css';
+/* @import './custom-properties.css'; */
 
 /* 
 :root {
