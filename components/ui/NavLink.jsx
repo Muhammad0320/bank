@@ -3,16 +3,16 @@
 import Link from 'next/link';
 import styled from 'styled-components';
 import { usePathname } from 'next/navigation';
-import { clampBuilder } from '../../styles/clampBuilder';
+import { ClampComponent } from '../../styles/clampBuilder';
 
 const StyledNavLink = styled(Link)`
-  font-size: ${() => clampBuilder(320, 1200, 1.3, 2.2)};
+  font-size: ${() => ClampComponent(320, 1200, 1.3, 2.2)};
 
   color: var(--text-color);
-  border-radius: 3.6rem;
 
-  padding-inline: ${() => clampBuilder(320, 1200, 1.4, 2)};
-  padding-inline: ${() => clampBuilder(320, 1200, 1, 1.4)};
+  border-radius: 3.6rem;
+  padding-inline: ${() => ClampComponent(320, 1200, 1.4, 2)};
+  padding-inline: ${() => ClampComponent(320, 1200, 1, 1.4)};
 
   &:hover,
   .active {

@@ -127,6 +127,19 @@ const CurrencyCardContainer = styled.div`
   background-color: var(--card-color);
 
   border: 1px solid hsl(0, 0%, 11%);
+
+  border-radius: 1.4rem;
+
+  :first-child {
+    grid-row: span 2;
+
+    border-top: 1px solid red;
+  }
+
+  :nth-child(2) {
+    grid-column: 1 / 2;
+    border-right: 1px solid red;
+  }
 `;
 
 const IconContainer = styled.span`
@@ -189,7 +202,10 @@ function Header() {
           </TxnCard>
         </TxnCardContainer>
 
-        <CurrencyCardContainer></CurrencyCardContainer>
+        <CurrencyCardContainer>
+          <div></div>
+          <div></div>
+        </CurrencyCardContainer>
       </HeroContainer>
     </StyledHeader>
   );
