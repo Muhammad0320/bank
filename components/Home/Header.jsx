@@ -33,7 +33,7 @@ const StyledTextContainer = styled.div`
 const BenContainer = styled.span`
   display: flex;
 
-  background-color: var(--color-card);
+  background-color: var(--card-color);
 
   color: var(--text-color);
 `;
@@ -52,7 +52,7 @@ const Text = styled.p`
 
 const HeroContainer = styled(FancyBorder)`
   padding: ${() => ClampComponent(320, 1200, 2, 3.5)};
-  background-color: var(--card-color);
+  background-color: var(--black-color);
   grid-column: 2 / -1;
 
   display: grid;

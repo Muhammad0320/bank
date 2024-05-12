@@ -13,10 +13,7 @@ const rotation = keyframes`
 export const FancyBorder = styled.div`
   position: relative;
 
-  width: 10rem;
-  height: 10rem;
-
-  border-radius: 1.6rem;
+  border-radius: 1.4rem;
 
   &::before,
   &::after {
@@ -31,14 +28,14 @@ export const FancyBorder = styled.div`
 
     background: conic-gradient(
       from var(--gradient-angle),
-      #5ee780,
-      #008421,
-      #25a244,
-      #004612,
-      #1a7431
+      #9ef01a,
+      #70e000,
+      #38b000,
+      #70e000,
+      #9ef01a
     );
 
-    animation: 20s ${rotation} linear infinite;
+    animation: 50s ${rotation} linear infinite;
   }
 
   &::after {
