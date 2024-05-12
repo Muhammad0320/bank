@@ -56,12 +56,13 @@ const AbstractContainer = styled.div`
 
   z-index: -1;
 
-  top: 50%;
-  left: -40%;
+  top: 0%;
+  right: -45%;
 `;
 
 const HeroContainer = styled(FancyBorder)`
   position: relative;
+  /* transform: translateX(-2rem); */
   padding: ${() => ClampComponent(320, 1200, 2, 3.5)};
   background-color: var(--black-color);
   grid-column: 2 / -1;
