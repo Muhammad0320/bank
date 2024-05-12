@@ -128,17 +128,30 @@ const CurrencyCardContainer = styled.div`
 
   border: 1px solid hsl(0, 0%, 11%);
 
+  position: relative;
+
   border-radius: 1.4rem;
 
-  :first-child {
-    grid-row: span 2;
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
 
-    border-top: 1px solid red;
+    width: 100%;
+    height: 100%;
   }
 
-  :nth-child(2) {
-    grid-column: 1 / 2;
-    border-right: 1px solid red;
+  &::before {
+    top: 50%;
+
+    box-shadow: inset 0 1px #ddd;
+  }
+
+  &::after {
+    left: -50%;
+
+    /* Style vertical line */
+    box-shadow: 1px 0 #ddd;
   }
 `;
 
