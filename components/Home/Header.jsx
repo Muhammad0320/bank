@@ -55,8 +55,10 @@ const HeroContainer = styled(FancyBorder)`
   background-color: var(--black-color);
   grid-column: 2 / -1;
 
+  max-height: 75dvh;
+
   display: grid;
-  grid-template-rows: auto repeat(2, 1fr) auto;
+  grid-template-rows: auto 1fr 0.9fr auto;
 
   row-gap: ${() => ClampComponent(920, 1200, 2, 3)};
 
