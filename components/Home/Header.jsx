@@ -120,9 +120,9 @@ const CurrencyCardContainer = styled.div`
 
   display: grid;
 
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1.4fr 0.8fr;
 
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
 
   background-color: var(--card-color);
 
@@ -142,16 +142,29 @@ const CurrencyCardContainer = styled.div`
   }
 
   &::before {
-    top: 50%;
+    top: 60%;
 
-    box-shadow: inset 0 1px #ddd;
+    box-shadow: inset 0 1px var(--black-color-light);
   }
 
   &::after {
     left: -50%;
 
     /* Style vertical line */
-    box-shadow: 1px 0 #ddd;
+    box-shadow: 1px 0 var(--black-color-light);
+  }
+
+  & > * {
+    margin-inline-start: 2rem;
+
+    width: 80%;
+  }
+
+  &:first-child {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+
+    align-self: center;
   }
 `;
 
@@ -160,7 +173,9 @@ const CurrencyInfoContainer = styled.div`
 
   flex-flow: column;
 
-  align-items: center;
+  /* align-items: center; */
+
+  justify-content: center;
 `;
 
 const CurrencyInfo = styled.div`

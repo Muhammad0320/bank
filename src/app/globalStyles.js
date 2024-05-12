@@ -28,7 +28,8 @@ const GlobalStyles = createGlobalStyle`
     --bg-color:  hsl(var(--hue), var(--saturation), var(--lightness)); */
     --text-color: hsl(280, 6%, 90%);
     --card-color: hsl(0, 0%, 15%);
-    --black-color: hsl(0, 0%, 10%);
+    --black-color: hsl(0, 0%, 10% ) ;
+    --black-color-light: hsl(0, 0%, 20%);
 
     --color-red-light: #e5383b;
     --color-red-dark: #da1e37;
