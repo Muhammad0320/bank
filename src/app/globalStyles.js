@@ -8,6 +8,14 @@ import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyles = createGlobalStyle`
 
+@property --gradient-angle {
+
+syntax: "<angle>";
+initial-value: 0deg;
+inherits: false;
+
+};
+
 :root {
 
 

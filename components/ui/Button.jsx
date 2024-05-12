@@ -43,6 +43,8 @@ export const Button = styled.button`
       color: var(--primary-color);
     `}
 
+    
+
 
 
   &:hover {
