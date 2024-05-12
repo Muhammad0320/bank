@@ -10,11 +10,9 @@ export const Button = styled.button`
 
   align-items: center;
 
-  /* background-color: var(--primary-color);
+  background-color: var(--primary-color);
 
-  background-image: var(--color-gradient-dark); */
-
-  background-image: var(--primary-color-t);
+  background-image: var(--color-gradient-dark);
 
   border-radius: 3.6rem;
 
@@ -27,15 +25,21 @@ export const Button = styled.button`
     css`
       background-image: none;
 
-      color: var(--tex-color);
+      background-color: transparent;
+
+      color: var(--text-color);
     `}
 
   padding-inline: ${() => ClampComponent(950, 1200, 1.2, 1.7)};
   padding-block: ${() => ClampComponent(950, 1200, 1.1, 1.5)};
 
-  transition: background-position 350ms cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: background-color 1s ease-in;
 
-  :hover {
-    background-position: right;
+  &:hover {
+    --saturation: 60%;
+
+    background-color: hsl(var(--hue) var(--saturation) var(--lightness));
+
+    /* background-image: var(--color-gradient-dark-1); */
   }
 `;
