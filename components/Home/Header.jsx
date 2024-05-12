@@ -48,17 +48,17 @@ const Text = styled.p`
 
 const HeroContainer = styled.div`
   grid-column: 2 / -1;
-  display: grid;
 
   padding: 1.4rem;
 
-  grid-template-rows: 2rem repeat(1, 1fr);
+  display: grid;
+  grid-template-rows: 2rem repeat(2, 1fr);
 
-  row-gap: ${() => ClampComponent(920, 1200, 5, 6)};
+  row-gap: ${() => ClampComponent(920, 1200, 2, 3)};
 
   border-radius: 1.4rem;
 
-  border: 1px solid var(--color-primary);
+  border: 1px solid var(--primary-color);
 `;
 
 const HeroText = styled.div`
@@ -94,7 +94,9 @@ const TxnCardContainer = styled.div`
 
   row-gap: -5px;
 
-  background-color: var(--card-color);
+  /* background-color: var(--card-color); */
+
+  border: 1px solid red;
 
   &:first-child {
     width: 100%;
