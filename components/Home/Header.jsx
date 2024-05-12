@@ -7,6 +7,7 @@ import Ngn from '/public/assets/icons/ngn.svg';
 import Usa from '/public/assets/icons/usa.svg';
 import Stroke from '/public/assets/icons/stroke.svg';
 import Arrows from '/public/assets/icons/arrows.svg';
+import Check from '/public/assets/icons/check.svg';
 import { FancyBorder } from '../ui/FancyBorder';
 
 const StyledHeader = styled.header`
@@ -16,7 +17,7 @@ const StyledHeader = styled.header`
 
   grid-template-columns: repeat(2, 1fr);
 
-  column-gap: ${() => ClampComponent(920, 1200, 4, 6)};
+  column-gap: ${() => ClampComponent(920, 1200, 5, 7)};
 `;
 
 const StyledTextContainer = styled.div`
@@ -36,11 +37,18 @@ const BenContainer = styled.span`
 
   background-color: var(--card-color);
 
+  column-gap: 1rem;
+
+  border-radius: 3.6rem;
+
+  padding: 1.4rem;
+  width: fit-content;
+
   color: var(--text-color);
 `;
 
 const TextH1 = styled.h1`
-  font-size: ${() => ClampComponent(920, 1200, 4, 5)};
+  font-size: ${() => ClampComponent(920, 1200, 3, 4)};
 
   color: var(--text-color);
 `;
@@ -57,17 +65,18 @@ const AbstractContainer = styled.div`
   z-index: -1;
 
   top: 0%;
-  right: -45%;
+  right: -40%;
 `;
 
 const HeroContainer = styled(FancyBorder)`
   position: relative;
-  /* transform: translateX(-2rem); */
+
   padding: ${() => ClampComponent(320, 1200, 2, 3.5)};
   background-color: var(--black-color);
   grid-column: 2 / -1;
 
   max-height: 75dvh;
+  max-width: 30dvw;
 
   display: grid;
   grid-template-rows: auto 1fr 0.9fr auto;
@@ -239,7 +248,11 @@ function Header() {
   return (
     <StyledHeader>
       <StyledTextContainer>
-        <BenContainer>NO LLC Required. No credit check</BenContainer>
+        <BenContainer>
+          <Check />
+
+          <span>NO LLC Required. No credit check</span>
+        </BenContainer>
         <TextH1>Welcome to YourBank Empowering your financial journey</TextH1>
         <Text>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
