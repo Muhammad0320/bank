@@ -55,7 +55,7 @@ const HeroContainer = styled.div`
   grid-column: 2 / -1;
 
   display: grid;
-  grid-template-rows: 2rem repeat(2, 1fr);
+  grid-template-rows: auto repeat(2, 1fr) auto;
 
   row-gap: ${() => ClampComponent(920, 1200, 2, 3)};
 
@@ -140,7 +140,7 @@ const CardContentContainer = styled.div`
 `;
 
 const CurrencyCardContainer = styled.div`
-  grid-row: 3 / -1;
+  grid-row: 3 / 4;
 
   display: grid;
 
@@ -307,6 +307,8 @@ function Header() {
             10.00{' '}
           </HeroText>
         </CurrencyCardContainer>
+
+        <Button kind="ex"> Exchange </Button>
       </HeroContainer>
     </StyledHeader>
   );

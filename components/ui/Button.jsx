@@ -20,6 +20,11 @@ export const Button = styled.button`
 
   font-size: ${() => ClampComponent(320, 1200, 1.2, 2)};
 
+  padding-inline: ${() => ClampComponent(950, 1200, 1.2, 1.7)};
+  padding-block: ${() => ClampComponent(950, 1200, 1.1, 1.5)};
+
+  transition: background-color 350ms ease-in-out;
+
   ${props =>
     props.kind === 'null' &&
     css`
@@ -30,10 +35,15 @@ export const Button = styled.button`
       color: var(--text-color);
     `}
 
-  padding-inline: ${() => ClampComponent(950, 1200, 1.2, 1.7)};
-  padding-block: ${() => ClampComponent(950, 1200, 1.1, 1.5)};
+  ${props =>
+    props.kind === 'ex' &&
+    css`
+      --lightness: 15%;
 
-  transition: background-color 350ms ease-in-out;
+      color: var(--primary-color);
+    `}
+
+
 
   &:hover {
     /* ---hue: 74; */
