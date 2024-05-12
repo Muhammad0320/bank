@@ -47,9 +47,8 @@ const Text = styled.p`
 `;
 
 const HeroContainer = styled.div`
-  grid-column: 2 / -1;
-
   padding: 1.4rem;
+  grid-column: 2 / -1;
 
   display: grid;
   grid-template-rows: 2rem repeat(2, 1fr);
@@ -68,9 +67,17 @@ const HeroText = styled.div`
 `;
 
 const TxnCard = styled.div`
-  display: grid;
+  width: 100%;
 
-  grid-template-rows: 6rem 1fr;
+  display: grid;
+  background-color: var(--card-color);
+
+  grid-template-columns: 6rem 1fr;
+
+  border-radius: 1.4rem;
+
+  padding-inline: ${() => ClampComponent(320, 1200, 1.3, 2.5)};
+  padding-block: ${() => ClampComponent(320, 1200, 1, 2)};
 
   border: 1px solid hsl(0, 0%, 11%);
 `;
@@ -79,12 +86,10 @@ const TxnDetails = styled.div`
   display: flex;
 
   justify-content: space-between;
-
-  align-items: center;
 `;
 
 const TxnCardContainer = styled.div`
-  grid-row: 2/ 3;
+  grid-row: 2 / 3;
 
   display: flex;
 
@@ -92,17 +97,13 @@ const TxnCardContainer = styled.div`
 
   align-items: center;
 
-  row-gap: -5px;
-
-  /* background-color: var(--card-color); */
-
-  border: 1px solid red;
+  row-gap: -2rem;
 
   &:first-child {
-    width: 100%;
+    opacity: 0.5;
   }
 
-  &:nth-child(2) {
+  /* &:nth-child(2) {
     width: 85%;
 
     opacity: 0.8;
@@ -112,7 +113,13 @@ const TxnCardContainer = styled.div`
     width: 70%;
 
     opacity: 0.6;
-  }
+  }  */
+`;
+
+const CardContentContainer = styled.div`
+  display: flex;
+
+  flex-flow: column;
 `;
 
 const CurrencyCardContainer = styled.div`
@@ -123,7 +130,6 @@ const CurrencyCardContainer = styled.div`
   grid-template-rows: 1.4fr 0.8fr;
 
   grid-template-columns: repeat(2, 1fr);
-
   background-color: var(--card-color);
 
   border: 1px solid hsl(0, 0%, 11%);
@@ -150,7 +156,6 @@ const CurrencyCardContainer = styled.div`
   &::after {
     left: -50%;
 
-    /* Style vertical line */
     box-shadow: 1px 0 var(--black-color-light);
   }
 
@@ -172,8 +177,6 @@ const CurrencyInfoContainer = styled.div`
   display: flex;
 
   flex-flow: column;
-
-  /* align-items: center; */
 
   justify-content: center;
 `;
@@ -220,26 +223,33 @@ function Header() {
         <TxnCardContainer>
           <TxnCard>
             <IconContainer> I </IconContainer>
-            <TxnDetails>
-              <span> Shit man </span>
-              <span> -$68.00 </span>
-            </TxnDetails>
+            <CardContentContainer>
+              <Text> Transaction </Text>
+              <TxnDetails>
+                <span> Shit man </span>
+                <span> -$68.00 </span>
+              </TxnDetails>
+            </CardContentContainer>
           </TxnCard>
-
           <TxnCard>
             <IconContainer> I </IconContainer>
-            <TxnDetails>
-              <span> Shit man </span>
-              <span> -$68.00 </span>
-            </TxnDetails>
-          </TxnCard>
-
+            <CardContentContainer>
+              <Text> Transaction </Text>
+              <TxnDetails>
+                <span> Shit man </span>
+                <span> -$68.00 </span>
+              </TxnDetails>
+            </CardContentContainer>
+          </TxnCard>{' '}
           <TxnCard>
             <IconContainer> I </IconContainer>
-            <TxnDetails>
-              <span> Shit man </span>
-              <span> -$68.00 </span>
-            </TxnDetails>
+            <CardContentContainer>
+              <Text> Transaction </Text>
+              <TxnDetails>
+                <span> Shit man </span>
+                <span> -$68.00 </span>
+              </TxnDetails>
+            </CardContentContainer>
           </TxnCard>
         </TxnCardContainer>
 
