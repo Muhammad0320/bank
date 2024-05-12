@@ -11,7 +11,7 @@ const StyledHeader = styled.header`
 
   grid-template-columns: repeat(2, 1fr);
 
-  column-gap: ${() => ClampComponent(920, 1200, 3, 6)};
+  column-gap: ${() => ClampComponent(920, 1200, 4, 6)};
 `;
 
 const StyledTextContainer = styled.div`
@@ -47,7 +47,8 @@ const Text = styled.p`
 `;
 
 const HeroContainer = styled.div`
-  padding: 1.4rem;
+  padding: ${() => ClampComponent(320, 1200, 2, 3.5)};
+
   grid-column: 2 / -1;
 
   display: grid;
@@ -69,6 +70,7 @@ const HeroText = styled.div`
 const TxnCard = styled.div`
   width: 100%;
 
+  align-content: center;
   display: grid;
   background-color: var(--card-color);
 
@@ -80,6 +82,22 @@ const TxnCard = styled.div`
   padding-block: ${() => ClampComponent(320, 1200, 1, 2)};
 
   border: 1px solid hsl(0, 0%, 11%);
+
+  z-index: 100;
+
+  &:nth-child(2) {
+    opacity: 0.5;
+    margin-top: -2rem;
+    z-index: 10;
+    width: 85%;
+  }
+
+  &:nth-child(3) {
+    width: 75%;
+    margin-top: -2rem;
+
+    opacity: 0.3;
+  }
 `;
 
 const TxnDetails = styled.div`
@@ -98,10 +116,6 @@ const TxnCardContainer = styled.div`
   align-items: center;
 
   row-gap: -2rem;
-
-  &:first-child {
-    opacity: 0.5;
-  }
 
   /* &:nth-child(2) {
     width: 85%;
@@ -226,8 +240,8 @@ function Header() {
             <CardContentContainer>
               <Text> Transaction </Text>
               <TxnDetails>
-                <span> Shit man </span>
-                <span> -$68.00 </span>
+                <span> Max Schwartz </span>
+                <span> -$89.00 </span>
               </TxnDetails>
             </CardContentContainer>
           </TxnCard>
@@ -236,8 +250,8 @@ function Header() {
             <CardContentContainer>
               <Text> Transaction </Text>
               <TxnDetails>
-                <span> Shit man </span>
-                <span> -$68.00 </span>
+                <span> Kevin Powell </span>
+                <span> -$120.00 </span>
               </TxnDetails>
             </CardContentContainer>
           </TxnCard>{' '}
@@ -246,8 +260,8 @@ function Header() {
             <CardContentContainer>
               <Text> Transaction </Text>
               <TxnDetails>
-                <span> Shit man </span>
-                <span> -$68.00 </span>
+                <span> Jeff Delaney </span>
+                <span> -$180.00 </span>
               </TxnDetails>
             </CardContentContainer>
           </TxnCard>
