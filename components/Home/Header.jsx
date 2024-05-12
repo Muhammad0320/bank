@@ -6,6 +6,7 @@ import { Button } from '../ui/Button';
 import Ngn from '/public/assets/icons/ngn.svg';
 import Usa from '/public/assets/icons/usa.svg';
 import Stroke from '/public/assets/icons/stroke.svg';
+import Arrows from '/public/assets/icons/arrows.svg';
 import { FancyBorder } from '../ui/FancyBorder';
 
 const StyledHeader = styled.header`
@@ -50,7 +51,17 @@ const Text = styled.p`
   font-size: ${() => ClampComponent(920, 1200, 1, 1.4)};
 `;
 
+const AbstractContainer = styled.div`
+  position: absolute;
+
+  z-index: -1;
+
+  top: 50%;
+  left: -40%;
+`;
+
 const HeroContainer = styled(FancyBorder)`
+  position: relative;
   padding: ${() => ClampComponent(320, 1200, 2, 3.5)};
   background-color: var(--black-color);
   grid-column: 2 / -1;
@@ -240,6 +251,11 @@ function Header() {
       </StyledTextContainer>
 
       <HeroContainer>
+        <>
+          <AbstractContainer>
+            <Arrows />
+          </AbstractContainer>
+        </>
         <HeroText> Your Transations </HeroText>
 
         <TxnCardContainer>
