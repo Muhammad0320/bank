@@ -5,26 +5,25 @@ const rotation = keyframes`
     --gradient-angle: 0deg;
   }
   100% {
-    --gradient-angle: 360%;
+    --gradient-angle: 360deg;
     
   }
 `;
 
-const FancyBorder = styled.div`
-  @property --gradient-angle {
-    syntax: '<angle>';
-    initial-value: 0deg;
-    inherits: false;
-  }
-
+export const FancyBorder = styled.div`
   position: relative;
-  background-color: transparent;
+
+  width: 10rem;
+  height: 10rem;
+
+  border-radius: 1.6rem;
 
   &::before,
   &::after {
     content: '';
     position: absolute;
-    inset: -0.5rem;
+
+    inset: -0.1rem;
 
     z-index: -1;
 
@@ -32,13 +31,17 @@ const FancyBorder = styled.div`
 
     background: conic-gradient(
       from var(--gradient-angle),
-      #1a7431,
-      #208b3a,
+      #5ee780,
+      #008421,
       #25a244,
-      #208b3a,
+      #004612,
       #1a7431
     );
 
-    animation: ${rotation} 20s linear infinite;
+    animation: 20s ${rotation} linear infinite;
+  }
+
+  &::after {
+    filter: blur(5px);
   }
 `;

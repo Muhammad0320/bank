@@ -6,6 +6,7 @@ import { Button } from '../ui/Button';
 import Ngn from '/public/assets/icons/ngn.svg';
 import Usa from '/public/assets/icons/usa.svg';
 import Stroke from '/public/assets/icons/stroke.svg';
+import { FancyBorder } from '../ui/FancyBorder';
 
 const StyledHeader = styled.header`
   margin-block-start: ${() => ClampComponent(920, 1200, 7, 10)};
@@ -61,7 +62,7 @@ const HeroContainer = styled.div`
 
   border-radius: 1.4rem;
 
-  border: 1px solid var(--primary-color);
+  border: 1px solid green;
 `;
 
 const HeroText = styled.div`
@@ -235,6 +236,8 @@ function Header() {
 
         <Button>Open Acount</Button>
       </StyledTextContainer>
+
+      <FancyBorder>shit</FancyBorder>
 
       <HeroContainer>
         <HeroText> Your Transations </HeroText>
