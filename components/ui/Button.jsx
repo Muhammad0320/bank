@@ -10,7 +10,7 @@ export const Button = styled.button`
 
   align-items: center;
 
-  background-color: var(--primary-color);
+  background-color: hsl(var(--hue) var(--saturation) var(--lightness));
 
   background-image: var(--color-gradient-dark);
 
@@ -33,13 +33,15 @@ export const Button = styled.button`
   padding-inline: ${() => ClampComponent(950, 1200, 1.2, 1.7)};
   padding-block: ${() => ClampComponent(950, 1200, 1.1, 1.5)};
 
-  transition: background-color 1s ease-in;
+  transition: background-color 350ms ease-in-out;
 
   &:hover {
-    --saturation: 60%;
+    /* ---hue: 74; */
+    --lightness: 75%;
+    --saturation: 90%;
 
-    background-color: hsl(var(--hue) var(--saturation) var(--lightness));
+    /* background-color: hsl(var(--hue) var(--saturation) var(--lightness)); */
 
-    /* background-image: var(--color-gradient-dark-1); */
+    /* background-image: var(--color-gradient-dark-muted); */
   }
 `;
