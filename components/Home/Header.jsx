@@ -155,6 +155,19 @@ const CurrencyCardContainer = styled.div`
   }
 `;
 
+const CurrencyInfoContainer = styled.div`
+  display: flex;
+
+  flex-flow: column;
+
+  align-items: center;
+`;
+
+const CurrencyInfo = styled.div`
+  display: flex;
+  row-gap: 1.5rem;
+`;
+
 const IconContainer = styled.span`
   background-image: var(--primary-gradient);
 
@@ -216,8 +229,30 @@ function Header() {
         </TxnCardContainer>
 
         <CurrencyCardContainer>
-          <div></div>
-          <div></div>
+          <CurrencyInfoContainer style={{ gridColumn: 1 / 2, gridRow: 1 / 2 }}>
+            <CurrencyInfo>
+              <IconContainer> </IconContainer>
+              <HeroText> NGN </HeroText>
+            </CurrencyInfo>
+            <Text> Nigerian Naira </Text>
+          </CurrencyInfoContainer>
+
+          <CurrencyInfoContainer style={{ gridColumn: 2 / -1, gridRow: 1 / 2 }}>
+            <CurrencyInfo>
+              <IconContainer> </IconContainer>
+              <HeroText> NGN </HeroText>
+            </CurrencyInfo>
+            <Text> Nigerian Naira </Text>
+          </CurrencyInfoContainer>
+
+          <HeroText style={{ gridColumn: 1 / 2, gridRow: 2 / -1 }}>
+            {' '}
+            5,000{' '}
+          </HeroText>
+          <HeroText style={{ gridColumn: 2 / -1, gridRow: 2 / -1 }}>
+            {' '}
+            10.00{' '}
+          </HeroText>
         </CurrencyCardContainer>
       </HeroContainer>
     </StyledHeader>

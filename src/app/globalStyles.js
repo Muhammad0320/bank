@@ -18,8 +18,8 @@ const GlobalStyles = createGlobalStyle`
     --g-saturation: 67%;
     --g-lightness: 36%;
 
-    --primary-color-t:  linear-gradient( 145deg, hsl( var(--hue) var(--saturation) var(--lightness) ), hsl( var(--hue) var(--g-saturation) var(--g-lightness) /.9 )  ) ;  
-
+    --primary-gradient:  linear-gradient( 145deg, hsl( var(--hue) var(--saturation) var(--lightness) ), hsl( var(--hue) var(--g-saturation) var(--g-lightness) /.9 )  ) ;  
+     
     --primary-color:  hsl(var(--hue) var(--saturation) var(--lightness) );
 
     /* --accent-color: hsl(var(--hue), var(--saturation), var(--lightness));
@@ -84,6 +84,7 @@ const GlobalStyles = createGlobalStyle`
 html {
   font-size: 62.5%;
   scroll-behavior: smooth; 
+  
   overflow: auto;
 }
 
