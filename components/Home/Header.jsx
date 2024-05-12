@@ -3,6 +3,9 @@
 import styled from 'styled-components';
 import { ClampComponent } from '../../styles/clampBuilder';
 import { Button } from '../ui/Button';
+import Ngn from '/public/assets/icons/ngn.svg';
+import Usa from '/public/assets/icons/usa.svg';
+import Stroke from '/public/assets/icons/stroke.svg';
 
 const StyledHeader = styled.header`
   margin-block-start: ${() => ClampComponent(920, 1200, 7, 10)};
@@ -78,25 +81,25 @@ const TxnCard = styled.div`
 
   border-radius: 1.4rem;
 
-  padding-inline: ${() => ClampComponent(320, 1200, 1.3, 2.5)};
-  padding-block: ${() => ClampComponent(320, 1200, 1, 2)};
+  padding-inline: ${() => ClampComponent(320, 1200, 1.3, 2)};
+  padding-block: ${() => ClampComponent(320, 1200, 1, 1.8)};
 
   border: 1px solid hsl(0, 0%, 11%);
 
   z-index: 100;
 
   &:nth-child(2) {
-    opacity: 0.5;
+    opacity: 0.65;
     margin-top: -2rem;
     z-index: 10;
-    width: 85%;
+    width: 90%;
   }
 
   &:nth-child(3) {
-    width: 75%;
+    width: 80%;
     margin-top: -2rem;
 
-    opacity: 0.3;
+    opacity: 0.45;
   }
 `;
 
@@ -191,6 +194,7 @@ const CurrencyInfoContainer = styled.div`
   display: flex;
 
   flex-flow: column;
+  row-gap: 1rem;
 
   justify-content: center;
 `;
@@ -203,16 +207,17 @@ const CurrencyInfo = styled.div`
 const IconContainer = styled.span`
   background-image: var(--primary-gradient);
 
-  height: 2.5rem;
+  height: 3.5rem;
 
-  width: 2.5rem;
+  width: 3.5rem;
 
   margin-right: 1rem;
 
   border-radius: 50%;
 
-  display: grid;
-  align-content: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;
 
 function Header() {
@@ -236,7 +241,10 @@ function Header() {
 
         <TxnCardContainer>
           <TxnCard>
-            <IconContainer> I </IconContainer>
+            <IconContainer>
+              {' '}
+              <Stroke />{' '}
+            </IconContainer>
             <CardContentContainer>
               <Text> Transaction </Text>
               <TxnDetails>
@@ -246,7 +254,10 @@ function Header() {
             </CardContentContainer>
           </TxnCard>
           <TxnCard>
-            <IconContainer> I </IconContainer>
+            <IconContainer>
+              {' '}
+              <Stroke />{' '}
+            </IconContainer>
             <CardContentContainer>
               <Text> Transaction </Text>
               <TxnDetails>
@@ -256,7 +267,10 @@ function Header() {
             </CardContentContainer>
           </TxnCard>{' '}
           <TxnCard>
-            <IconContainer> I </IconContainer>
+            <IconContainer>
+              {' '}
+              <Stroke />{' '}
+            </IconContainer>
             <CardContentContainer>
               <Text> Transaction </Text>
               <TxnDetails>
@@ -270,18 +284,18 @@ function Header() {
         <CurrencyCardContainer>
           <CurrencyInfoContainer style={{ gridColumn: 1 / 2, gridRow: 1 / 2 }}>
             <CurrencyInfo>
-              <IconContainer> </IconContainer>
-              <HeroText> NGN </HeroText>
+              <Ngn />
+              <HeroText style={{ marginLeft: '1rem' }}> NGN </HeroText>
             </CurrencyInfo>
             <Text> Nigerian Naira </Text>
           </CurrencyInfoContainer>
 
           <CurrencyInfoContainer style={{ gridColumn: 2 / -1, gridRow: 1 / 2 }}>
             <CurrencyInfo>
-              <IconContainer> </IconContainer>
-              <HeroText> NGN </HeroText>
+              <Usa />
+              <HeroText style={{ marginLeft: '1rem' }}> USD </HeroText>
             </CurrencyInfo>
-            <Text> Nigerian Naira </Text>
+            <Text> United States Dollars </Text>
           </CurrencyInfoContainer>
 
           <HeroText style={{ gridColumn: 1 / 2, gridRow: 2 / -1 }}>
