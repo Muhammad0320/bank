@@ -50,9 +50,9 @@ const Text = styled.p`
   font-size: ${() => ClampComponent(920, 1200, 1, 1.4)};
 `;
 
-const HeroContainer = styled.div`
+const HeroContainer = styled(FancyBorder)`
   padding: ${() => ClampComponent(320, 1200, 2, 3.5)};
-
+  background-color: var(--card-color);
   grid-column: 2 / -1;
 
   display: grid;
@@ -236,8 +236,6 @@ function Header() {
 
         <Button>Open Acount</Button>
       </StyledTextContainer>
-
-      <FancyBorder>shit</FancyBorder>
 
       <HeroContainer>
         <HeroText> Your Transations </HeroText>
