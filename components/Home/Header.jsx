@@ -79,9 +79,9 @@ const HeroContainer = styled(FancyBorder)`
   max-width: 30dvw;
 
   display: grid;
-  grid-template-rows: auto 1fr auto 0.9fr 3rem;
+  grid-template-rows: auto 1fr auto 0.9fr 4rem;
 
-  row-gap: ${() => ClampComponent(920, 1200, 2, 3)};
+  row-gap: ${() => ClampComponent(920, 1200, 1, 2.5)};
 
   border-radius: 1.4rem;
 
@@ -152,7 +152,7 @@ const CardContentContainer = styled.div`
 const CurrencyCardContainer = styled.div`
   grid-row: 3 / 4;
 
-  height: auto;
+  height: 15rem;
 
   display: grid;
 
