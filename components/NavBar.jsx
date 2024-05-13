@@ -15,7 +15,7 @@ const StyledHeading = styled.nav`
   position: fixed;
   /* width: 100%; */
   backdrop-filter: blur(4px);
-  flex: 1;
+
   justify-content: space-between;
   margin-inline: 1.5rem;
   align-items: center;
