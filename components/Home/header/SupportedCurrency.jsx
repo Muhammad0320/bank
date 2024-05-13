@@ -12,7 +12,7 @@ const Container = styled.div`
   position: absolute;
 
   bottom: -16%;
-  right: -40%;
+  right: -30%;
 
   background-color: hsl(var(--hue) var(--saturation) var(--lightness) / 0.9);
 
