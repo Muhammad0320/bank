@@ -1,4 +1,9 @@
 import styled from 'styled-components';
+import Btc from '/public/assets/icons/btc.svg';
+import Usd from '/public/assets/icons/usd.svg';
+import Euro from '/public/assets/icons/euro.svg';
+import Eth from '/public/assets/icons/eth.svg';
+
 import { ClampComponent } from '../../styles/clampBuilder';
 
 const Container = styled.div`
@@ -43,7 +48,29 @@ const Currency = styled.div`
 `;
 
 function SupportedCurrency() {
-  return <div></div>;
+  return (
+    <Container>
+      <span> Supported Currency </span>
+
+      <CurrencyContainer>
+        <Currency>
+          <Usd />
+        </Currency>
+
+        <Currency>
+          <Euro />
+        </Currency>
+
+        <Currency>
+          <Btc />
+        </Currency>
+
+        <Currency>
+          <Eth />
+        </Currency>
+      </CurrencyContainer>
+    </Container>
+  );
 }
 
 export default SupportedCurrency;
