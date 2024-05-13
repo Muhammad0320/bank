@@ -18,6 +18,8 @@ const CardContainer = styled.div`
   top: -50%;
   left: -50%;
   color: var(--test-color);
+
+  box-shadow: --box-shadow-dark;
 `;
 
 const TextContainer = styled.div`
