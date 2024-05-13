@@ -1,3 +1,5 @@
+import styled from 'styled-components';
+
 export const IconContainer = styled.span`
   background-image: var(--primary-gradient);
 

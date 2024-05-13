@@ -5,21 +5,23 @@ import { ClampComponent } from '../../styles/clampBuilder';
 import { IconContainer } from '../ui/IconContainer';
 
 const CardContainer = styled.div`
-  --lightness: 15%;
+  --lightness: 12%;
 
-  background-color: hsl(var(--hue) var(--saturation) var(--lightness));
+  background-color: hsl(var(--hue) var(--saturation) var(--lightness) / 0.9);
 
   display: flex;
+
+  border-radius: 1rem;
 
   column-gap: 5px;
 
   padding: ${() => ClampComponent(320, 1200, 1, 1.5)};
   position: absolute;
-  top: -50%;
-  left: -50%;
+  transform: translate(-50%, -50%);
   color: var(--test-color);
 
-  box-shadow: --box-shadow-dark;
+  /* z-index: 1000; */
+  box-shadow: var(--box-shadow-dark);
 `;
 
 const TextContainer = styled.div`

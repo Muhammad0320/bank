@@ -9,6 +9,8 @@ import Stroke from '/public/assets/icons/stroke.svg';
 import Arrows from '/public/assets/icons/arrows.svg';
 import Check from '/public/assets/icons/check.svg';
 import { FancyBorder } from '../ui/FancyBorder';
+import { IconContainer } from '../ui/IconContainer';
+import IncomeCard from './IncomeCard';
 
 const StyledHeader = styled.header`
   margin-block-start: ${() => ClampComponent(920, 1200, 7, 10)};
@@ -216,22 +218,6 @@ const CurrencyInfo = styled.div`
   row-gap: 1.5rem;
 `;
 
-const IconContainer = styled.span`
-  background-image: var(--primary-gradient);
-
-  height: 3.5rem;
-
-  width: 3.5rem;
-
-  margin-right: 1rem;
-
-  border-radius: 50%;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-`;
-
 function Header() {
   return (
     <StyledHeader>
@@ -258,6 +244,7 @@ function Header() {
             <Arrows />
           </AbstractContainer>
         </>
+        <IncomeCard />
         <HeroText> Your Transations </HeroText>
 
         <TxnCardContainer>
