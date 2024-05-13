@@ -13,7 +13,7 @@ const CardContainer = styled.div`
 
   border-radius: 1rem;
 
-  column-gap: 5px;
+  column-gap: 3px;
 
   padding: ${() => ClampComponent(320, 1200, 1, 1.5)};
   position: absolute;
@@ -29,7 +29,7 @@ const TextContainer = styled.div`
 
   flex-flow: column;
 
-  row-gap: 3px;
+  row-gap: 1.5px;
 
   font-size: ${() => ClampComponent(320, 1200, 1.1, 1.5)};
 

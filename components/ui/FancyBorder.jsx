@@ -22,7 +22,7 @@ export const FancyBorder = styled.div`
 
     inset: -0.1rem;
 
-    z-index: -1;
+    /* z-index: -1; */
 
     border-radius: inherit;
 
@@ -35,7 +35,7 @@ export const FancyBorder = styled.div`
       #9ef01a
     );
 
-    animation: 50s ${rotation} linear infinite;
+    animation: 30s ${rotation} linear infinite;
   }
 
   &::after {
