@@ -11,20 +11,28 @@ const Container = styled.div`
 
   position: absolute;
 
-  bottom: 10%;
-  right: 40%;
+  bottom: -20%;
+  right: -40%;
 
   background-color: hsl(var(--hue) var(--saturation) var(--lightness) / 0.9);
 
   border-radius: 3.6rem;
 
+  padding: 1rem;
+
   display: flex;
+
+  align-items: center;
 
   column-gap: 5px;
 
   color: var(--text-color);
 
-  font-size: ${() => ClampComponent(320, 1200, 1.2, 1.6)};
+  font-size: ${() => ClampComponent(320, 1200, 1, 1.5)};
+
+  /* & > * {
+    flex: 1;
+  } */
 `;
 
 const CurrencyContainer = styled.div`
@@ -32,11 +40,11 @@ const CurrencyContainer = styled.div`
 
   background-color: var(--black-color);
 
-  padding: 1.5px;
+  padding: 0.8rem;
 
   border-radius: 3.6rem;
 
-  column-gap: 1px;
+  column-gap: 0.4rem;
 `;
 
 const Currency = styled.div`
@@ -45,11 +53,13 @@ const Currency = styled.div`
 
   align-items: center;
 
+  width: 3.5rem;
+
   border-radius: 50%;
 
   background-color: var(--card-color);
 
-  padding: 3px;
+  padding: 0.8rem;
 `;
 
 function SupportedCurrency() {
