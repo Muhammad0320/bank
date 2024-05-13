@@ -11,6 +11,7 @@ import Check from '/public/assets/icons/check.svg';
 import { FancyBorder } from '../ui/FancyBorder';
 import { IconContainer } from '../ui/IconContainer';
 import IncomeCard from './IncomeCard';
+import SupportedCurrency from './SupportedCurrency';
 
 const StyledHeader = styled.header`
   margin-block-start: ${() => ClampComponent(920, 1200, 7, 10)};
@@ -245,6 +246,7 @@ function Header() {
           </AbstractContainer>
         </>
         <IncomeCard />
+        <SupportedCurrency />
         <HeroText> Your Transations </HeroText>
 
         <TxnCardContainer>

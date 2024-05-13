@@ -22,17 +22,17 @@ export const FancyBorder = styled.div`
 
     inset: -0.1rem;
 
-    /* z-index: -1; */
+    z-index: -1;
 
     border-radius: inherit;
 
     background: conic-gradient(
       from var(--gradient-angle),
-      #9ef01a,
+      #294102,
       #70e000,
       #38b000,
       #70e000,
-      #9ef01a
+      #294102
     );
 
     animation: 30s ${rotation} linear infinite;

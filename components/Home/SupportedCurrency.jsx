@@ -7,7 +7,12 @@ import Eth from '/public/assets/icons/eth.svg';
 import { ClampComponent } from '../../styles/clampBuilder';
 
 const Container = styled.div`
-  -lightness: 12%;
+  --lightness: 12%;
+
+  position: absolute;
+
+  bottom: 10%;
+  right: 40%;
 
   background-color: hsl(var(--hue) var(--saturation) var(--lightness) / 0.9);
 
