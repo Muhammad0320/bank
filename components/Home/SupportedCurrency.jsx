@@ -11,28 +11,25 @@ const Container = styled.div`
 
   position: absolute;
 
-  bottom: -20%;
+  bottom: -16%;
   right: -40%;
 
   background-color: hsl(var(--hue) var(--saturation) var(--lightness) / 0.9);
 
   border-radius: 3.6rem;
 
-  padding: 1rem;
+  padding-inline: 1.3rem;
+  padding-block: 0.8rem;
 
   display: flex;
 
   align-items: center;
 
-  column-gap: 5px;
+  column-gap: 0.8rem;
 
   color: var(--text-color);
 
   font-size: ${() => ClampComponent(320, 1200, 1, 1.5)};
-
-  /* & > * {
-    flex: 1;
-  } */
 `;
 
 const CurrencyContainer = styled.div`
