@@ -4,7 +4,7 @@ import Usd from '/public/assets/icons/usd.svg';
 import Euro from '/public/assets/icons/euro.svg';
 import Eth from '/public/assets/icons/eth.svg';
 
-import { ClampComponent } from '../../styles/clampBuilder';
+import { ClampComponent } from '../../../styles/clampBuilder';
 
 const Container = styled.div`
   --lightness: 12%;

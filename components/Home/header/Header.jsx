@@ -1,17 +1,18 @@
 'use client';
 
 import styled from 'styled-components';
-import { ClampComponent } from '../../styles/clampBuilder';
-import { Button } from '../ui/Button';
+import { ClampComponent } from '../../../styles/clampBuilder';
+import { Button } from '../../ui/Button';
 import Ngn from '/public/assets/icons/ngn.svg';
 import Usa from '/public/assets/icons/usa.svg';
 import Stroke from '/public/assets/icons/stroke.svg';
 import Arrows from '/public/assets/icons/arrows.svg';
 import Check from '/public/assets/icons/check.svg';
-import { FancyBorder } from '../ui/FancyBorder';
-import { IconContainer } from '../ui/IconContainer';
-import IncomeCard from './IncomeCard';
+import { FancyBorder } from '../../ui/FancyBorder';
+import { IconContainer } from '../../ui/IconContainer';
+
 import SupportedCurrency from './SupportedCurrency';
+import IncomeCard from './IncomeCard';
 
 const StyledHeader = styled.header`
   margin-block-start: ${() => ClampComponent(920, 1200, 7, 10)};
@@ -56,7 +57,7 @@ const TextH1 = styled.h1`
   color: var(--text-color);
 `;
 
-const Text = styled.p`
+ export const Text = styled.p`
   color: var(--text-color);
 
   font-size: ${() => ClampComponent(920, 1200, 1, 1.4)};

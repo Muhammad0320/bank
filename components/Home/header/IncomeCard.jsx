@@ -1,8 +1,9 @@
 import styled from 'styled-components';
 
 import Plus from '/public/assets/icons/plus.svg';
-import { ClampComponent } from '../../styles/clampBuilder';
-import { IconContainer } from '../ui/IconContainer';
+
+import { ClampComponent } from '../../../styles/clampBuilder';
+import { IconContainer } from '../../ui/IconContainer';
 
 const CardContainer = styled.div`
   --lightness: 12%;
