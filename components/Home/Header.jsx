@@ -41,7 +41,7 @@ const BenContainer = styled.span`
 
   border-radius: 3.6rem;
 
-  padding: 1.4rem;
+  padding: 1.1rem;
   width: fit-content;
 
   color: var(--text-color);
@@ -79,7 +79,7 @@ const HeroContainer = styled(FancyBorder)`
   max-width: 30dvw;
 
   display: grid;
-  grid-template-rows: auto 1fr 0.9fr auto;
+  grid-template-rows: auto 1fr auto 0.9fr 3rem;
 
   row-gap: ${() => ClampComponent(920, 1200, 2, 3)};
 
@@ -101,12 +101,12 @@ const TxnCard = styled.div`
   display: grid;
   background-color: var(--card-color);
 
-  grid-template-columns: 6rem 1fr;
+  grid-template-columns: 4.5rem 1fr;
 
   border-radius: 1.4rem;
 
   padding-inline: ${() => ClampComponent(320, 1200, 1.3, 2)};
-  padding-block: ${() => ClampComponent(320, 1200, 1, 1.8)};
+  padding-block: ${() => ClampComponent(320, 1200, 1, 1.4)};
 
   border: 1px solid hsl(0, 0%, 11%);
 
@@ -141,20 +141,6 @@ const TxnCardContainer = styled.div`
   flex-flow: column;
 
   align-items: center;
-
-  row-gap: -2rem;
-
-  /* &:nth-child(2) {
-    width: 85%;
-
-    opacity: 0.8;
-  }
-
-  &:last-child {
-    width: 70%;
-
-    opacity: 0.6;
-  }  */
 `;
 
 const CardContentContainer = styled.div`
@@ -165,6 +151,8 @@ const CardContentContainer = styled.div`
 
 const CurrencyCardContainer = styled.div`
   grid-row: 3 / 4;
+
+  height: auto;
 
   display: grid;
 
@@ -313,6 +301,8 @@ function Header() {
             </CardContentContainer>
           </TxnCard>
         </TxnCardContainer>
+
+        <HeroText>Money Exchange</HeroText>
 
         <CurrencyCardContainer>
           <CurrencyInfoContainer style={{ gridColumn: 1 / 2, gridRow: 1 / 2 }}>
