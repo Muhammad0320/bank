@@ -3,6 +3,7 @@
 import styled from 'styled-components';
 import { ClampComponent } from '../../../styles/clampBuilder';
 import { Text } from '../../ui/Text';
+import { TextGradient } from '../../ui/TextGradient';
 
 const SectionContainer = styled.section`
   margin-block: ${() => ClampComponent(320, 1200, 4, 6)};
@@ -83,7 +84,10 @@ function Products() {
     <SectionContainer>
       <TextContainer>
         <TextWrapper>
-          <H2> Our Products</H2>
+          <H2>
+            {' '}
+            Our <TextGradient as={'h2'}> Product </TextGradient>{' '}
+          </H2>
 
           <Text>
             Discover a range of comprehensive and customizable banking products

@@ -13,6 +13,7 @@ import { FancyBorder } from '../../ui/FancyBorder';
 import SupportedCurrency from './SupportedCurrency';
 import { IconContainer } from '../../ui/IconContainer';
 import { ClampComponent } from '../../../styles/clampBuilder';
+import { TextGradient } from '../../ui/TextGradient';
 
 const StyledHeader = styled.header`
   margin-block-start: ${() => ClampComponent(920, 1200, 7, 10)};
@@ -52,7 +53,7 @@ const BenContainer = styled.span`
 `;
 
 const TextH1 = styled.h1`
-  font-size: ${() => ClampComponent(920, 1200, 3, 4)};
+  font-size: ${() => ClampComponent(920, 1200, 3, 5)};
 
   color: var(--text-color);
 `;
@@ -223,7 +224,11 @@ function Header() {
 
           <span>NO LLC Required. No credit check</span>
         </BenContainer>
-        <TextH1>Welcome to YourBank Empowering your financial journey</TextH1>
+        <TextH1>
+          Welcome to YourBank Empowering your{' '}
+          <TextGradient as="h1"> Financial Journey </TextGradient>{' '}
+        </TextH1>
+
         <Text>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
           tenetur numquam vel odio explicabo rem consequatur consequuntur ad,

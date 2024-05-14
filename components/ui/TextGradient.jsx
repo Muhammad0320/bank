@@ -1,9 +1,9 @@
 import styled from 'styled-components';
 
-const StyledText = styled.div`
+export const TextGradient = styled.span`
   font-size: inherit;
 
-  font-weight: 650;
+  font-weight: inherit;
 
   background-color: var(--primary-gradient);
   background-clip: text;
@@ -12,9 +12,3 @@ const StyledText = styled.div`
 
   color: transparent;
 `;
-
-function TextGradient() {
-  return <span></span>;
-}
-
-export default TextGradient;
