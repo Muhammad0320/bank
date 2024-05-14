@@ -8,6 +8,7 @@ import { ClampComponent } from '../../../styles/clampBuilder';
 import Loan from '/public/assets/icons/loan.svg';
 import Savings from '/public/assets/icons/savings.svg';
 import Account from '/public/assets/icons/account.svg';
+import { HeadingWrapper } from './HeadingWrapper';
 
 const SectionContainer = styled.section`
   display: flex;
@@ -57,14 +58,6 @@ const TextContainer = styled.div`
   align-items: center;
 `;
 
-const TextWrapper = styled.div`
-  display: flex;
-
-  flex-flow: column;
-
-  row-gap: ${() => ClampComponent(320, 1200, 1, 2)};
-`;
-
 const ContentContainer = styled.div`
   display: grid;
 
@@ -105,7 +98,7 @@ function Products() {
   return (
     <SectionContainer>
       <TextContainer>
-        <TextWrapper>
+        <HeadingWrapper>
           <H2>
             {' '}
             Our <TextGradient as={'h2'}> Product </TextGradient>{' '}
@@ -116,7 +109,7 @@ function Products() {
             at YourBank, <br /> designed to suit your unique financial needs and
             aspirations
           </Text>
-        </TextWrapper>
+        </HeadingWrapper>
 
         <ProductCategory>
           <span className="active">For Individual</span>
