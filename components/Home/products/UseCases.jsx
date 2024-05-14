@@ -1,5 +1,7 @@
 'use client';
 
+import styled from 'styled-components';
+
 import { ClampComponent } from '../../../styles/clampBuilder';
 import { Text } from '../../ui/Text';
 import Future from '/public/assets/icons/future.svg';
