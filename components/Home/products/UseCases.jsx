@@ -7,10 +7,12 @@ import { Text } from '../../ui/Text';
 import Future from '/public/assets/icons/future.svg';
 import Home from '/public/assets/icons/home.svg';
 import Finance from '/public/assets/icons/finance.svg';
-import Edu from '/public/assets/icons/finance.svg';
+import Edu from '/public/assets/icons/edu.svg';
+import Dot from '/public/assets/icons/dot-lg.svg';
 
 import { TextGradient } from '../../ui/TextGradient';
 import { HeadingWrapper } from './HeadingWrapper';
+import { InlineContainer } from '../../ui/InlineContiner';
 
 const SectionContainer = styled.section`
   display: flex;
@@ -50,6 +52,14 @@ const CaseType = styled.div`
   flex-flow: column;
 
   gap: ${() => ClampComponent(920, 1200, 2.8, 4)};
+`;
+
+const ContentContainer = styled.div`
+  display: grid;
+
+  grid-auto-flow: column;
+
+  grid-auto-columns: 1fr;
 `;
 
 const FeatContainer = styled(InlineContainer)`
@@ -118,6 +128,9 @@ function UseCases() {
 
       <USeContainer>
         <CaseCardContainer>
+          <AbstractContainer>
+            <Dot />
+          </AbstractContainer>
           <CaseCard>
             <Finance />
             <Text>Managing Personal Finances</Text>
@@ -139,6 +152,38 @@ function UseCases() {
           </CaseCard>
         </CaseCardContainer>
       </USeContainer>
+
+      <CaseType>
+        <HeadingWrapper>
+          <Text type="head">For Individuals</Text>
+          <Text color="dark">
+            For individuals, our mortgage services pave the way to
+            homeownership, and our flexible personal loans provide vital support
+            during various life milestones. We also prioritize retirement
+            planning, ensuring a financially secure future for our customers
+          </Text>
+        </HeadingWrapper>
+
+        <ContentContainer>
+          <FeatContainer>
+            <TextGradient as="h2"> 78% </TextGradient>
+
+            <Text color="dark">Secure Retirement Planning</Text>
+          </FeatContainer>
+
+          <FeatContainer>
+            <TextGradient as="h2"> 63% </TextGradient>
+
+            <Text color="dark">Manageable Debt Consolidation.</Text>
+          </FeatContainer>
+
+          <FeatContainer>
+            <TextGradient as="h2"> 91% </TextGradient>
+
+            <Text color="dark">Reduced Financial Burden</Text>
+          </FeatContainer>
+        </ContentContainer>
+      </CaseType>
     </SectionContainer>
   );
 }
