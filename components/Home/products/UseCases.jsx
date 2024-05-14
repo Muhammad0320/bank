@@ -20,6 +20,88 @@ const SectionContainer = styled.section`
   row-gap: ${() => ClampComponent(320, 1200, 2.5, 4)};
 `;
 
+const USeContainer = styled.div`
+  display: grid;
+
+  grid-auto-flow: column;
+
+  grid-template-columns: 1fr;
+
+  gap: ${() => ClampComponent(920, 1200, 2.5, 4)};
+`;
+
+const CaseCardContainer = styled.div`
+  position: relative;
+  display: grid;
+  padding: ${() => ClampComponent(920, 1200, 1, 3)};
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+
+  gap: ${() => ClampComponent(920, 1200, 1.5, 2.5)};
+
+  border-radius: 1.4rem;
+
+  background-color: var(--card-color);
+`;
+
+const CaseType = styled.div`
+  display: flex;
+
+  flex-flow: column;
+
+  gap: ${() => ClampComponent(920, 1200, 2.8, 4)};
+`;
+
+const FeatContainer = styled(InlineContainer)`
+  & > h2 {
+    font-size: ${() => ClampComponent(920, 1200, 4, 6)};
+  }
+`;
+
+const CaseCard = styled.div`
+  display: flex;
+
+  flex-direction: column;
+
+  gap: ${() => ClampComponent(920, 1200, 1, 1.4)};
+
+  align-items: center;
+
+  padding-inline: ${() => ClampComponent(920, 1200, 1.1, 1.6)};
+
+  padding-block: ${() => ClampComponent(920, 1200, 1, 1.4)};
+
+  border-radius: 1.4rem;
+
+  border: 1px solid var(--black-color-light);
+
+  &:first-child {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+
+  &:nth-child(2) {
+    grid-column: 2 / -1;
+    grid-row: 1 / 2;
+  }
+
+  &:nth-child(3) {
+    grid-column: 1 / 2;
+    grid-row: 2 / -1;
+  }
+
+  &:last-child {
+    grid-column: 2 / -1;
+    grid-row: 2 / -1;
+  }
+`;
+
+const AbstractContainer = styled.div`
+  position: absolute;
+
+  inset: 0;
+`;
+
 function UseCases() {
   return (
     <SectionContainer>
@@ -33,6 +115,10 @@ function UseCases() {
           businesses alike, offering a wide range of financial solutions
         </Text>
       </HeadingWrapper>
+
+      <USeContainer>
+        <CaseCardContainer></CaseCardContainer>
+      </USeContainer>
     </SectionContainer>
   );
 }

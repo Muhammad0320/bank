@@ -9,6 +9,7 @@ import Loan from '/public/assets/icons/loan.svg';
 import Savings from '/public/assets/icons/savings.svg';
 import Account from '/public/assets/icons/account.svg';
 import { HeadingWrapper } from './HeadingWrapper';
+import { InlineContainer } from '../../ui/InlineContiner';
 
 const SectionContainer = styled.section`
   display: flex;
@@ -66,32 +67,10 @@ const ContentContainer = styled.div`
   grid-auto-columns: 1fr;
 `;
 
-const ProdContainer = styled.div`
-  display: flex;
-
-  flex-flow: column;
-
-  row-gap: 2rem;
-
+const ProdContainer = styled(InlineContainer)`
   align-items: center;
 
   text-align: center;
-
-  &:first-child {
-    padding-inline-end: ${() => ClampComponent(320, 1200, 3, 5)};
-  }
-
-  &:nth-child(2) {
-    padding-inline: ${() => ClampComponent(320, 1200, 2, 3.5)};
-  }
-
-  &:last-child {
-    padding-inline: ${() => ClampComponent(320, 1200, 3, 5)};
-  }
-
-  &:not(:last-child) {
-    border-right: 1px solid var(--black-color-light);
-  }
 `;
 
 function Products() {
@@ -147,7 +126,7 @@ function Products() {
         </ProdContainer>
 
         <ProdContainer>
-          <Savings />
+          <Loan />
           <Text color="dark" type="head">
             {' '}
             Loans and Mortgages{' '}

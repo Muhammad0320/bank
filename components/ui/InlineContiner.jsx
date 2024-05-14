@@ -1,7 +1,13 @@
 import styled from 'styled-components';
 import { ClampComponent } from '../../styles/clampBuilder';
 
-export const InlineContainer = Reactstyled.div`
+export const InlineContainer = styled.div`
+  display: flex;
+
+  flex-flow: column;
+
+  row-gap: 2rem;
+
   &:first-child {
     padding-inline-end: ${() => ClampComponent(320, 1200, 3, 5)};
   }
