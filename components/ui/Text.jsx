@@ -12,4 +12,11 @@ export const Text = styled.p`
       font-size: ${() => ClampComponent(920, 1200, 1.4, 1.8)};
       font-weight: 500;
     `}
+
+  ${props =>
+    props.color === 'dark' &&
+    css`
+      color: var(--black-color-light);
+      font-size: ${() => ClampComponent(920, 1200, 0.8, 1.2)};
+    `}
 `;
