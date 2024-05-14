@@ -1,3 +1,6 @@
+import styled from 'styled-components';
+import { ClampComponent } from '../../styles/clampBuilder';
+
 export const Text = styled.p`
   color: var(--text-color);
 
