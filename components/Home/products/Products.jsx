@@ -1,3 +1,5 @@
+'use client';
+
 import styled from 'styled-components';
 import { ClampComponent } from '../../../styles/clampBuilder';
 import { Text } from '../../ui/Text';
@@ -18,7 +20,12 @@ const ProductCategory = styled.div`
 
   border: 1px solid var(--black-color-light);
 
+  border-radius: 3.6rem;
+
   & > * {
+    flex: 1;
+    min-width: fit-content;
+
     color: var(--text-color-light);
     display: flex;
     justify-content: center;
@@ -80,7 +87,7 @@ function Products() {
 
           <Text>
             Discover a range of comprehensive and customizable banking products
-            at YourBank, designed to suit your unique financial needs and
+            at YourBank, <br /> designed to suit your unique financial needs and
             aspirations
           </Text>
         </TextWrapper>
