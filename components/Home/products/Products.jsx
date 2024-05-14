@@ -44,6 +44,8 @@ const ProductCategory = styled.div`
 
 const H2 = styled.h2`
   font-size: ${() => ClampComponent(320, 1200, 2, 3)};
+
+  font-weight: 500;
 `;
 
 const TextContainer = styled.div`

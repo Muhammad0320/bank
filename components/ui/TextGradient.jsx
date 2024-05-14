@@ -5,7 +5,10 @@ export const TextGradient = styled.span`
 
   font-weight: inherit;
 
-  background-color: var(--primary-gradient);
+  display: inline-block;
+
+  background-image: var(--primary-gradient);
+
   background-clip: text;
 
   -webkit-background-clip: text;

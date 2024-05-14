@@ -53,7 +53,9 @@ const BenContainer = styled.span`
 `;
 
 const TextH1 = styled.h1`
-  font-size: ${() => ClampComponent(920, 1200, 3, 5)};
+  font-size: ${() => ClampComponent(920, 1200, 3, 4)};
+
+  font-weight: 600;
 
   color: var(--text-color);
 `;
