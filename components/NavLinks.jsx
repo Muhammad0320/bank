@@ -2,14 +2,14 @@
 
 import NavLink from './ui/NavLink';
 import styled from 'styled-components';
-import { clampBuilder } from '../styles/clampBuilder';
+import { ClampComponent } from '../styles/clampBuilder';
 
 const NavContainer = styled.ul`
   display: flex;
 
-  column-gap: ${() => clampBuilder(950, 1200, 1.3, 2)};
+  column-gap: ${() => ClampComponent(950, 1200, 1.3, 2)};
 
-  font-size: ${() => clampBuilder(320, 1200, 1.3, 2.2)};
+  font-size: ${() => ClampComponent(320, 1200, 1.3, 2.2)};
 `;
 
 function NavLinks() {
