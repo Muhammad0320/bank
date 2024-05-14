@@ -35,6 +35,7 @@ inherits: false;
     
     --bg-color:  hsl(var(--hue), var(--saturation), var(--lightness)); */
     --text-color: hsl(280, 6%, 90%);
+    --text-color-dark: hsl(280, 6%, 70%);
     --card-color: hsl(0, 0%, 15%);
     --black-color: hsl(0, 0%, 10% ) ;
     --black-color-light: hsl(0, 0%, 20%);

@@ -85,15 +85,15 @@ const ProdContainer = styled.div`
   text-align: center;
 
   &:first-child {
-    padding-inline-end: ${() => ClampComponent(320, 1200, 2, 3)};
+    padding-inline-end: ${() => ClampComponent(320, 1200, 3, 5)};
   }
 
   &:nth-child(2) {
-    padding-inline: ${() => ClampComponent(320, 1200, 2, 3)};
+    padding-inline: ${() => ClampComponent(320, 1200, 2, 3.5)};
   }
 
   &:last-child {
-    padding-inline: ${() => ClampComponent(320, 1200, 2, 3)};
+    padding-inline: ${() => ClampComponent(320, 1200, 3, 5)};
   }
 
   &:not(:last-child) {
@@ -111,7 +111,7 @@ function Products() {
             Our <TextGradient as={'h2'}> Product </TextGradient>{' '}
           </H2>
 
-          <Text>
+          <Text color="dark">
             Discover a range of comprehensive and customizable banking products
             at YourBank, <br /> designed to suit your unique financial needs and
             aspirations
@@ -128,8 +128,11 @@ function Products() {
       <ContentContainer>
         <ProdContainer>
           <Account />
-          <Text type="head"> Checking Account </Text>
-          <Text>
+          <Text color="dark" type="head">
+            {' '}
+            Checking Account{' '}
+          </Text>
+          <Text color="dark">
             Enjoy easy and convenient access to your funds with our range of
             checking account options. Benefit from features such as online and
             mobile banking, debit cards, and free ATM access.
@@ -138,10 +141,13 @@ function Products() {
 
         <ProdContainer>
           <Savings />
-          <Text type="head"> Savings Account </Text>
-          <Text>
+          <Text color="dark" type="head">
+            {' '}
+            Savings Account{' '}
+          </Text>
+          <Text color="dark">
             Build your savings with our competitive interest rates and flexible
-            savings account options. Whether you &apos; re saving for a specific
+            savings account options. Whether you&apos;re saving for a specific
             goal or want to grow your wealth over time, we have the right
             account for you.
           </Text>
@@ -149,8 +155,11 @@ function Products() {
 
         <ProdContainer>
           <Savings />
-          <Text type="head"> Loans and Mortgages </Text>
-          <Text>
+          <Text color="dark" type="head">
+            {' '}
+            Loans and Mortgages{' '}
+          </Text>
+          <Text color="dark">
             Realize your dreams with our flexible loan and mortgage options.
             From personal loans to home mortgages, our experienced loan officers
             are here to guide you through the application process and help you

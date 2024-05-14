@@ -1,3 +1,5 @@
+'use client';
+
 import styled, { css } from 'styled-components';
 import { ClampComponent } from '../../styles/clampBuilder';
 
@@ -16,7 +18,7 @@ export const Text = styled.p`
   ${props =>
     props.color === 'dark' &&
     css`
-      color: var(--black-color-light);
+      color: var(--text-color-dark);
       font-size: ${() => ClampComponent(920, 1200, 0.8, 1.2)};
     `}
 `;
