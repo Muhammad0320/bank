@@ -117,7 +117,27 @@ function UseCases() {
       </HeadingWrapper>
 
       <USeContainer>
-        <CaseCardContainer></CaseCardContainer>
+        <CaseCardContainer>
+          <CaseCard>
+            <Finance />
+            <Text>Managing Personal Finances</Text>
+          </CaseCard>
+
+          <CaseCard>
+            <Future />
+            <Text>Saving for the future</Text>
+          </CaseCard>
+
+          <CaseCard>
+            <Home />
+            <Text>Homeownership</Text>
+          </CaseCard>
+
+          <CaseCard>
+            <Edu />
+            <Text>Education Funding</Text>
+          </CaseCard>
+        </CaseCardContainer>
       </USeContainer>
     </SectionContainer>
   );
