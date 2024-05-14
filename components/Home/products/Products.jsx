@@ -1,13 +1,15 @@
 'use client';
 
-import styled from 'styled-components';
-import { ClampComponent } from '../../../styles/clampBuilder';
 import { Text } from '../../ui/Text';
+import styled from 'styled-components';
 import { TextGradient } from '../../ui/TextGradient';
+import { ClampComponent } from '../../../styles/clampBuilder';
+
+import Loan from '/public/assets/icons/loan.svg';
+import Savings from '/public/assets/icons/savings.svg';
+import Account from '/public/assets/icons/account.svg';
 
 const SectionContainer = styled.section`
-  margin-block: ${() => ClampComponent(320, 1200, 4, 6)};
-
   display: flex;
 
   flex-flow: column;
@@ -79,6 +81,22 @@ const ProdContainer = styled.div`
   row-gap: 2rem;
 
   align-items: center;
+
+  &:first-child {
+    padding-inline-end: ${() => ClampComponent(320, 1200, 2, 3)};
+  }
+
+  &:nth-child(2) {
+    padding-inline: ${() => ClampComponent(320, 1200, 2, 3)};
+  }
+
+  &:last-child {
+    padding-inline: ${() => ClampComponent(320, 1200, 2, 3)};
+  }
+
+  &:not(:last-child) {
+    border-right: 1px solid var(--black-color-light);
+  }
 `;
 
 function Products() {

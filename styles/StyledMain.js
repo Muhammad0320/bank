@@ -27,5 +27,5 @@ export const StyledMain = styled.main`
 
   grid-auto-flow: row;
 
-  row-gap: 10rem;
+  row-gap: ${() => ClampComponent(320, 1200, 8, 15)};
 `;
