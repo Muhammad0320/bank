@@ -82,6 +82,8 @@ const ProdContainer = styled.div`
 
   align-items: center;
 
+  text-align: center;
+
   &:first-child {
     padding-inline-end: ${() => ClampComponent(320, 1200, 2, 3)};
   }
@@ -124,7 +126,37 @@ function Products() {
       </TextContainer>
 
       <ContentContainer>
-        <ProdContainer></ProdContainer>
+        <ProdContainer>
+          <Account />
+          <Text type="head"> Checking Account </Text>
+          <Text>
+            Enjoy easy and convenient access to your funds with our range of
+            checking account options. Benefit from features such as online and
+            mobile banking, debit cards, and free ATM access.
+          </Text>
+        </ProdContainer>
+
+        <ProdContainer>
+          <Savings />
+          <Text type="head"> Savings Account </Text>
+          <Text>
+            Build your savings with our competitive interest rates and flexible
+            savings account options. Whether you &apos; re saving for a specific
+            goal or want to grow your wealth over time, we have the right
+            account for you.
+          </Text>
+        </ProdContainer>
+
+        <ProdContainer>
+          <Savings />
+          <Text type="head"> Loans and Mortgages </Text>
+          <Text>
+            Realize your dreams with our flexible loan and mortgage options.
+            From personal loans to home mortgages, our experienced loan officers
+            are here to guide you through the application process and help you
+            secure the funds you need.
+          </Text>
+        </ProdContainer>
       </ContentContainer>
     </SectionContainer>
   );
