@@ -5,9 +5,18 @@ import { ClampComponent } from '../../../styles/clampBuilder';
 import { HeadingWrapper } from '../products/HeadingWrapper';
 import { TextGradient } from '../../ui/TextGradient';
 import { H2 } from '../../ui/H2';
+import Goto from '/public/assets/icons/goto.svg';
+
 import { Text } from '../../ui/Text';
 
 const SectionContainer = styled.section`
+  display: flex;
+  flex-flow: column;
+
+  gap: ${() => ClampComponent(920, 1200, 4, 6)};
+`;
+
+const ContentContainer = styled.div`
   display: grid;
 
   grid-template-columns: auto 1fr;
@@ -63,6 +72,16 @@ const FeatureCard = styled.li`
   grid-template-columns: 1fr auto;
 
   gap: ${() => ClampComponent(920, 1200, 2, 3.5)};
+
+  border-radius: 1.4rem;
+
+  border: 1px solid var(--card-color);
+`;
+
+const IconContainer = styled.span`
+  grid-column: 2 /-1;
+
+  grid-row: 1 / 2;
 `;
 
 function Features() {
@@ -82,6 +101,33 @@ function Features() {
           designed to enhance your banking experience
         </Text>
       </HeadingWrapper>
+
+      <ContentContainer>
+        <SideBar>
+          <SideNav> Online Banking </SideNav>
+          <SideNav> Financial Tools </SideNav>
+          <SideNav> Customer support </SideNav>
+        </SideBar>
+
+        <FeatureContainer>
+          <FeatureCard>
+            <Text type="head" style={{ gridColumn: '1 / 2' }}>
+              {' '}
+              24/7 Account Access{' '}
+            </Text>
+
+            <IconContainer>
+              <Goto />
+            </IconContainer>
+
+            <Text>
+              Enjoy the convenience of accessing your accounts anytime, anywhere
+              through our secure online banking platform. Check balances,
+              transfer funds, and pay bills with ease.
+            </Text>
+          </FeatureCard>
+        </FeatureContainer>
+      </ContentContainer>
     </SectionContainer>
   );
 }
