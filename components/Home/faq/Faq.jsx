@@ -18,12 +18,24 @@ const ContentContainer = styled.ul`
   display: grid;
 
   grid-template-columns: repeat(2, 1fr);
+
+  grid-template-rows: repeat(2, 1fr);
+
+  gap: ${() => ClampComponent(920, 1200, 2.5, 4)};
 `;
 
 const QuestionCard = styled.li`
-  border: 1px solid var(--black-color-light);
-
   padding: ${() => ClampComponent(920, 1200, 2.5, 4)};
+
+  border: 1px solid var(--black-color-light);
+  display: flex;
+  flex-flow: column;
+  gap: ${() => ClampComponent(920, 1200, 1.6, 3)};
+  box-shadow: var(--box-shadow-dark);
+
+  & > h4 {
+    border-bottom: 1px solid var(--black-color-light);
+  }
 `;
 
 function Faq() {
