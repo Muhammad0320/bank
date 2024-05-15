@@ -35,16 +35,6 @@ const SectionContainer = styled.section`
 // `;
 
 const CaseCardContainer = styled.div`
-  /* &:first-child {
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
-  }
-
-  &:last-child {
-    grid-column: 2 / -1;
-    grid-row: 2 / -1;
-  } */
-
   position: relative;
   display: grid;
   padding: ${() => ClampComponent(920, 1200, 1, 3)};
@@ -135,7 +125,9 @@ const AbstractContainer = styled.div`
   ${props =>
     props.position === 'alt' &&
     css`
-      right: 50%;
+      inset: unset;
+      right: 0;
+      transform: rotateY(190deg);
     `}
 `;
 
