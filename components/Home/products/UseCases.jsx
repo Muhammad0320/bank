@@ -14,6 +14,7 @@ import { TextGradient } from '../../ui/TextGradient';
 import { HeadingWrapper } from './HeadingWrapper';
 import { InlineContainer } from '../../ui/InlineContiner';
 import { H2 } from '../../ui/H2';
+import { Button } from '../../ui/Button';
 
 const SectionContainer = styled.section`
   display: flex;
@@ -23,8 +24,18 @@ const SectionContainer = styled.section`
   row-gap: ${() => ClampComponent(320, 1200, 2.5, 4)};
 `;
 
-const USeContainer = styled.div`
-  &:first-child {
+// const USeContainer = styled.div`
+//   display: grid;
+
+//   grid-auto-flow: column;
+
+//   grid-template-columns: 1fr;
+
+//   gap: ${() => ClampComponent(920, 1200, 2.5, 4)};
+// `;
+
+const CaseCardContainer = styled.div`
+  /* &:first-child {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
   }
@@ -32,18 +43,8 @@ const USeContainer = styled.div`
   &:last-child {
     grid-column: 2 / -1;
     grid-row: 2 / -1;
-  }
+  } */
 
-  display: grid;
-
-  grid-auto-flow: column;
-
-  grid-template-columns: 1fr;
-
-  gap: ${() => ClampComponent(920, 1200, 2.5, 4)};
-`;
-
-const CaseCardContainer = styled.div`
   position: relative;
   display: grid;
   padding: ${() => ClampComponent(920, 1200, 1, 3)};
@@ -54,7 +55,9 @@ const CaseCardContainer = styled.div`
 
   border-radius: 1.4rem;
 
-  background-color: var(--card-color);
+  min-width: 50rem;
+
+  background-color: hsl(0, 0%, 12%);
 `;
 
 const CaseType = styled.div`
@@ -62,7 +65,12 @@ const CaseType = styled.div`
 
   flex-flow: column;
 
-  gap: ${() => ClampComponent(920, 1200, 2.8, 4)};
+  justify-content: space-between;
+
+  & > button {
+    align-self: flex-start;
+    justify-self: flex-start;
+  }
 `;
 
 const ContentContainer = styled.div`
@@ -93,6 +101,8 @@ const CaseCard = styled.div`
   padding-block: ${() => ClampComponent(920, 1200, 1, 1.4)};
 
   border-radius: 1.4rem;
+
+  text-align: center;
 
   border: 1px solid var(--black-color-light);
 
@@ -126,8 +136,6 @@ const AbstractContainer = styled.div`
 const AllCasesContainer = styled.div`
   display: grid;
 
-  grid-template-rows: repeat(2, 1fr);
-
   grid-template-columns: 1.5fr 1fr;
 
   gap: ${() => ClampComponent(920, 1200, 3, 5)};
@@ -138,7 +146,7 @@ function UseCases() {
     <SectionContainer>
       <HeadingWrapper>
         <H2>
-          <TextGradient as="h2"> Use Cases </TextGradient>
+          <TextGradient> Use Cases </TextGradient>
         </H2>
 
         <Text color="dark">
@@ -148,32 +156,30 @@ function UseCases() {
       </HeadingWrapper>
 
       <AllCasesContainer>
-        <USeContainer>
-          <CaseCardContainer>
-            <AbstractContainer>
-              <Dot />
-            </AbstractContainer>
-            <CaseCard>
-              <Finance />
-              <Text type="head">Managing Personal Finances</Text>
-            </CaseCard>
+        <CaseCardContainer>
+          <AbstractContainer>
+            <Dot />
+          </AbstractContainer>
+          <CaseCard>
+            <Finance />
+            <Text type="head">Managing Personal Finances</Text>
+          </CaseCard>
 
-            <CaseCard>
-              <Future />
-              <Text type="head">Saving for the future</Text>
-            </CaseCard>
+          <CaseCard>
+            <Future />
+            <Text type="head">Saving for the future</Text>
+          </CaseCard>
 
-            <CaseCard>
-              <Home />
-              <Text type="head">Homeownership</Text>
-            </CaseCard>
+          <CaseCard>
+            <Home />
+            <Text type="head">Homeownership</Text>
+          </CaseCard>
 
-            <CaseCard>
-              <Edu />
-              <Text type="head">Education Funding</Text>
-            </CaseCard>
-          </CaseCardContainer>
-        </USeContainer>
+          <CaseCard>
+            <Edu />
+            <Text type="head">Education Funding</Text>
+          </CaseCard>
+        </CaseCardContainer>
 
         <CaseType>
           <HeadingWrapper>
@@ -206,6 +212,8 @@ function UseCases() {
               <Text color="dark">Reduced Financial Burden</Text>
             </FeatContainer>
           </ContentContainer>
+
+          <Button>Learn more</Button>
         </CaseType>
       </AllCasesContainer>
     </SectionContainer>
