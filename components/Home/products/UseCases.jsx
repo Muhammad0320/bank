@@ -1,6 +1,6 @@
 'use client';
 
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 import { ClampComponent } from '../../../styles/clampBuilder';
 import { Text } from '../../ui/Text';
@@ -21,7 +21,7 @@ const SectionContainer = styled.section`
 
   flex-flow: column;
 
-  row-gap: ${() => ClampComponent(320, 1200, 2.5, 4)};
+  row-gap: ${() => ClampComponent(320, 1200, 3, 5)};
 `;
 
 // const USeContainer = styled.div`
@@ -131,6 +131,12 @@ const AbstractContainer = styled.div`
   position: absolute;
 
   inset: 0;
+
+  ${props =>
+    props.position === 'alt' &&
+    css`
+      right: 50%;
+    `}
 `;
 
 const AllCasesContainer = styled.div`
@@ -220,33 +226,32 @@ function UseCases() {
       <AllCasesContainer>
         <CaseType>
           <HeadingWrapper>
-            <Text type="head">For Individuals</Text>
+            <Text type="head">For Business</Text>
             <Text color="dark">
-              For individuals, our mortgage services pave the way to
-              homeownership, and our flexible personal loans provide vital
-              support during various life milestones. We also prioritize
-              retirement planning, ensuring a financially secure future for our
-              customers
+              For businesses, we empower growth with working capital solutions
+              that optimize cash flow, and our tailored financing options fuel
+              business expansion. Whatever your financial aspirations, YourBank
+              is committed to providing the right tools and support to achieve
+              them
             </Text>
           </HeadingWrapper>
 
           <ContentContainer>
             <FeatContainer>
-              <TextGradient as="h2"> 78% </TextGradient>
+              <TextGradient as="h2"> 65% </TextGradient>
 
-              <Text color="dark">Secure Retirement Planning</Text>
+              <Text color="dark">Cash Flow Management</Text>
             </FeatContainer>
 
             <FeatContainer>
-              <TextGradient as="h2"> 63% </TextGradient>
+              <TextGradient as="h2"> 70% </TextGradient>
 
-              <Text color="dark">Manageable Debt Consolidation.</Text>
+              <Text color="dark"> Drive Business Exploration. </Text>
             </FeatContainer>
 
             <FeatContainer>
-              <TextGradient as="h2"> 91% </TextGradient>
-
-              <Text color="dark">Reduced Financial Burden</Text>
+              <TextGradient as="h2"> 45% </TextGradient>
+              <Text color="dark"> Streaming Payroll processing. </Text>
             </FeatContainer>
           </ContentContainer>
 
@@ -254,27 +259,27 @@ function UseCases() {
         </CaseType>
 
         <CaseCardContainer>
-          <AbstractContainer>
+          <AbstractContainer position="alt">
             <Dot />
           </AbstractContainer>
           <CaseCard>
             <Finance />
-            <Text type="head">Managing Personal Finances</Text>
+            <Text type="head"> Startups and Entrepreneur </Text>
           </CaseCard>
 
           <CaseCard>
             <Future />
-            <Text type="head">Saving for the future</Text>
+            <Text type="head">Cash Flow Managenemt</Text>
           </CaseCard>
 
           <CaseCard>
             <Home />
-            <Text type="head">Homeownership</Text>
+            <Text type="head"> Business Expansion </Text>
           </CaseCard>
 
           <CaseCard>
             <Edu />
-            <Text type="head">Education Funding</Text>
+            <Text type="head"> Payment Solution </Text>
           </CaseCard>
         </CaseCardContainer>
       </AllCasesContainer>
