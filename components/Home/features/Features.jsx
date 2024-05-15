@@ -126,6 +126,54 @@ function Features() {
               transfer funds, and pay bills with ease.
             </Text>
           </FeatureCard>
+          <FeatureCard>
+            <Text type="head" style={{ gridColumn: '1 / 2' }}>
+              {' '}
+              24/7 Account Access{' '}
+            </Text>
+
+            <IconContainer>
+              <Goto />
+            </IconContainer>
+
+            <Text>
+              Enjoy the convenience of accessing your accounts anytime, anywhere
+              through our secure online banking platform. Check balances,
+              transfer funds, and pay bills with ease.
+            </Text>
+          </FeatureCard>{' '}
+          <FeatureCard>
+            <Text type="head" style={{ gridColumn: '1 / 2' }}>
+              {' '}
+              24/7 Account Access{' '}
+            </Text>
+
+            <IconContainer>
+              <Goto />
+            </IconContainer>
+
+            <Text>
+              Enjoy the convenience of accessing your accounts anytime, anywhere
+              through our secure online banking platform. Check balances,
+              transfer funds, and pay bills with ease.
+            </Text>
+          </FeatureCard>
+          <FeatureCard>
+            <Text type="head" style={{ gridColumn: '1 / 2' }}>
+              {' '}
+              24/7 Account Access{' '}
+            </Text>
+
+            <IconContainer>
+              <Goto />
+            </IconContainer>
+
+            <Text>
+              Enjoy the convenience of accessing your accounts anytime, anywhere
+              through our secure online banking platform. Check balances,
+              transfer funds, and pay bills with ease.
+            </Text>
+          </FeatureCard>
         </FeatureContainer>
       </ContentContainer>
     </SectionContainer>
