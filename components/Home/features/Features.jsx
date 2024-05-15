@@ -127,9 +127,8 @@ function Features() {
             </Text>
           </FeatureCard>
           <FeatureCard>
-            <Text type="head" style={{ gridColumn: '1 / 2' }}>
-              {' '}
-              24/7 Account Access{' '}
+            <Text type="head" style={{ gridColumn: '2 / -1' }}>
+              Mobile banking App
             </Text>
 
             <IconContainer>
@@ -137,15 +136,15 @@ function Features() {
             </IconContainer>
 
             <Text>
-              Enjoy the convenience of accessing your accounts anytime, anywhere
-              through our secure online banking platform. Check balances,
-              transfer funds, and pay bills with ease.
+              Stay connected to your finances on the go with our user-friendly
+              mobile banking app. Easily manage your accounts, deposit checks,
+              and make payments from your smartphone or tablet.
             </Text>
           </FeatureCard>{' '}
           <FeatureCard>
-            <Text type="head" style={{ gridColumn: '1 / 2' }}>
+            <Text type="head" style={{ gridColumn: '1 / 2', gridRow: '1 / 2' }}>
               {' '}
-              24/7 Account Access{' '}
+              Secure Transaction
             </Text>
 
             <IconContainer>
@@ -153,15 +152,18 @@ function Features() {
             </IconContainer>
 
             <Text>
-              Enjoy the convenience of accessing your accounts anytime, anywhere
-              through our secure online banking platform. Check balances,
-              transfer funds, and pay bills with ease.
+              Rest assured knowing that your transactions are protected by
+              industry-leading security measures. We employ encryption and
+              multi-factor authentication to safeguard your financial
+              information.
             </Text>
           </FeatureCard>
           <FeatureCard>
-            <Text type="head" style={{ gridColumn: '1 / 2' }}>
-              {' '}
-              24/7 Account Access{' '}
+            <Text
+              type="head"
+              style={{ gridColumn: '2 / -1', gridRow: '2 / -1' }}
+            >
+              Bill pay and Transfer
             </Text>
 
             <IconContainer>
@@ -169,9 +171,9 @@ function Features() {
             </IconContainer>
 
             <Text>
-              Enjoy the convenience of accessing your accounts anytime, anywhere
-              through our secure online banking platform. Check balances,
-              transfer funds, and pay bills with ease.
+              Save time and avoid late fees with our convenient bill pay
+              service. Set up recurring payments or make one-time transfers
+              between your accounts with just a few clicks..
             </Text>
           </FeatureCard>
         </FeatureContainer>
