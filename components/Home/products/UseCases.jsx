@@ -216,6 +216,68 @@ function UseCases() {
           <Button>Learn more</Button>
         </CaseType>
       </AllCasesContainer>
+
+      <AllCasesContainer>
+        <CaseType>
+          <HeadingWrapper>
+            <Text type="head">For Individuals</Text>
+            <Text color="dark">
+              For individuals, our mortgage services pave the way to
+              homeownership, and our flexible personal loans provide vital
+              support during various life milestones. We also prioritize
+              retirement planning, ensuring a financially secure future for our
+              customers
+            </Text>
+          </HeadingWrapper>
+
+          <ContentContainer>
+            <FeatContainer>
+              <TextGradient as="h2"> 78% </TextGradient>
+
+              <Text color="dark">Secure Retirement Planning</Text>
+            </FeatContainer>
+
+            <FeatContainer>
+              <TextGradient as="h2"> 63% </TextGradient>
+
+              <Text color="dark">Manageable Debt Consolidation.</Text>
+            </FeatContainer>
+
+            <FeatContainer>
+              <TextGradient as="h2"> 91% </TextGradient>
+
+              <Text color="dark">Reduced Financial Burden</Text>
+            </FeatContainer>
+          </ContentContainer>
+
+          <Button>Learn more</Button>
+        </CaseType>
+
+        <CaseCardContainer>
+          <AbstractContainer>
+            <Dot />
+          </AbstractContainer>
+          <CaseCard>
+            <Finance />
+            <Text type="head">Managing Personal Finances</Text>
+          </CaseCard>
+
+          <CaseCard>
+            <Future />
+            <Text type="head">Saving for the future</Text>
+          </CaseCard>
+
+          <CaseCard>
+            <Home />
+            <Text type="head">Homeownership</Text>
+          </CaseCard>
+
+          <CaseCard>
+            <Edu />
+            <Text type="head">Education Funding</Text>
+          </CaseCard>
+        </CaseCardContainer>
+      </AllCasesContainer>
     </SectionContainer>
   );
 }
