@@ -112,6 +112,14 @@ const AbstractContainer = styled.div`
   inset: 0;
 `;
 
+const AllCasesContainer = styled.div`
+  display: grid;
+
+  grid-auto-flow: row;
+
+  grid-auto-rows: 1fr;
+`;
+
 function UseCases() {
   return (
     <SectionContainer>
@@ -126,64 +134,67 @@ function UseCases() {
         </Text>
       </HeadingWrapper>
 
-      <USeContainer>
-        <CaseCardContainer>
-          <AbstractContainer>
-            <Dot />
-          </AbstractContainer>
-          <CaseCard>
-            <Finance />
-            <Text>Managing Personal Finances</Text>
-          </CaseCard>
+      <AllCasesContainer>
+        <USeContainer>
+          <CaseCardContainer>
+            <AbstractContainer>
+              <Dot />
+            </AbstractContainer>
+            <CaseCard>
+              <Finance />
+              <Text>Managing Personal Finances</Text>
+            </CaseCard>
 
-          <CaseCard>
-            <Future />
-            <Text>Saving for the future</Text>
-          </CaseCard>
+            <CaseCard>
+              <Future />
+              <Text>Saving for the future</Text>
+            </CaseCard>
 
-          <CaseCard>
-            <Home />
-            <Text>Homeownership</Text>
-          </CaseCard>
+            <CaseCard>
+              <Home />
+              <Text>Homeownership</Text>
+            </CaseCard>
 
-          <CaseCard>
-            <Edu />
-            <Text>Education Funding</Text>
-          </CaseCard>
-        </CaseCardContainer>
-      </USeContainer>
+            <CaseCard>
+              <Edu />
+              <Text>Education Funding</Text>
+            </CaseCard>
+          </CaseCardContainer>
+        </USeContainer>
 
-      <CaseType>
-        <HeadingWrapper>
-          <Text type="head">For Individuals</Text>
-          <Text color="dark">
-            For individuals, our mortgage services pave the way to
-            homeownership, and our flexible personal loans provide vital support
-            during various life milestones. We also prioritize retirement
-            planning, ensuring a financially secure future for our customers
-          </Text>
-        </HeadingWrapper>
+        <CaseType>
+          <HeadingWrapper>
+            <Text type="head">For Individuals</Text>
+            <Text color="dark">
+              For individuals, our mortgage services pave the way to
+              homeownership, and our flexible personal loans provide vital
+              support during various life milestones. We also prioritize
+              retirement planning, ensuring a financially secure future for our
+              customers
+            </Text>
+          </HeadingWrapper>
 
-        <ContentContainer>
-          <FeatContainer>
-            <TextGradient as="h2"> 78% </TextGradient>
+          <ContentContainer>
+            <FeatContainer>
+              <TextGradient as="h2"> 78% </TextGradient>
 
-            <Text color="dark">Secure Retirement Planning</Text>
-          </FeatContainer>
+              <Text color="dark">Secure Retirement Planning</Text>
+            </FeatContainer>
 
-          <FeatContainer>
-            <TextGradient as="h2"> 63% </TextGradient>
+            <FeatContainer>
+              <TextGradient as="h2"> 63% </TextGradient>
 
-            <Text color="dark">Manageable Debt Consolidation.</Text>
-          </FeatContainer>
+              <Text color="dark">Manageable Debt Consolidation.</Text>
+            </FeatContainer>
 
-          <FeatContainer>
-            <TextGradient as="h2"> 91% </TextGradient>
+            <FeatContainer>
+              <TextGradient as="h2"> 91% </TextGradient>
 
-            <Text color="dark">Reduced Financial Burden</Text>
-          </FeatContainer>
-        </ContentContainer>
-      </CaseType>
+              <Text color="dark">Reduced Financial Burden</Text>
+            </FeatContainer>
+          </ContentContainer>
+        </CaseType>
+      </AllCasesContainer>
     </SectionContainer>
   );
 }
