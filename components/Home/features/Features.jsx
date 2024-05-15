@@ -30,14 +30,17 @@ const SideBar = styled.aside`
 
   background-color: var(--card-color);
 
+  border-radius: 1rem;
+  padding: ${() => ClampComponent(920, 1200, 2.4, 4)};
+  box-shadow: var(--box-shadow-dark-2);
+`;
+
+const SideNavUl = styled.ul`
   display: flex;
   flex-flow: column;
   gap: ${() => ClampComponent(920, 1200, 1.5, 3)};
-  padding: ${() => ClampComponent(920, 1200, 2.4, 4)};
   justify-content: center;
   align-items: center;
-  border-radius: 1rem;
-  box-shadow: var(--box-shadow-dark-2);
 `;
 
 const SideNav = styled.li`
@@ -48,6 +51,8 @@ const SideNav = styled.li`
   transition: all 350ms ease-out;
 
   border: 1px solid var(--black-color-light);
+
+  border-radius: 3.6rem;
 
   &:hover,
   .active {
@@ -121,11 +126,11 @@ function Features() {
 
       <ContentContainer>
         <SideBar>
-          <ul>
+          <SideNavUl>
             <SideNav> Online Banking </SideNav>
             <SideNav> Financial Tools </SideNav>
             <SideNav> Customer support </SideNav>
-          </ul>
+          </SideNavUl>
         </SideBar>
 
         <FeatureContainer>
