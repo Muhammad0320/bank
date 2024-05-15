@@ -48,6 +48,23 @@ const SideNav = styled.li`
   }
 `;
 
+const FeatureContainer = styled.ul`
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+
+  gap: ${() => ClampComponent(920, 1200, 2.5, 4)};
+`;
+
+const FeatureCard = styled.li`
+  display: grid;
+
+  grid-template-columns: 1fr auto;
+
+  gap: ${() => ClampComponent(920, 1200, 2, 3.5)};
+`;
+
 function Features() {
   return (
     <SectionContainer>
