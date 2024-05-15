@@ -25,6 +25,8 @@ const ContentContainer = styled.div`
 `;
 
 const SideBar = styled.aside`
+  justify-self: start;
+
   background-color: var(--card-color);
 
   display: flex;
@@ -34,6 +36,7 @@ const SideBar = styled.aside`
   justify-content: center;
   align-items: center;
   border-radius: 1rem;
+  box-shadow: var(--box-shadow-dark-2);
 `;
 
 const SideNav = styled.li`
@@ -71,7 +74,11 @@ const FeatureCard = styled.li`
 
   grid-template-columns: 1fr auto;
 
+  padding: ${() => ClampComponent(920, 1200, 2, 3)};
+
   gap: ${() => ClampComponent(920, 1200, 2, 3.5)};
+
+  box-shadow: var(--box-shadow-dark);
 
   border-radius: 1.4rem;
 
@@ -120,7 +127,7 @@ function Features() {
               <Goto />
             </IconContainer>
 
-            <Text>
+            <Text style={{ gridColumn: 'span 2' }}>
               Enjoy the convenience of accessing your accounts anytime, anywhere
               through our secure online banking platform. Check balances,
               transfer funds, and pay bills with ease.
@@ -135,7 +142,7 @@ function Features() {
               <Goto />
             </IconContainer>
 
-            <Text>
+            <Text style={{ gridColumn: 'span 2', gridRow: '2 / -1' }}>
               Stay connected to your finances on the go with our user-friendly
               mobile banking app. Easily manage your accounts, deposit checks,
               and make payments from your smartphone or tablet.
@@ -151,7 +158,7 @@ function Features() {
               <Goto />
             </IconContainer>
 
-            <Text>
+            <Text style={{ gridColumn: 'span 2', gridRow: '2 / -1' }}>
               Rest assured knowing that your transactions are protected by
               industry-leading security measures. We employ encryption and
               multi-factor authentication to safeguard your financial
@@ -170,7 +177,7 @@ function Features() {
               <Goto />
             </IconContainer>
 
-            <Text>
+            <Text style={{ gridColumn: 'span 2', gridRow: '2 / -1' }}>
               Save time and avoid late fees with our convenient bill pay
               service. Set up recurring payments or make one-time transfers
               between your accounts with just a few clicks..
