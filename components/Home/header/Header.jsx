@@ -228,7 +228,7 @@ function Header() {
         </BenContainer>
         <TextH1>
           Welcome to YourBank Empowering your{' '}
-          <TextGradient as="h1"> Financial Journey </TextGradient>{' '}
+          <TextGradient> Financial Journey </TextGradient>{' '}
         </TextH1>
 
         <Text>

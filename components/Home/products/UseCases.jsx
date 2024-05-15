@@ -13,6 +13,7 @@ import Dot from '/public/assets/icons/dot-lg.svg';
 import { TextGradient } from '../../ui/TextGradient';
 import { HeadingWrapper } from './HeadingWrapper';
 import { InlineContainer } from '../../ui/InlineContiner';
+import { H2 } from '../../ui/H2';
 
 const SectionContainer = styled.section`
   display: flex;
@@ -124,9 +125,9 @@ function UseCases() {
   return (
     <SectionContainer>
       <HeadingWrapper>
-        <Text type="head">
+        <H2>
           <TextGradient as="h2"> Use Cases </TextGradient>
-        </Text>
+        </H2>
 
         <Text color="dark">
           At YourBank, we cater to the diverse needs of individuals and
@@ -134,67 +135,64 @@ function UseCases() {
         </Text>
       </HeadingWrapper>
 
-      <AllCasesContainer>
-        <USeContainer>
-          <CaseCardContainer>
-            <AbstractContainer>
-              <Dot />
-            </AbstractContainer>
-            <CaseCard>
-              <Finance />
-              <Text>Managing Personal Finances</Text>
-            </CaseCard>
+      <USeContainer>
+        <CaseCardContainer>
+          <AbstractContainer>
+            <Dot />
+          </AbstractContainer>
+          <CaseCard>
+            <Finance />
+            <Text type="head">Managing Personal Finances</Text>
+          </CaseCard>
 
-            <CaseCard>
-              <Future />
-              <Text>Saving for the future</Text>
-            </CaseCard>
+          <CaseCard>
+            <Future />
+            <Text type="head">Saving for the future</Text>
+          </CaseCard>
 
-            <CaseCard>
-              <Home />
-              <Text>Homeownership</Text>
-            </CaseCard>
+          <CaseCard>
+            <Home />
+            <Text type="head">Homeownership</Text>
+          </CaseCard>
 
-            <CaseCard>
-              <Edu />
-              <Text>Education Funding</Text>
-            </CaseCard>
-          </CaseCardContainer>
-        </USeContainer>
+          <CaseCard>
+            <Edu />
+            <Text type="head">Education Funding</Text>
+          </CaseCard>
+        </CaseCardContainer>
+      </USeContainer>
 
-        <CaseType>
-          <HeadingWrapper>
-            <Text type="head">For Individuals</Text>
-            <Text color="dark">
-              For individuals, our mortgage services pave the way to
-              homeownership, and our flexible personal loans provide vital
-              support during various life milestones. We also prioritize
-              retirement planning, ensuring a financially secure future for our
-              customers
-            </Text>
-          </HeadingWrapper>
+      <CaseType>
+        <HeadingWrapper>
+          <Text type="head">For Individuals</Text>
+          <Text color="dark">
+            For individuals, our mortgage services pave the way to
+            homeownership, and our flexible personal loans provide vital support
+            during various life milestones. We also prioritize retirement
+            planning, ensuring a financially secure future for our customers
+          </Text>
+        </HeadingWrapper>
 
-          <ContentContainer>
-            <FeatContainer>
-              <TextGradient as="h2"> 78% </TextGradient>
+        <ContentContainer>
+          <FeatContainer>
+            <TextGradient as="h2"> 78% </TextGradient>
 
-              <Text color="dark">Secure Retirement Planning</Text>
-            </FeatContainer>
+            <Text color="dark">Secure Retirement Planning</Text>
+          </FeatContainer>
 
-            <FeatContainer>
-              <TextGradient as="h2"> 63% </TextGradient>
+          <FeatContainer>
+            <TextGradient as="h2"> 63% </TextGradient>
 
-              <Text color="dark">Manageable Debt Consolidation.</Text>
-            </FeatContainer>
+            <Text color="dark">Manageable Debt Consolidation.</Text>
+          </FeatContainer>
 
-            <FeatContainer>
-              <TextGradient as="h2"> 91% </TextGradient>
+          <FeatContainer>
+            <TextGradient as="h2"> 91% </TextGradient>
 
-              <Text color="dark">Reduced Financial Burden</Text>
-            </FeatContainer>
-          </ContentContainer>
-        </CaseType>
-      </AllCasesContainer>
+            <Text color="dark">Reduced Financial Burden</Text>
+          </FeatContainer>
+        </ContentContainer>
+      </CaseType>
     </SectionContainer>
   );
 }
