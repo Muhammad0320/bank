@@ -72,7 +72,12 @@ const FeatureContainer = styled.ul`
 const FeatureCard = styled.li`
   display: grid;
 
+  justify-content: center;
+  align-items: center;
+
   grid-template-columns: 1fr auto;
+
+  grid-template-rows: auto 1fr;
 
   padding: ${() => ClampComponent(920, 1200, 2, 3)};
 
@@ -86,8 +91,8 @@ const FeatureCard = styled.li`
 `;
 
 const IconContainer = styled.span`
-  align-self: center;
-  justify-self: center;
+  /* align-self: center;
+  justify-self: center; */
 
   grid-column: 2 /-1;
 
