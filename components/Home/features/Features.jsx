@@ -86,6 +86,9 @@ const FeatureCard = styled.li`
 `;
 
 const IconContainer = styled.span`
+  align-self: center;
+  justify-self: center;
+
   grid-column: 2 /-1;
 
   grid-row: 1 / 2;
@@ -96,7 +99,6 @@ function Features() {
     <SectionContainer>
       <HeadingWrapper>
         <H2>
-          {' '}
           Our
           <TextGradient> Features </TextGradient>
         </H2>
@@ -119,8 +121,7 @@ function Features() {
         <FeatureContainer>
           <FeatureCard>
             <Text type="head" style={{ gridColumn: '1 / 2' }}>
-              {' '}
-              24/7 Account Access{' '}
+              24/7 Account Access
             </Text>
 
             <IconContainer>
@@ -147,10 +148,9 @@ function Features() {
               mobile banking app. Easily manage your accounts, deposit checks,
               and make payments from your smartphone or tablet.
             </Text>
-          </FeatureCard>{' '}
+          </FeatureCard>
           <FeatureCard>
             <Text type="head" style={{ gridColumn: '1 / 2', gridRow: '1 / 2' }}>
-              {' '}
               Secure Transaction
             </Text>
 
