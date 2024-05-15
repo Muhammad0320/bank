@@ -26,6 +26,7 @@ const ContentContainer = styled.div`
 
 const SideBar = styled.aside`
   justify-self: start;
+  align-self: flex-start;
 
   background-color: var(--card-color);
 
@@ -45,6 +46,8 @@ const SideNav = styled.li`
   color: var(--text-color);
 
   transition: all 350ms ease-out;
+
+  border: 1px solid var(--black-color-light);
 
   &:hover,
   .active {
@@ -118,9 +121,11 @@ function Features() {
 
       <ContentContainer>
         <SideBar>
-          <SideNav> Online Banking </SideNav>
-          <SideNav> Financial Tools </SideNav>
-          <SideNav> Customer support </SideNav>
+          <ul>
+            <SideNav> Online Banking </SideNav>
+            <SideNav> Financial Tools </SideNav>
+            <SideNav> Customer support </SideNav>
+          </ul>
         </SideBar>
 
         <FeatureContainer>
