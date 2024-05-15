@@ -57,6 +57,8 @@ const CaseType = styled.div`
 
   justify-content: space-between;
 
+  padding-block: ${() => ClampComponent(920, 1200, 1.5, 3)};
+
   & > button {
     align-self: flex-start;
     justify-self: flex-start;
