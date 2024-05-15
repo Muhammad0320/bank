@@ -10,6 +10,7 @@ import Savings from '/public/assets/icons/savings.svg';
 import Account from '/public/assets/icons/account.svg';
 import { HeadingWrapper } from './HeadingWrapper';
 import { InlineContainer } from '../../ui/InlineContiner';
+import { H2 } from '../../ui/H2';
 
 const SectionContainer = styled.section`
   display: flex;
@@ -46,12 +47,6 @@ const ProductCategory = styled.div`
   }
 `;
 
-const H2 = styled.h2`
-  font-size: ${() => ClampComponent(320, 1200, 2, 3)};
-
-  font-weight: 500;
-`;
-
 const TextContainer = styled.div`
   display: flex;
 
@@ -80,7 +75,7 @@ function Products() {
         <HeadingWrapper>
           <H2>
             {' '}
-            Our <TextGradient as={'h2'}> Product </TextGradient>{' '}
+            Our <TextGradient> Product </TextGradient>{' '}
           </H2>
 
           <Text color="dark">
