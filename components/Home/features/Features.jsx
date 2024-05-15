@@ -7,12 +7,45 @@ import { TextGradient } from '../../ui/TextGradient';
 import { H2 } from '../../ui/H2';
 import { Text } from '../../ui/Text';
 
-const SectionContainer = styled.div`
+const SectionContainer = styled.section`
   display: grid;
 
   grid-template-columns: auto 1fr;
 
   gap: ${() => ClampComponent(920, 1200, 2, 3.5)};
+`;
+
+const SideBar = styled.aside`
+  background-color: var(--card-color);
+
+  display: flex;
+  flex-flow: column;
+  gap: ${() => ClampComponent(920, 1200, 1.5, 3)};
+  padding: ${() => ClampComponent(920, 1200, 2.4, 4)};
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+`;
+
+const SideNav = styled.li`
+  padding: 0.8rem 1.2rem;
+
+  color: var(--text-color);
+
+  transition: all 350ms ease-out;
+
+  &:hover,
+  .active {
+    background-image: var(--primary-gradient);
+
+    background-clip: text;
+
+    -webkit-background-clip: text;
+
+    color: transparent;
+
+    background-color: var(--black-color);
+  }
 `;
 
 function Features() {
