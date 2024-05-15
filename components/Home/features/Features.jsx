@@ -45,7 +45,7 @@ const SideNavUl = styled.ul`
 
 const SideNav = styled.li`
   padding: 0.8rem 1.2rem;
-
+  cursor: pointer;
   color: var(--text-color);
 
   transition: all 350ms ease-out;
@@ -55,7 +55,7 @@ const SideNav = styled.li`
   border-radius: 3.6rem;
 
   &:hover,
-  .active {
+  &.active {
     background-image: var(--primary-gradient);
 
     background-clip: text;
@@ -65,6 +65,7 @@ const SideNav = styled.li`
     color: transparent;
 
     background-color: var(--black-color);
+    box-shadow: var(--box-shadow-button);
   }
 `;
 
@@ -102,6 +103,8 @@ const IconContainer = styled.span`
   /* align-self: center;
   justify-self: center; */
 
+  cursor: pointer;
+
   grid-column: 2 /-1;
 
   grid-row: 1 / 2;
@@ -127,7 +130,7 @@ function Features() {
       <ContentContainer>
         <SideBar>
           <SideNavUl>
-            <SideNav> Online Banking </SideNav>
+            <SideNav className="active"> Online Banking </SideNav>
             <SideNav> Financial Tools </SideNav>
             <SideNav> Customer support </SideNav>
           </SideNavUl>
@@ -149,23 +152,25 @@ function Features() {
               transfer funds, and pay bills with ease.
             </Text>
           </FeatureCard>
+
           <FeatureCard>
-            <Text type="head" style={{ gridColumn: '2 / -1' }}>
-              Mobile banking App
+            <Text type="head" style={{ gridColumn: '1 / 2' }}>
+              Mobile Banking App
             </Text>
 
             <IconContainer>
               <Goto />
             </IconContainer>
 
-            <Text style={{ gridColumn: 'span 2', gridRow: '2 / -1' }}>
+            <Text style={{ gridColumn: 'span 2' }}>
               Stay connected to your finances on the go with our user-friendly
               mobile banking app. Easily manage your accounts, deposit checks,
               and make payments from your smartphone or tablet.
             </Text>
           </FeatureCard>
+
           <FeatureCard>
-            <Text type="head" style={{ gridColumn: '1 / 2', gridRow: '1 / 2' }}>
+            <Text type="head" style={{ gridColumn: '1 / 2' }}>
               Secure Transaction
             </Text>
 
@@ -173,26 +178,24 @@ function Features() {
               <Goto />
             </IconContainer>
 
-            <Text style={{ gridColumn: 'span 2', gridRow: '2 / -1' }}>
+            <Text style={{ gridColumn: 'span 2' }}>
               Rest assured knowing that your transactions are protected by
               industry-leading security measures. We employ encryption and
               multi-factor authentication to safeguard your financial
               information.
             </Text>
           </FeatureCard>
+
           <FeatureCard>
-            <Text
-              type="head"
-              style={{ gridColumn: '2 / -1', gridRow: '2 / -1' }}
-            >
-              Bill pay and Transfer
+            <Text type="head" style={{ gridColumn: '1 / 2' }}>
+              Bill and Transfer
             </Text>
 
             <IconContainer>
               <Goto />
             </IconContainer>
 
-            <Text style={{ gridColumn: 'span 2', gridRow: '2 / -1' }}>
+            <Text style={{ gridColumn: 'span 2' }}>
               Save time and avoid late fees with our convenient bill pay
               service. Set up recurring payments or make one-time transfers
               between your accounts with just a few clicks..
