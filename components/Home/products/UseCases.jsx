@@ -24,6 +24,16 @@ const SectionContainer = styled.section`
 `;
 
 const USeContainer = styled.div`
+  &:first-child {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+
+  &:last-child {
+    grid-column: 2 / -1;
+    grid-row: 2 / -1;
+  }
+
   display: grid;
 
   grid-auto-flow: column;
@@ -116,9 +126,11 @@ const AbstractContainer = styled.div`
 const AllCasesContainer = styled.div`
   display: grid;
 
-  grid-auto-flow: row;
+  grid-template-rows: repeat(2, 1fr);
 
-  grid-auto-rows: 1fr;
+  grid-template-columns: 1.5fr 1fr;
+
+  gap: ${() => ClampComponent(920, 1200, 3, 5)};
 `;
 
 function UseCases() {
@@ -135,64 +147,67 @@ function UseCases() {
         </Text>
       </HeadingWrapper>
 
-      <USeContainer>
-        <CaseCardContainer>
-          <AbstractContainer>
-            <Dot />
-          </AbstractContainer>
-          <CaseCard>
-            <Finance />
-            <Text type="head">Managing Personal Finances</Text>
-          </CaseCard>
+      <AllCasesContainer>
+        <USeContainer>
+          <CaseCardContainer>
+            <AbstractContainer>
+              <Dot />
+            </AbstractContainer>
+            <CaseCard>
+              <Finance />
+              <Text type="head">Managing Personal Finances</Text>
+            </CaseCard>
 
-          <CaseCard>
-            <Future />
-            <Text type="head">Saving for the future</Text>
-          </CaseCard>
+            <CaseCard>
+              <Future />
+              <Text type="head">Saving for the future</Text>
+            </CaseCard>
 
-          <CaseCard>
-            <Home />
-            <Text type="head">Homeownership</Text>
-          </CaseCard>
+            <CaseCard>
+              <Home />
+              <Text type="head">Homeownership</Text>
+            </CaseCard>
 
-          <CaseCard>
-            <Edu />
-            <Text type="head">Education Funding</Text>
-          </CaseCard>
-        </CaseCardContainer>
-      </USeContainer>
+            <CaseCard>
+              <Edu />
+              <Text type="head">Education Funding</Text>
+            </CaseCard>
+          </CaseCardContainer>
+        </USeContainer>
 
-      <CaseType>
-        <HeadingWrapper>
-          <Text type="head">For Individuals</Text>
-          <Text color="dark">
-            For individuals, our mortgage services pave the way to
-            homeownership, and our flexible personal loans provide vital support
-            during various life milestones. We also prioritize retirement
-            planning, ensuring a financially secure future for our customers
-          </Text>
-        </HeadingWrapper>
+        <CaseType>
+          <HeadingWrapper>
+            <Text type="head">For Individuals</Text>
+            <Text color="dark">
+              For individuals, our mortgage services pave the way to
+              homeownership, and our flexible personal loans provide vital
+              support during various life milestones. We also prioritize
+              retirement planning, ensuring a financially secure future for our
+              customers
+            </Text>
+          </HeadingWrapper>
 
-        <ContentContainer>
-          <FeatContainer>
-            <TextGradient as="h2"> 78% </TextGradient>
+          <ContentContainer>
+            <FeatContainer>
+              <TextGradient as="h2"> 78% </TextGradient>
 
-            <Text color="dark">Secure Retirement Planning</Text>
-          </FeatContainer>
+              <Text color="dark">Secure Retirement Planning</Text>
+            </FeatContainer>
 
-          <FeatContainer>
-            <TextGradient as="h2"> 63% </TextGradient>
+            <FeatContainer>
+              <TextGradient as="h2"> 63% </TextGradient>
 
-            <Text color="dark">Manageable Debt Consolidation.</Text>
-          </FeatContainer>
+              <Text color="dark">Manageable Debt Consolidation.</Text>
+            </FeatContainer>
 
-          <FeatContainer>
-            <TextGradient as="h2"> 91% </TextGradient>
+            <FeatContainer>
+              <TextGradient as="h2"> 91% </TextGradient>
 
-            <Text color="dark">Reduced Financial Burden</Text>
-          </FeatContainer>
-        </ContentContainer>
-      </CaseType>
+              <Text color="dark">Reduced Financial Burden</Text>
+            </FeatContainer>
+          </ContentContainer>
+        </CaseType>
+      </AllCasesContainer>
     </SectionContainer>
   );
 }
