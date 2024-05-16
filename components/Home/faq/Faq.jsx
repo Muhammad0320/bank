@@ -15,8 +15,9 @@ const SectionContainer = styled.section`
   gap: ${() => ClampComponent(920, 1200, 4, 6)};
 
   & > button {
+    margin-top: -10rem;
     justify-self: center;
-    align-items: center;
+    align-self: center;
   }
 `;
 
@@ -31,12 +32,12 @@ const ContentContainer = styled.ul`
 
   mask-image: linear-gradient(
     rgb(0 0 0 / 1),
-    rgb(0 0 0 / 0.3) 80%,
+    rgb(0 0 0 / 0.2) 80%,
     rgb(0 0 0 / 0)
   );
   -webkit-mask-image: linear-gradient(
     rgb(0 0 0 / 1),
-    rgb(0 0 0 / 0.3) 80%,
+    rgb(0 0 0 / 0.2) 80%,
     rgb(0 0 0 / 0)
   );
 `;

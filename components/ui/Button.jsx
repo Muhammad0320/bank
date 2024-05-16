@@ -38,10 +38,15 @@ export const Button = styled.button`
   ${props =>
     props.kind === 'sec' &&
     css`
+      width: fit-content;
+
       padding-inline: ${() => ClampComponent(950, 1200, 0.8, 1)};
       padding-block: ${() => ClampComponent(950, 1200, 0.4, 0.8)};
 
-      background-color: var(--color-card);
+      font-size: ${() => ClampComponent(320, 1200, 0.6, 1.2)};
+      font-weight: 350;
+      background-color: var(--card-color);
+      border: 1px solid var(--black-color-light);
 
       color: var(--text-color);
     `}
@@ -53,9 +58,6 @@ export const Button = styled.button`
 
       color: var(--primary-color);
     `}
-
-
-
 
 
   &:hover {
