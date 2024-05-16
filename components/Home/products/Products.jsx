@@ -8,9 +8,9 @@ import { ClampComponent } from '../../../styles/clampBuilder';
 import Loan from '/public/assets/icons/loan.svg';
 import Savings from '/public/assets/icons/savings.svg';
 import Account from '/public/assets/icons/account.svg';
-import { HeadingWrapper } from './HeadingWrapper';
 import { InlineContainer } from '../../ui/InlineContiner';
 import { H2 } from '../../ui/H2';
+import HeadingWrapper from '../../ui/HeadingWrapper';
 
 const SectionContainer = styled.section`
   display: flex;
@@ -18,40 +18,6 @@ const SectionContainer = styled.section`
   flex-flow: column;
 
   row-gap: ${() => ClampComponent(320, 1200, 2.5, 4)};
-`;
-
-const ProductCategory = styled.div`
-  display: flex;
-  padding: 1rem;
-
-  border: 1px solid var(--black-color-light);
-
-  border-radius: 3.6rem;
-
-  & > * {
-    flex: 1;
-    min-width: fit-content;
-
-    color: var(--text-color-light);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-inline: 1.2rem;
-    padding-block: 0.8rem;
-    border-radius: 3.6rem;
-  }
-
-  & > .active {
-    background-image: var(--primary-gradient);
-    color: var(--black-color);
-  }
-`;
-
-const TextContainer = styled.div`
-  display: flex;
-
-  justify-content: space-between;
-  align-items: center;
 `;
 
 const ContentContainer = styled.div`
@@ -71,27 +37,11 @@ const ProdContainer = styled(InlineContainer)`
 function Products() {
   return (
     <SectionContainer>
-      <TextContainer>
-        <HeadingWrapper>
-          <H2>
-            {' '}
-            Our <TextGradient> Product </TextGradient>{' '}
-          </H2>
-
-          <Text color="dark">
-            Discover a range of comprehensive and customizable banking products
-            at YourBank, <br /> designed to suit your unique financial needs and
-            aspirations
-          </Text>
-        </HeadingWrapper>
-
-        <ProductCategory>
-          <span className="active">For Individual</span>
-
-          <span>For Business</span>
-        </ProductCategory>
-      </TextContainer>
-
+      <HeadingWrapper withGradient={'Product'} withoutGradient="Our">
+        Discover a range of comprehensive and customizable banking products at
+        YourBank, <br /> designed to suit your unique financial needs and
+        aspirations
+      </HeadingWrapper>
       <ContentContainer>
         <ProdContainer>
           <Account />
