@@ -1,7 +1,8 @@
-import Features from '../../../components/Home/features/Features';
+import Faq from '../../../components/Home/faq/Faq';
 import Header from '../../../components/Home/header/Header';
 import Products from '../../../components/Home/products/Products';
 import UseCases from '../../../components/Home/products/UseCases';
+import Features from '../../../components/Home/features/Features';
 
 function Page() {
   return (
@@ -10,6 +11,7 @@ function Page() {
       <Products />
       <UseCases />
       <Features />
+      <Faq />
     </>
   );
 }
