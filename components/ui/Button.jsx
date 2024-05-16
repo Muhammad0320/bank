@@ -16,6 +16,8 @@ export const Button = styled.button`
 
   border-radius: 3.6rem;
 
+  cursor: pointer;
+
   color: var(--black-color);
 
   font-size: ${() => ClampComponent(320, 1200, 1.2, 2)};
