@@ -9,6 +9,8 @@ import Twitter from '/public/assets/icons/twitter.svg';
 import Linkedin from '/public/assets/icons/linkedin.svg';
 
 import { SmallFlex, TinyFlex } from '../../ui/flex';
+import { IconContainer } from '../../ui/IconContainer';
+import { Text } from '../../ui/Text';
 
 const FooterContainer = styled.footer`
   background-color: var(--color-card);
@@ -55,19 +57,34 @@ function Footer() {
 
         <SmallFlex>
           <TinyFlex>
-            {' '}
-            <Msg /> <span>hello@yourbank.com</span>{' '}
+            <Msg /> <span>hello@yourbank.com</span>
           </TinyFlex>
           <TinyFlex>
-            {' '}
-            <Msg /> <span>hello@yourbank.com</span>{' '}
+            <Phone /> <span>+234 91 6653 7641</span>
           </TinyFlex>
           <TinyFlex>
-            {' '}
-            <Msg /> <span>hello@yourbank.com</span>{' '}
+            <Location /> <span> Somewhere on Earth </span>
           </TinyFlex>
         </SmallFlex>
       </ContentContainer>
+
+      <CopyRight>
+        <TinyFlex>
+          <IconContainer>
+            <Facebook />
+          </IconContainer>
+          <IconContainer>
+            <Twitter />
+          </IconContainer>
+          <IconContainer>
+            <Linkedin />
+          </IconContainer>
+        </TinyFlex>
+
+        <Text color="dark"> YourBank All Rights Reserved </Text>
+
+        <Text color="dark"> Privacy Policy | Terms of Service </Text>
+      </CopyRight>
     </FooterContainer>
   );
 }
