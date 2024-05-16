@@ -1,4 +1,7 @@
-const SmallFlex = styled.ul`
+const { ClampComponent } = require('../../styles/clampBuilder');
+import styled from 'styled-components';
+
+export const SmallFlex = styled.ul`
   display: flex;
 
   gap: ${() => ClampComponent(320, 1200, 0.8, 1.2)};
@@ -6,7 +9,7 @@ const SmallFlex = styled.ul`
   align-items: center;
 `;
 
-const TinyFlex = styled.li`
+export const TinyFlex = styled.li`
   display: flex;
 
   gap: ${() => ClampComponent(920, 1200, 0.4, 0.8)};
