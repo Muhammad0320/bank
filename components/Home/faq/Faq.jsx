@@ -6,12 +6,28 @@ import { HeadingWrapper } from '../products/HeadingWrapper';
 import { H2 } from '../../ui/H2';
 import { TextGradient } from '../../ui/TextGradient';
 import { Text } from '../../ui/Text';
+import { Button } from '../../ui/Button';
 
 const SectionContainer = styled.section`
   display: flex;
   flex-flow: column;
 
   gap: ${() => ClampComponent(920, 1200, 4, 6)};
+
+  & > button {
+    justify-self: center;
+    align-items: center;
+  }
+`;
+
+const ContentContainer = styled.ul`
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  grid-template-rows: repeat(2, 1fr);
+
+  gap: ${() => ClampComponent(920, 1200, 2.5, 4)};
 
   mask-image: linear-gradient(
     rgb(0 0 0 / 1),
@@ -23,16 +39,6 @@ const SectionContainer = styled.section`
     rgb(0 0 0 / 0.3) 80%,
     rgb(0 0 0 / 0)
   );
-`;
-
-const ContentContainer = styled.ul`
-  display: grid;
-
-  grid-template-columns: repeat(2, 1fr);
-
-  grid-template-rows: repeat(2, 1fr);
-
-  gap: ${() => ClampComponent(920, 1200, 2.5, 4)};
 `;
 
 const QuestionCard = styled.li`
@@ -122,6 +128,7 @@ function Faq() {
           </Text>
         </QuestionCard>
       </ContentContainer>
+      <Button> Load all faqs </Button>
     </SectionContainer>
   );
 }
