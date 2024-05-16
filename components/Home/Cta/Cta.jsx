@@ -32,7 +32,7 @@ const TextContainer = styled.div`
   gap: ${() => ClampComponent(920, 1200, 2, 4)};
 `;
 
-function MiniFooter() {
+function Cta() {
   return (
     <FooterContainer>
       <AbstractContainer>
@@ -53,9 +53,11 @@ function MiniFooter() {
         </Text>
       </TextContainer>
 
-      <Button>Open accounta</Button>
+      <Button>Open account</Button>
     </FooterContainer>
   );
 }
 
-export default MiniFooter;
+export default Cta;
+
+
