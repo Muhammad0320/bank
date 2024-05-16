@@ -51,6 +51,22 @@ function Faq() {
           support@yourbank.com
         </Text>
       </HeadingWrapper>
+
+      <ContentContainer>
+        <QuestionCard>
+          <Text as="h4" type="head">
+            {' '}
+            How do I open an account with YourBank{' '}
+          </Text>
+          <Text>
+            Opening an account with YourBank is easy. Simply visit our website
+            and click on the &ldquo;Open an Account&ldquo; button. Follow the
+            prompts, provide the required information, and complete the
+            application process. If you have any questions or need assistance,
+            our customer support team is available to help.
+          </Text>
+        </QuestionCard>
+      </ContentContainer>
     </SectionContainer>
   );
 }
