@@ -28,12 +28,14 @@ const QuestionCard = styled.li`
   padding: ${() => ClampComponent(920, 1200, 2.5, 4)};
 
   border: 1px solid var(--black-color-light);
+  border-radius: 1rem;
   display: flex;
   flex-flow: column;
   gap: ${() => ClampComponent(920, 1200, 1.6, 3)};
   box-shadow: var(--box-shadow-dark);
 
   & > h4 {
+    padding-block-end: 1rem;
     border-bottom: 1px solid var(--black-color-light);
   }
 `;
