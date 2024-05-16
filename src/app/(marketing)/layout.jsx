@@ -3,6 +3,7 @@ import GlobalStyles from '../globalStyles.js';
 import '../globals.css';
 
 import Abstract from '/public/assets/icons/layout.svg';
+
 import { StyledBody, StyledMain } from '../../../styles/StyledMain';
 
 import NavBar from '../../../components/NavBar.jsx';

@@ -1,16 +1,15 @@
-import styled from 'styled-components';
-import { ClampComponent } from '../../../styles/clampBuilder';
+import { Text } from '../../ui/Text';
 import NavLinks from '../../NavLinks';
-import Phone from '/public/assets/icons/phone.svg';
+import styled from 'styled-components';
 import Msg from '/public/assets/icons/msg.svg';
-import Location from '/public/assets/icons/location.svg';
-import Facebook from '/public/assets/icons/facebook.svg';
-import Twitter from '/public/assets/icons/twitter.svg';
-import Linkedin from '/public/assets/icons/linkedin.svg';
-
+import Phone from '/public/assets/icons/phone.svg';
 import { SmallFlex, TinyFlex } from '../../ui/flex';
 import { IconContainer } from '../../ui/IconContainer';
-import { Text } from '../../ui/Text';
+import Twitter from '/public/assets/icons/twitter.svg';
+import Linkedin from '/public/assets/icons/linkedin.svg';
+import Location from '/public/assets/icons/location.svg';
+import Facebook from '/public/assets/icons/facebook.svg';
+import { ClampComponent } from '../../../styles/clampBuilder';
 
 const FooterContainer = styled.footer`
   background-color: var(--color-card);
