@@ -128,7 +128,7 @@ function Faq() {
           </Text>
         </QuestionCard>
       </ContentContainer>
-      <Button> Load all faqs </Button>
+      <Button kind="sec"> Load all FAQ&apos;s </Button>
     </SectionContainer>
   );
 }

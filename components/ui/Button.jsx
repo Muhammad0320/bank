@@ -36,6 +36,17 @@ export const Button = styled.button`
     `}
 
   ${props =>
+    props.kind === 'sec' &&
+    css`
+      padding-inline: ${() => ClampComponent(950, 1200, 0.8, 1)};
+      padding-block: ${() => ClampComponent(950, 1200, 0.4, 0.8)};
+
+      background-color: var(--color-card);
+
+      color: var(--text-color);
+    `}
+
+  ${props =>
     props.kind === 'ex' &&
     css`
       --lightness: 15%;
