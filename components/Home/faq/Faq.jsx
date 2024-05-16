@@ -12,6 +12,17 @@ const SectionContainer = styled.section`
   flex-flow: column;
 
   gap: ${() => ClampComponent(920, 1200, 4, 6)};
+
+  mask-image: linear-gradient(
+    rgb(0 0 0 / 1),
+    rgb(0 0 0 / 0.3) 80%,
+    rgb(0 0 0 / 0)
+  );
+  -webkit-mask-image: linear-gradient(
+    rgb(0 0 0 / 1),
+    rgb(0 0 0 / 0.3) 80%,
+    rgb(0 0 0 / 0)
+  );
 `;
 
 const ContentContainer = styled.ul`
