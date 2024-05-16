@@ -1,8 +1,8 @@
 'use client';
 
-import styled from 'styled-components';
 import { H2 } from './H2';
 import { Text } from './Text';
+import styled from 'styled-components';
 import { TextGradient } from './TextGradient';
 
 const ProductCategory = styled.div`

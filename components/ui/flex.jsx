@@ -1,5 +1,5 @@
-const { ClampComponent } = require('../../styles/clampBuilder');
 import styled from 'styled-components';
+import { ClampComponent } from '../../styles/clampBuilder';
 
 export const SmallFlex = styled.ul`
   display: flex;
