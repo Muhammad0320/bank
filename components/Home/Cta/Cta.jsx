@@ -1,3 +1,5 @@
+'use client';
+
 import styled from 'styled-components';
 import Dot from '/public/assets/icons/dot-lg.svg';
 
@@ -48,8 +50,8 @@ function Cta() {
         <Text color="dark">
           {' '}
           Ready to take control of your finances? Join YourBank now, and let us
-          help you achieve your financial goals with our tailored solutions and
-          exceptional customer service{' '}
+          help you achieve your financial goals with our tailored <br />{' '}
+          solutions and exceptional customer service
         </Text>
       </TextContainer>
 
@@ -59,5 +61,3 @@ function Cta() {
 }
 
 export default Cta;
-
-
