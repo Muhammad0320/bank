@@ -7,6 +7,7 @@ import { H2 } from '../../ui/H2';
 import { TextGradient } from '../../ui/TextGradient';
 import { Text } from '../../ui/Text';
 import { Button } from '../../ui/Button';
+import Arrdown from '/public/assets/icons/arrdown.svg';
 
 const SectionContainer = styled.section`
   display: flex;
@@ -129,7 +130,11 @@ function Faq() {
           </Text>
         </QuestionCard>
       </ContentContainer>
-      <Button kind="sec"> Load all FAQ&apos;s </Button>
+      <Button kind="sec">
+        {' '}
+        <span>Load all FAQ&apos;s</span>
+        <Arrdown />{' '}
+      </Button>
     </SectionContainer>
   );
 }

@@ -49,6 +49,9 @@ export const Button = styled.button`
       border: 1px solid var(--black-color-light);
 
       color: var(--text-color);
+
+      display: flex;
+      gap: ${() => ClampComponent(320, 1200, 0.6, 1)};
     `}
 
   ${props =>
