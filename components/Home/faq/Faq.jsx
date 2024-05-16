@@ -56,7 +56,49 @@ function Faq() {
         <QuestionCard>
           <Text as="h4" type="head">
             {' '}
-            How do I open an account with YourBank{' '}
+            How do I open an account with YourBank?
+          </Text>
+          <Text>
+            Opening an account with YourBank is easy. Simply visit our website
+            and click on the &ldquo;Open an Account&ldquo; button. Follow the
+            prompts, provide the required information, and complete the
+            application process. If you have any questions or need assistance,
+            our customer support team is available to help.
+          </Text>
+        </QuestionCard>
+
+        <QuestionCard>
+          <Text as="h4" type="head">
+            What document do I need to apply for a loan?
+          </Text>
+          <Text>
+            The documents required for a loan application may vary depending on
+            the type of loan you are applying for. Generally, you will need to
+            provide identification documents (such as a passport or
+            driver&apos;s license), proof of income (such as pay stubs or tax
+            returns), and information about the collateral (if applicable). Our
+            loan officers will guide you through the specific requirements
+            during the application process.
+          </Text>
+        </QuestionCard>
+
+        <QuestionCard>
+          <Text as="h4" type="head">
+            {' '}
+            How can I access my account online?
+          </Text>
+          <Text>
+            Opening an account with YourBank is easy. Simply visit our website
+            and click on the &ldquo;Open an Account&ldquo; button. Follow the
+            prompts, provide the required information, and complete the
+            application process. If you have any questions or need assistance,
+            our customer support team is available to help.
+          </Text>
+        </QuestionCard>
+
+        <QuestionCard>
+          <Text as="h4" type="head">
+            Are my transactions and my personal information secure?
           </Text>
           <Text>
             Opening an account with YourBank is easy. Simply visit our website
