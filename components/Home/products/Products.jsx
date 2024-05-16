@@ -2,15 +2,13 @@
 
 import { Text } from '../../ui/Text';
 import styled from 'styled-components';
-import { TextGradient } from '../../ui/TextGradient';
-import { ClampComponent } from '../../../styles/clampBuilder';
 
 import Loan from '/public/assets/icons/loan.svg';
+import HeadingWrapper from '../../ui/HeadingWrapper';
 import Savings from '/public/assets/icons/savings.svg';
 import Account from '/public/assets/icons/account.svg';
 import { InlineContainer } from '../../ui/InlineContiner';
-import { H2 } from '../../ui/H2';
-import HeadingWrapper from '../../ui/HeadingWrapper';
+import { ClampComponent } from '../../../styles/clampBuilder';
 
 const SectionContainer = styled.section`
   display: flex;
