@@ -6,6 +6,8 @@ import { ClampComponent } from '../../styles/clampBuilder';
 export const Button = styled.button`
   display: flex;
 
+  min-width: fit-content;
+
   justify-content: center;
 
   align-items: center;

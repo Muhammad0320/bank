@@ -9,16 +9,19 @@ import { TextGradient } from '../../ui/TextGradient';
 import { Text } from '../../ui/Text';
 import { Button } from '../../ui/Button';
 
-const FooterContainer = styled.section`
+const CtaContainer = styled.section`
   position: relative;
   display: flex;
+
   justify-content: space-between;
 
   align-items: center;
 
   border: 1px solid var(--card-color);
 
-  padding: ${() => ClampComponent(920, 1200, 4, 7)};
+  border-radius: 1rem;
+
+  padding: ${() => ClampComponent(920, 1200, 4, 6.5)};
 `;
 
 const AbstractContainer = styled.div`
@@ -27,16 +30,18 @@ const AbstractContainer = styled.div`
 `;
 
 const TextContainer = styled.div`
+  margin-inline-end: ${() => ClampComponent(920, 1200, 3, 5)};
+
   display: flex;
 
   flex-flow: column;
 
-  gap: ${() => ClampComponent(920, 1200, 2, 4)};
+  gap: ${() => ClampComponent(920, 1200, 1, 2.5)};
 `;
 
 function Cta() {
   return (
-    <FooterContainer>
+    <CtaContainer>
       <AbstractContainer>
         <Dot />
       </AbstractContainer>
@@ -50,13 +55,13 @@ function Cta() {
         <Text color="dark">
           {' '}
           Ready to take control of your finances? Join YourBank now, and let us
-          help you achieve your financial goals with our tailored <br />{' '}
-          solutions and exceptional customer service
+          help you achieve your financial goals with our tailored solutions and
+          exceptional customer service
         </Text>
       </TextContainer>
 
       <Button>Open account</Button>
-    </FooterContainer>
+    </CtaContainer>
   );
 }
 
