@@ -2,9 +2,6 @@
 
 import styled from 'styled-components';
 import { ClampComponent } from '../../../styles/clampBuilder';
-
-import { H2 } from '../../ui/H2';
-import { TextGradient } from '../../ui/TextGradient';
 import { Text } from '../../ui/Text';
 import { Button } from '../../ui/Button';
 import Arrdown from '/public/assets/icons/arrdown.svg';
