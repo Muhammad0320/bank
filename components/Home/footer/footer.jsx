@@ -1,3 +1,5 @@
+'use client';
+
 import { Text } from '../../ui/Text';
 import NavLinks from '../../NavLinks';
 import styled from 'styled-components';
@@ -12,7 +14,7 @@ import Facebook from '/public/assets/icons/facebook.svg';
 import { ClampComponent } from '../../../styles/clampBuilder';
 
 const FooterContainer = styled.footer`
-  background-color: var(--color-card);
+  background-color: var(--card-color);
 
   gap: ${() => ClampComponent(320, 1200, 1.5, 3)};
 `;

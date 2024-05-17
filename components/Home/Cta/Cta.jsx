@@ -3,11 +3,11 @@
 import styled from 'styled-components';
 import Dot from '/public/assets/icons/dot-lg.svg';
 
-import { ClampComponent } from '../../../styles/clampBuilder';
 import { H2 } from '../../ui/H2';
-import { TextGradient } from '../../ui/TextGradient';
 import { Text } from '../../ui/Text';
 import { Button } from '../../ui/Button';
+import { TextGradient } from '../../ui/TextGradient';
+import { ClampComponent } from '../../../styles/clampBuilder';
 
 const CtaContainer = styled.section`
   position: relative;

@@ -3,10 +3,10 @@ import GlobalStyles from '../globalStyles.js';
 import '../globals.css';
 
 import Abstract from '/public/assets/icons/layout.svg';
-
 import { StyledBody, StyledMain } from '../../../styles/StyledMain';
 
 import NavBar from '../../../components/NavBar.jsx';
+import Footer from '../../../components/Home/footer/Footer.jsx';
 
 const lexend = Lexend({ subsets: ['latin'] });
 
@@ -28,6 +28,7 @@ export default function RootLayout({ children }) {
           <NavBar />
           {children}
         </StyledMain>
+        <Footer />
       </StyledBody>
     </html>
   );

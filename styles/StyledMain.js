@@ -18,6 +18,10 @@ export const StyledBody = styled.body`
         1fr
       );
   }
+
+  & > footer {
+    grid-column: 1 / -1;
+  }
 `;
 
 export const StyledMain = styled.main`
