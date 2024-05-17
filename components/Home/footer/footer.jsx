@@ -35,6 +35,8 @@ const ContentContainer = styled.div`
     border-block: 1px solid var(--black-color-light);
 
     padding-block: ${() => ClampComponent(920, 1200, 1, 2)};
+
+    margin-bottom: ${() => ClampComponent(920, 1200, 1, 2.5)};
   }
 `;
 
