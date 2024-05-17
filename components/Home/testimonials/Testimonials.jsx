@@ -2,10 +2,9 @@
 
 import { Text } from '../../ui/Text';
 import styled from 'styled-components';
-import Goto from '/public/assets/icons/goto.svg';
+import Next from '/public/assets/icons/next.svg';
 import Apos from '/public/assets/icons/apos.svg';
 import { TextGradient } from '../../ui/TextGradient';
-
 import { SectionContainer } from '../../ui/SectionContainer';
 import { ClampComponent } from '../../../styles/clampBuilder';
 import HeadingTextContainer from '../../ui/HeadingWrapper';
@@ -19,7 +18,7 @@ const ContentContainer = styled.div`
 
   grid-auto-columns: auto 1fr auto;
 
-  gap: ${() => ClampComponent(320, 1200, 1, 2)};
+  gap: ${() => ClampComponent(320, 1200, 2, 3)};
 `;
 
 const IconContainer = styled.span`
@@ -39,6 +38,10 @@ const IconContainer = styled.span`
   justify-content: center;
 
   align-items: center;
+
+  & > svg:last-of-type {
+    transform: rotateY(180deg);
+  }
 `;
 
 const TestimonialsContainer = styled.div`
@@ -97,7 +100,7 @@ function Testimonials() {
 
       <ContentContainer>
         <IconContainer>
-          <Goto />
+          <Next />
         </IconContainer>
         <>
           <TestimonialsContainer>
@@ -137,7 +140,7 @@ function Testimonials() {
         </>
 
         <IconContainer>
-          <Goto />
+          <Next />
         </IconContainer>
       </ContentContainer>
     </SectionContainer>
