@@ -1,13 +1,13 @@
 'use client';
 
+import { Text } from '../../ui/Text';
 import styled from 'styled-components';
 import Goto from '/public/assets/icons/goto.svg';
 import Apos from '/public/assets/icons/apos.svg';
+import { TextGradient } from '../../ui/TextGradient';
 import HeadingWrapper from '../../ui/HeadingWrapper';
 import { SectionContainer } from '../../ui/SectionContainer';
 import { ClampComponent } from '../../../styles/clampBuilder';
-import { Text } from '../../ui/Text';
-import { TextGradient } from '../../ui/TextGradient';
 
 const ContentContainer = styled.div`
   display: grid;

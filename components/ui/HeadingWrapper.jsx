@@ -5,6 +5,14 @@ import { Text } from './Text';
 import styled from 'styled-components';
 import { TextGradient } from './TextGradient';
 
+export const HeadingWrapper = styled.div`
+  display: flex;
+
+  flex-flow: column;
+
+  row-gap: ${() => ClampComponent(320, 1200, 1, 2)};
+`;
+
 const ProductCategory = styled.div`
   display: flex;
   padding: 1rem;
@@ -39,7 +47,7 @@ const TextContainer = styled.div`
   align-items: center;
 `;
 
-function HeadingWrapper({ children, withGradient, withoutGradient }) {
+function HeadingTextContainer({ children, withGradient, withoutGradient }) {
   return (
     <TextContainer>
       <HeadingWrapper>
@@ -59,4 +67,4 @@ function HeadingWrapper({ children, withGradient, withoutGradient }) {
   );
 }
 
-export default HeadingWrapper;
+export default HeadingTextContainer;
