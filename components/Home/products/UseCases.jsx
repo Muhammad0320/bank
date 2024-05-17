@@ -1,21 +1,17 @@
 'use client';
 
-import styled, { css } from 'styled-components';
-
-import { ClampComponent } from '../../../styles/clampBuilder';
 import { Text } from '../../ui/Text';
-import Future from '/public/assets/icons/future.svg';
-import Home from '/public/assets/icons/home.svg';
-import Finance from '/public/assets/icons/finance.svg';
-import Edu from '/public/assets/icons/edu.svg';
-import Dot from '/public/assets/icons/dot-lg.svg';
-
-import { TextGradient } from '../../ui/TextGradient';
-import { HeadingWrapper } from './HeadingWrapper';
-import { InlineContainer } from '../../ui/InlineContiner';
-import { H2 } from '../../ui/H2';
 import { Button } from '../../ui/Button';
+import Edu from '/public/assets/icons/edu.svg';
+import styled, { css } from 'styled-components';
+import Home from '/public/assets/icons/home.svg';
+import Dot from '/public/assets/icons/dot-lg.svg';
+import Future from '/public/assets/icons/future.svg';
+import { TextGradient } from '../../ui/TextGradient';
+import Finance from '/public/assets/icons/finance.svg';
+import { InlineContainer } from '../../ui/InlineContiner';
 import HeadingTextContainer from '../../ui/HeadingWrapper';
+import { ClampComponent } from '../../../styles/clampBuilder';
 
 const SectionContainer = styled.section`
   display: flex;
