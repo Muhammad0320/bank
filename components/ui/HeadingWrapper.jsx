@@ -4,6 +4,7 @@ import { H2 } from './H2';
 import { Text } from './Text';
 import styled from 'styled-components';
 import { TextGradient } from './TextGradient';
+import { ClampComponent } from '../../styles/clampBuilder';
 
 export const HeadingWrapper = styled.div`
   display: flex;
