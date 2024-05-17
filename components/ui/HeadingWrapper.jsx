@@ -47,14 +47,29 @@ const TextContainer = styled.div`
   align-items: center;
 `;
 
-function HeadingTextContainer({ children, withGradient, withoutGradient }) {
+function HeadingTextContainer({
+  children,
+  withGradient = '',
+  withoutGradient = '',
+  order = 'normal',
+}) {
   return (
     <TextContainer>
       <HeadingWrapper>
         <H2>
-          {withoutGradient} <TextGradient> {withGradient} </TextGradient>{' '}
+          {order === 'normal' ? (
+            <>
+              {withoutGradient}
+              <TextGradient>{withGradient}</TextGradient>
+            </>
+          ) : (
+            <>
+              <TextGradient>{withGradient}</TextGradient>
+              {withoutGradient}
+            </>
+          )}
         </H2>
-
+        ${withoutGradient} <TextGradient> withGradient </TextGradient>
         <Text color="dark">{children}</Text>
       </HeadingWrapper>
 
