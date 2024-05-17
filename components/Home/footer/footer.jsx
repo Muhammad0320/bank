@@ -16,7 +16,7 @@ import { ClampComponent } from '../../../styles/clampBuilder';
 const FooterContainer = styled.footer`
   background-color: var(--card-color);
 
-  gap: ${() => ClampComponent(320, 1200, 1.5, 3)};
+  padding: ${() => ClampComponent(320, 1200, 1.5, 3)};
 `;
 
 const ContentContainer = styled.div`
@@ -31,7 +31,7 @@ const ContentContainer = styled.div`
 
   gap: ${() => ClampComponent(320, 1200, 1.5, 3)};
 
-  &:has(ul) ul {
+  & > ul {
     border-block: 1px solid var(--black-color-light);
 
     padding-block: ${() => ClampComponent(920, 1200, 1, 2)};
@@ -39,6 +39,10 @@ const ContentContainer = styled.div`
 `;
 
 const CopyRight = styled.div`
+  background-color: var(--black-color);
+
+  border-radius: 3.6rem;
+
   display: flex;
 
   justify-content: space-between;
@@ -71,13 +75,13 @@ function Footer() {
 
       <CopyRight>
         <TinyFlex>
-          <IconContainer>
+          <IconContainer type="sm">
             <Facebook />
           </IconContainer>
-          <IconContainer>
+          <IconContainer type="sm">
             <Twitter />
           </IconContainer>
-          <IconContainer>
+          <IconContainer type="sm">
             <Linkedin />
           </IconContainer>
         </TinyFlex>
