@@ -15,6 +15,7 @@ import { HeadingWrapper } from './HeadingWrapper';
 import { InlineContainer } from '../../ui/InlineContiner';
 import { H2 } from '../../ui/H2';
 import { Button } from '../../ui/Button';
+import HeadingTextContainer from '../../ui/HeadingWrapper';
 
 const SectionContainer = styled.section`
   display: flex;
@@ -144,16 +145,10 @@ const AllCasesContainer = styled.div`
 function UseCases() {
   return (
     <SectionContainer>
-      <HeadingWrapper>
-        <H2>
-          <TextGradient> Use Cases </TextGradient>
-        </H2>
-
-        <Text color="dark">
-          At YourBank, we cater to the diverse needs of individuals and
-          businesses alike, offering a wide range of financial solutions
-        </Text>
-      </HeadingWrapper>
+      <HeadingTextContainer withoutGradient="Use Cases">
+        At YourBank, we cater to the diverse needs of individuals and businesses
+        alike, offering a wide range of financial solutions
+      </HeadingTextContainer>
 
       <AllCasesContainer>
         <CaseCardContainer>
@@ -182,16 +177,12 @@ function UseCases() {
         </CaseCardContainer>
 
         <CaseType>
-          <HeadingWrapper>
-            <Text type="head">For Individuals</Text>
-            <Text color="dark">
-              For individuals, our mortgage services pave the way to
-              homeownership, and our flexible personal loans provide vital
-              support during various life milestones. We also prioritize
-              retirement planning, ensuring a financially secure future for our
-              customers
-            </Text>
-          </HeadingWrapper>
+          <HeadingTextContainer withoutGradient="For Individuals">
+            For individuals, our mortgage services pave the way to
+            homeownership, and our flexible personal loans provide vital support
+            during various life milestones. We also prioritize retirement
+            planning, ensuring a financially secure future for our customers
+          </HeadingTextContainer>
 
           <ContentContainer>
             <FeatContainer>
@@ -219,16 +210,12 @@ function UseCases() {
 
       <AllCasesContainer>
         <CaseType>
-          <HeadingWrapper>
-            <Text type="head">For Business</Text>
-            <Text color="dark">
-              For businesses, we empower growth with working capital solutions
-              that optimize cash flow, and our tailored financing options fuel
-              business expansion. Whatever your financial aspirations, YourBank
-              is committed to providing the right tools and support to achieve
-              them
-            </Text>
-          </HeadingWrapper>
+          <HeadingTextContainer withoutGradient="For Business">
+            For businesses, we empower growth with working capital solutions
+            that optimize cash flow, and our tailored financing options fuel
+            business expansion. Whatever your financial aspirations, YourBank is
+            committed to providing the right tools and support to achieve them.
+          </HeadingTextContainer>
 
           <ContentContainer>
             <FeatContainer>
