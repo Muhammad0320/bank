@@ -2,7 +2,6 @@
 
 import { Text } from '../../ui/Text';
 import styled from 'styled-components';
-
 import Loan from '/public/assets/icons/loan.svg';
 import HeadingWrapper from '../../ui/HeadingWrapper';
 import Savings from '/public/assets/icons/savings.svg';
@@ -35,7 +34,7 @@ const ProdContainer = styled(InlineContainer)`
 function Products() {
   return (
     <SectionContainer>
-      <HeadingWrapper withGradient={'Product'} withoutGradient="Our">
+      <HeadingWrapper withGradient="Product" withoutGradient="Our">
         Discover a range of comprehensive and customizable banking products at
         YourBank, <br /> designed to suit your unique financial needs and
         aspirations

@@ -2,12 +2,13 @@
 
 import styled from 'styled-components';
 import { ClampComponent } from '../../../styles/clampBuilder';
-import { HeadingWrapper } from '../products/HeadingWrapper';
+
 import { H2 } from '../../ui/H2';
 import { TextGradient } from '../../ui/TextGradient';
 import { Text } from '../../ui/Text';
 import { Button } from '../../ui/Button';
 import Arrdown from '/public/assets/icons/arrdown.svg';
+import HeadingTextContainer from '../../ui/HeadingWrapper';
 
 const SectionContainer = styled.section`
   display: flex;
@@ -62,17 +63,12 @@ const QuestionCard = styled.li`
 function Faq() {
   return (
     <SectionContainer>
-      <HeadingWrapper>
-        <H2>
-          <TextGradient> Frequently </TextGradient> Asked Questions.
-        </H2>
-
-        <Text color="dark">
-          Still you have any questions? Contact our Team via
-          support@yourbank.com
-        </Text>
-      </HeadingWrapper>
-
+      <HeadingTextContainer
+        withGradient="Frequently"
+        withoutGradient="Asked Questions"
+      >
+        Still you have any questions? Contact our Team via support@yourbank.com
+      </HeadingTextContainer>
       <ContentContainer>
         <QuestionCard>
           <Text as="h4" type="head">

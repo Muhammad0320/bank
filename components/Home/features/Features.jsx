@@ -2,12 +2,13 @@
 
 import styled from 'styled-components';
 import { ClampComponent } from '../../../styles/clampBuilder';
-import { HeadingWrapper } from '../products/HeadingWrapper';
+
 import { TextGradient } from '../../ui/TextGradient';
 import { H2 } from '../../ui/H2';
 import Goto from '/public/assets/icons/goto.svg';
 
 import { Text } from '../../ui/Text';
+import HeadingTextContainer from '../../ui/HeadingWrapper';
 
 const SectionContainer = styled.section`
   display: flex;
@@ -100,9 +101,6 @@ const FeatureCard = styled.li`
 `;
 
 const IconContainer = styled.span`
-  /* align-self: center;
-  justify-self: center; */
-
   cursor: pointer;
 
   grid-column: 2 /-1;
@@ -113,20 +111,12 @@ const IconContainer = styled.span`
 function Features() {
   return (
     <SectionContainer>
-      <HeadingWrapper>
-        <H2>
-          Our
-          <TextGradient> Features </TextGradient>
-        </H2>
-
-        <Text color="dark">
-          Experience a host of powerful features at YourBank, including seamless
-          online banking, secure transactions, and personalized financial
-          insights, all <br />
-          designed to enhance your banking experience
-        </Text>
-      </HeadingWrapper>
-
+      <HeadingTextContainer withoutGradient="Our" withGradient="Features">
+        Experience a host of powerful features at YourBank, including seamless
+        online banking, secure transactions, and personalized financial
+        insights, all <br />
+        designed to enhance your banking experience
+      </HeadingTextContainer>
       <ContentContainer>
         <SideBar>
           <SideNavUl>
