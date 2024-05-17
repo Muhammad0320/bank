@@ -23,23 +23,22 @@ const ContentContainer = styled.div`
 `;
 
 const IconContainer = styled.span`
+  align-self: center;
+
+  background-color: var(--black-color-light);
+
   width: 4rem;
   height: 4rem;
+
+  border-radius: 50%;
+
+  border: 1px solid var(--black-color);
 
   display: flex;
 
   justify-content: center;
 
   align-items: center;
-  transform: rotateX(180deg);
-
-  /* 
-  &  {
-  }
-
-  & > svg:last-of-type {
-    transform: rotateY(-45deg);
-  } */
 `;
 
 const TestimonialsContainer = styled.div`
