@@ -1,3 +1,4 @@
+import Cta from '../../../components/Home/cta/Cta';
 import Faq from '../../../components/Home/faq/Faq';
 import Features from '../../../components/Home/features/Features';
 import Header from '../../../components/Home/header/Header';
@@ -12,6 +13,7 @@ function Page() {
       <Features />
       <Faq />
       <Testimonials />
+      <Cta />
     </>
   );
 }

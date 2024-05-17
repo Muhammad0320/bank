@@ -42,10 +42,6 @@ const IconContainer = styled.span`
   justify-content: center;
 
   align-items: center;
-
-  /* & > svg:last-child {
-    transform: rotateY(180deg);
-  } */
 `;
 
 const TestimonialsContainer = styled.div`

@@ -42,7 +42,7 @@ function Cta() {
       </AbstractContainer>
 
       <TextContainer>
-        <H2>
+        <H2 type="small">
           Start your financial journey with{' '}
           <TextGradient> YourBank today! </TextGradient>
         </H2>
