@@ -66,6 +66,7 @@ function Faq() {
       <HeadingTextContainer
         withGradient="Frequently"
         withoutGradient="Asked Questions"
+        order="alt"
       >
         Still you have any questions? Contact our Team via support@yourbank.com
       </HeadingTextContainer>

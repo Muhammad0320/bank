@@ -5,9 +5,10 @@ import styled from 'styled-components';
 import Goto from '/public/assets/icons/goto.svg';
 import Apos from '/public/assets/icons/apos.svg';
 import { TextGradient } from '../../ui/TextGradient';
-import HeadingWrapper from '../../ui/HeadingWrapper';
+
 import { SectionContainer } from '../../ui/SectionContainer';
 import { ClampComponent } from '../../../styles/clampBuilder';
+import HeadingTextContainer from '../../ui/HeadingWrapper';
 
 const ContentContainer = styled.div`
   display: grid;
@@ -86,11 +87,11 @@ const TestimonialWrapper = styled.div`
 function Testimonials() {
   return (
     <SectionContainer>
-      <HeadingWrapper withGradient="Testimonials" withoutGradient="our">
+      <HeadingTextContainer withGradient="Testimonials" withoutGradient="our">
         Discover how YourBank has transformed lives with innovative digital
         solutions and personalized customer service. See why our clients trust
         us for a secure and prosperous financial journey
-      </HeadingWrapper>
+      </HeadingTextContainer>
 
       <ContentContainer>
         <IconContainer>
