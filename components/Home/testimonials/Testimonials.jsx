@@ -33,11 +33,11 @@ const IconContainer = styled.span`
   align-items: center;
 
   & > svg:first-of-type {
-    transform: rotateX(45deg);
+    transform: rotateY(180deg);
   }
 
   & > svg:last-of-type {
-    transform: rotateX(-45deg);
+    transform: rotateY(-45deg);
   }
 `;
 
@@ -97,48 +97,46 @@ function Testimonials() {
         <IconContainer>
           <Goto />
         </IconContainer>
+        <>
+          <TestimonialsContainer>
+            <TestimonialWrapper>
+              <Apos />
+              <Text>
+                I recently started my own business, and YourBank has been
+                instrumental in helping me set up my business accounts and
+                secure the financing I needed. Their expert guidance and
+                tailored solutions have been invaluable.
+              </Text>
+              <TextGradient> Lisan alGaib </TextGradient>
+            </TestimonialWrapper>
+          </TestimonialsContainer>
 
-        <TestimonialsContainer>
-          <TestimonialWrapper>
-            <Apos />
-            <Text>
-              I recently started my own business, and YourBank has been
-              instrumental in helping me set up my business accounts and secure
-              the financing I needed. Their expert guidance and tailored
-              solutions have been invaluable.
-            </Text>
-          </TestimonialWrapper>
+          <TestimonialsContainer>
+            <TestimonialWrapper>
+              <Apos />
+              <Text>
+                I recently started my own business, and YourBank has been
+                instrumental in helping me set up my business accounts and
+                secure the financing I needed. Their expert guidance and
+                tailored solutions have been invaluable.
+              </Text>
+              <TextGradient> Andrew Tate </TextGradient>
+            </TestimonialWrapper>
+          </TestimonialsContainer>
 
-          <TextGradient> Lisan alGaib </TextGradient>
-        </TestimonialsContainer>
-
-        <TestimonialsContainer>
-          <TestimonialWrapper>
-            <Apos />
-            <Text>
-              I recently started my own business, and YourBank has been
-              instrumental in helping me set up my business accounts and secure
-              the financing I needed. Their expert guidance and tailored
-              solutions have been invaluable.
-            </Text>
-          </TestimonialWrapper>
-
-          <TextGradient> Andrew Tate </TextGradient>
-        </TestimonialsContainer>
-
-        <TestimonialsContainer>
-          <TestimonialWrapper>
-            <Apos />
-            <Text>
-              I recently started my own business, and YourBank has been
-              instrumental in helping me set up my business accounts and secure
-              the financing I needed. Their expert guidance and tailored
-              solutions have been invaluable.
-            </Text>
-          </TestimonialWrapper>
-
-          <TextGradient> Shit man </TextGradient>
-        </TestimonialsContainer>
+          <TestimonialsContainer>
+            <TestimonialWrapper>
+              <Apos />
+              <Text>
+                I recently started my own business, and YourBank has been
+                instrumental in helping me set up my business accounts and
+                secure the financing I needed. Their expert guidance and
+                tailored solutions have been invaluable.
+              </Text>
+              <TextGradient> Shit man </TextGradient>
+            </TestimonialWrapper>
+          </TestimonialsContainer>
+        </>
 
         <IconContainer>
           <Goto />
