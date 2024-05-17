@@ -19,19 +19,23 @@ const ContentContainer = styled.div`
   grid-auto-columns: auto 1fr auto;
 
   gap: ${() => ClampComponent(320, 1200, 2, 3)};
+
+  & > span:last-child > svg {
+    transform: rotateY(180deg);
+  }
 `;
 
 const IconContainer = styled.span`
   align-self: center;
 
-  background-color: var(--black-color-light);
+  background-color: var(--black-color);
 
   width: 4rem;
   height: 4rem;
 
   border-radius: 50%;
 
-  border: 1px solid var(--black-color);
+  border: 1px solid var(--black-color-light);
 
   display: flex;
 
@@ -39,9 +43,9 @@ const IconContainer = styled.span`
 
   align-items: center;
 
-  & > svg:last-of-type {
+  /* & > svg:last-child {
     transform: rotateY(180deg);
-  }
+  } */
 `;
 
 const TestimonialsContainer = styled.div`
