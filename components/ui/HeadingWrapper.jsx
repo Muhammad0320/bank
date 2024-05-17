@@ -60,17 +60,15 @@ function HeadingTextContainer({
         <H2>
           {order === 'normal' ? (
             <>
-              {withoutGradient}
-              <TextGradient>{withGradient}</TextGradient>
+              {withoutGradient} <TextGradient>{withGradient}</TextGradient>
             </>
           ) : (
             <>
-              <TextGradient>{withGradient}</TextGradient>
-              {withoutGradient}
+              <TextGradient>{withGradient}</TextGradient> {withoutGradient}
             </>
           )}
         </H2>
-        ${withoutGradient} <TextGradient> withGradient </TextGradient>
+
         <Text color="dark">{children}</Text>
       </HeadingWrapper>
 
