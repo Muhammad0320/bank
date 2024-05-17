@@ -12,7 +12,7 @@ export const SmallFlex = styled.ul`
 export const TinyFlex = styled.li`
   display: flex;
 
-  gap: ${() => ClampComponent(920, 1200, 0.4, 0.8)};
+  gap: ${() => ClampComponent(920, 1200, 0.3, 0.6)};
 
   justify-content: center;
 

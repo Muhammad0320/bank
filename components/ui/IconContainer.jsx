@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 export const IconContainer = styled.span`
   background-image: var(--primary-gradient);
@@ -14,4 +14,12 @@ export const IconContainer = styled.span`
   display: flex;
   justify-content: center;
   align-items: center;
+
+  ${props =>
+    props.type === 'sm' &&
+    css`
+      height: 3rem;
+
+      width: 3rem;
+    `}
 `;
