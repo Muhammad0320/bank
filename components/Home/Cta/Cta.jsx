@@ -19,9 +19,9 @@ const CtaContainer = styled.section`
 
   border: 1px solid var(--card-color);
 
-  border-radius: 1rem;
+  border-radius: 1.4rem;
 
-  padding: ${() => ClampComponent(920, 1200, 4, 6.5)};
+  padding: ${() => ClampComponent(920, 1200, 2.5, 5)};
 `;
 
 const AbstractContainer = styled.div`
