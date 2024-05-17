@@ -31,38 +31,41 @@ const IconContainer = styled.span`
   justify-content: center;
 
   align-items: center;
+  transform: rotateX(180deg);
 
-  & > svg:first-of-type {
-    transform: rotateY(180deg);
+  /* 
+  &  {
   }
 
   & > svg:last-of-type {
     transform: rotateY(-45deg);
-  }
+  } */
 `;
 
 const TestimonialsContainer = styled.div`
-  display: flex;
+  display: grid;
+
+  grid-auto-flow: column;
+
+  grid-auto-columns: 1fr;
 
   gap: ${() => ClampComponent(320, 1200, 4, 6)};
 
-  mask-image:
-    linear-gradient(90deg, rgb(0 0 0), rgb(0 0 0 / 0.2) 10%, rgb(0 0 0 / 0.2))
-      90%,
-    rgb(0 0 0);
+  mask-image: linear-gradient(
+    90deg,
+    transparent,
+    rgb(0 0 0 / 0.95) 20%,
+    rgb(0 0 0 / 0.95) 80%,
+    transparent
+  );
 
-  -webkit-mask-image:
-    linear-gradient(90deg, rgb(0 0 0), rgb(0 0 0 / 0.2) 10%, rgb(0 0 0 / 0.2))
-      90%,
-    rgb(0 0 0);
-
-  flex-wrap: nowrap;
-
-  & > * {
-    flex: 1;
-
-    min-width: fit-content;
-  }
+  -webkit-mask-image: linear-gradient(
+    90deg,
+    transparent,
+    rgb(0 0 0 / 0.95) 20%,
+    rgb(0 0 0 / 0.95) 80%,
+    transparent
+  );
 `;
 
 const TestimonialWrapper = styled.div`
@@ -109,9 +112,7 @@ function Testimonials() {
               </Text>
               <TextGradient> Lisan alGaib </TextGradient>
             </TestimonialWrapper>
-          </TestimonialsContainer>
 
-          <TestimonialsContainer>
             <TestimonialWrapper>
               <Apos />
               <Text>
@@ -122,9 +123,7 @@ function Testimonials() {
               </Text>
               <TextGradient> Andrew Tate </TextGradient>
             </TestimonialWrapper>
-          </TestimonialsContainer>
 
-          <TestimonialsContainer>
             <TestimonialWrapper>
               <Apos />
               <Text>
