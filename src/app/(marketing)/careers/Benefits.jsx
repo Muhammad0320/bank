@@ -1,15 +1,15 @@
 'use client';
 
 import styled from 'styled-components';
+import Work from '/public/assets/icons/work.svg';
+import Health from '/public/assets/icons/health.svg';
+import Retire from '/public/assets/icons/retire.svg';
+import { Text } from '../../../../components/ui/Text';
+import Compete from '/public/assets/icons/compete.svg';
+import { X4Grid } from '../../../../components/ui/4x4Grid';
 import { ClampComponent } from '../../../../styles/clampBuilder';
 import HeadingTextContainer from '../../../../components/ui/HeadingWrapper';
 import { SectionContainer } from '../../../../components/ui/SectionContainer';
-import Compete from '/public/assets/icons/compete.svg';
-import Health from '/public/assets/icons/health.svg';
-import Retire from '/public/assets/icons/retire.svg';
-import Work from '/public/assets/icons/work.svg';
-import { X4Grid } from '../../../../components/ui/4x4Grid';
-import { Text } from '../../../../components/ui/Text';
 
 const BenefitContainer = styled.li`
   display: grid;
