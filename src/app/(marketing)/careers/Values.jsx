@@ -21,13 +21,15 @@ const ValuesItem = styled.li`
 
   padding-inline: ${() => ClampComponent(320, 1200, 1.2, 1.8)};
 
+  box-shadow: var(--box-shadow-light-2);
+
   display: flex;
 
   flex-flow: column;
 
   gap: ${() => ClampComponent(320, 1200, 2, 5)};
 
-  border-left: 2px solid;
+  border-left: 1px solid;
 
   border-image: linear-gradient(
       to bottom,
@@ -57,7 +59,7 @@ function Values() {
       <ValuesContainerList>
         <ValuesItem>
           <h3> Intergrity </h3>
-          <Text>
+          <Text color="dark">
             We conduct ourselves with utmost honesty, transparency, and ethical
             behavior. We believe in doing what is right for our customers,
             colleagues, and stakeholders, even when faced with difficult
