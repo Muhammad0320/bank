@@ -27,7 +27,7 @@ const ValuesItem = styled.li`
 
   flex-flow: column;
 
-  gap: ${() => ClampComponent(320, 1200, 1.7, 3)};
+  gap: ${() => ClampComponent(320, 1200, 1, 2)};
 
   border-left: 1.5px solid;
 
@@ -39,9 +39,13 @@ const ValuesItem = styled.li`
     1 100%;
 
   & > h3 {
-    font-size: ${() => ClampComponent(320, 1200, 2, 3.5)};
+    color: var(--black-color-light);
 
-    opacity: 0.5;
+    font-size: ${() => ClampComponent(320, 1200, 2.5, 4)};
+
+    font-weight: 550;
+
+    /* opacity: 0.3; */
   }
 `;
 

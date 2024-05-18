@@ -92,7 +92,11 @@ const TestimonialWrapper = styled.div`
 function Testimonials() {
   return (
     <SectionContainer>
-      <HeadingTextContainer withGradient="Testimonials" withoutGradient="our">
+      <HeadingTextContainer
+        withGradient="Testimonials"
+        withoutGradient="our"
+        withCategory
+      >
         Discover how YourBank has transformed lives with innovative digital
         solutions and personalized customer <br /> service. See why our clients
         trust us for a secure and prosperous financial journey
