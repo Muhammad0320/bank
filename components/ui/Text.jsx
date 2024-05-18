@@ -6,7 +6,7 @@ import { ClampComponent } from '../../styles/clampBuilder';
 export const Text = styled.p`
   color: var(--text-color);
 
-  font-size: ${() => ClampComponent(920, 1200, 1, 1.4)};
+  font-size: ${() => ClampComponent(920, 1200, 1.2, 1.5)};
 
   ${props =>
     props.type === 'head' &&

@@ -21,20 +21,20 @@ const ValuesItem = styled.li`
 
   padding-inline: ${() => ClampComponent(320, 1200, 1.2, 1.8)};
 
-  box-shadow: var(--box-shadow-light-2);
+  /* box-shadow: var(--box-shadow-light-2); */
 
   display: flex;
 
   flex-flow: column;
 
-  gap: ${() => ClampComponent(320, 1200, 2, 5)};
+  gap: ${() => ClampComponent(320, 1200, 1.7, 3)};
 
-  border-left: 1px solid;
+  border-left: 1.5px solid;
 
   border-image: linear-gradient(
       to bottom,
       var(--primary-color),
-      rgba(0, 0, 0, 0)
+      var(--black-color)
     )
     1 100%;
 
