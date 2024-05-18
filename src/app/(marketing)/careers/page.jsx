@@ -1,3 +1,4 @@
+import Benefits from './Benefits';
 import CarreerHero from './Hero';
 import Values from './Values';
 
@@ -6,6 +7,7 @@ function Carrers() {
     <>
       <CarreerHero />
       <Values />
+      <Benefits />
     </>
   );
 }
