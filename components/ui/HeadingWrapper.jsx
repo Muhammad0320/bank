@@ -53,7 +53,7 @@ function HeadingTextContainer({
   withGradient = '',
   withoutGradient = '',
   order = 'normal',
-  withCategory = true,
+  withCategory = false,
   as,
 }) {
   return (

@@ -27,11 +27,11 @@ const ValuesItem = styled.li`
 
   gap: ${() => ClampComponent(320, 1200, 2, 5)};
 
-  border-right: 1px solid;
+  border-left: 2px solid;
 
   border-image: linear-gradient(
       to bottom,
-      var(--color-primary),
+      var(--primary-color),
       rgba(0, 0, 0, 0)
     )
     1 100%;
