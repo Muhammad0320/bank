@@ -14,6 +14,8 @@ const HeroContainer = styled.header`
   display: grid;
 
   grid-template-columns: 1fr 20rem 1.2fr;
+
+  border-radius: 1.4rem;
 `;
 
 const HeroTextContainer = styled.div`
@@ -45,8 +47,10 @@ const HeroTextContainer = styled.div`
 
 const ImageContainer = styled.div`
   grid-column: 2 / -1;
-
+  border-radius: inherit;
   max-width: 100%;
+
+  overflow: hidden;
 `;
 
 function CarreerHero() {
