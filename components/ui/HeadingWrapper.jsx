@@ -53,6 +53,7 @@ function HeadingTextContainer({
   withGradient = '',
   withoutGradient = '',
   order = 'normal',
+  withCategory = true,
 }) {
   return (
     <TextContainer>
@@ -71,12 +72,13 @@ function HeadingTextContainer({
 
         <Text color="dark">{children}</Text>
       </HeadingWrapper>
+      {withCategory && (
+        <ProductCategory>
+          <span className="active">For Individual</span>
 
-      <ProductCategory>
-        <span className="active">For Individual</span>
-
-        <span>For Business</span>
-      </ProductCategory>
+          <span>For Business</span>
+        </ProductCategory>
+      )}
     </TextContainer>
   );
 }

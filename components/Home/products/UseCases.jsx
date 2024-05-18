@@ -173,7 +173,10 @@ function UseCases() {
         </CaseCardContainer>
 
         <CaseType>
-          <HeadingTextContainer withoutGradient="For Individuals">
+          <HeadingTextContainer
+            withoutGradient="For Individuals"
+            withCategory={false}
+          >
             For individuals, our mortgage services pave the way to
             homeownership, and our flexible personal loans provide vital support
             during various life milestones. We also prioritize retirement
@@ -206,7 +209,10 @@ function UseCases() {
 
       <AllCasesContainer>
         <CaseType>
-          <HeadingTextContainer withoutGradient="For Business">
+          <HeadingTextContainer
+            withoutGradient="For Business"
+            withCategory={false}
+          >
             For businesses, we empower growth with working capital solutions
             that optimize cash flow, and our tailored financing options fuel
             business expansion. Whatever your financial aspirations, YourBank is
