@@ -66,6 +66,24 @@ function Values() {
             delivering exceptional service that exceeds expectations.
           </Text>
         </ValuesItem>
+        <ValuesItem>
+          <h3> Collaboration </h3>
+          <Text color="dark">
+            We foster a collaborative and inclusive work environment, where
+            teamwork and diversity are celebrated. By leveraging the unique
+            strengths and perspectives of our employees, we drive innovation and
+            achieve greater success together.
+          </Text>
+        </ValuesItem>
+        <ValuesItem>
+          <h3> Innovation </h3>
+          <Text color="dark">
+            We embrace change and constantly seek innovative solutions to meet
+            the evolving needs of our customers. We encourage our employees to
+            think creatively, challenge conventions, and explore new ideas to
+            drive the future of banking.
+          </Text>
+        </ValuesItem>
       </ValuesContainerList>
     </SectionContainer>
   );
