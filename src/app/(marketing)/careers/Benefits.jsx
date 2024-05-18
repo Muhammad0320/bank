@@ -4,7 +4,12 @@ import styled from 'styled-components';
 import { ClampComponent } from '../../../../styles/clampBuilder';
 import HeadingTextContainer from '../../../../components/ui/HeadingWrapper';
 import { SectionContainer } from '../../../../components/ui/SectionContainer';
+import Compete from '/public/assets/icons/compete.svg';
+import Health from '/public/assets/icons/health.svg';
+import Retire from '/public/assets/icons/retire.svg';
+import Work from '/public/assets/icons/work.svg';
 import { X4Grid } from '../../../../components/ui/4x4Grid';
+import { Text } from '../../../../components/ui/Text';
 
 const BenefitContainer = styled.li`
   display: grid;
@@ -51,7 +56,56 @@ function Benefits() {
       </HeadingTextContainer>
 
       <X4Grid>
-        <BenefitContainer></BenefitContainer>
+        <BenefitContainer>
+          <Compete />
+
+          <h4>Competitive Compensation</h4>
+
+          <Text>
+            We provide a competitive salary package that recognizes the skills
+            and expertise of our employees. YourBank believes in rewarding
+            exceptional performance and offering opportunities for financial
+            growth.{' '}
+          </Text>
+        </BenefitContainer>
+
+        <BenefitContainer>
+          <Health />
+
+          <h4>Health and Wellness</h4>
+
+          <Text>
+            We prioritize the health and well-being of our employees by
+            providing comprehensive medical, dental, and vision insurance plans.
+            We also offer wellness programs, gym memberships, and resources to
+            support a healthy lifestyle.{' '}
+          </Text>
+        </BenefitContainer>
+
+        <BenefitContainer>
+          <Retire />
+
+          <h4>Retirement Planning</h4>
+
+          <Text>
+            YourBank is committed to helping employees plan for their future. We
+            offer a retirement savings plan with a generous employer match to
+            help them build a secure financial foundation for the long term.{' '}
+          </Text>
+        </BenefitContainer>
+
+        <BenefitContainer>
+          <Work />
+
+          <h4>Work-Life Balance</h4>
+
+          <Text>
+            We understand the importance of maintaining a healthy work-life
+            balance. YourBank offers flexible work arrangements, paid time off,
+            parental leave, and other programs that support employees in
+            managing their personal and professional commitments.{' '}
+          </Text>
+        </BenefitContainer>
       </X4Grid>
     </SectionContainer>
   );
