@@ -1,10 +1,10 @@
 'use client';
 
+import Image from 'next/image';
 import styled from 'styled-components';
+import { Text } from '../../../../components/ui/Text';
 import { ClampComponent } from '../../../../styles/clampBuilder';
 import { TextGradient } from '../../../../components/ui/TextGradient';
-import { Text } from '../../../../components/ui/Text';
-import Image from 'next/image';
 
 const HeroContainer = styled.header`
   background-color: var(--card-color);
@@ -15,21 +15,27 @@ const HeroContainer = styled.header`
 
   grid-template-columns: 1fr 20rem 1.2fr;
 
+  grid-template-rows: 0.9fr 0.65fr;
+
   border-radius: 1.4rem;
 `;
 
 const HeroTextContainer = styled.div`
+  grid-row: 1 / 2;
+
+  z-index: 1;
   height: fit-content;
+  background-color: var(--black-color);
 
   grid-column: 1 / 3;
 
-  border-radius: 1.4rem 0 1.4rem 5rem;
+  border-radius: 1.4rem 0 5rem 1.4rem;
 
   display: flex;
 
   flex-flow: column;
 
-  gap: ${() => ClampComponent(920, 1200, 1, 2.5)};
+  gap: ${() => ClampComponent(920, 1200, 1, 1.8)};
 
   padding-inline: ${() => ClampComponent(920, 1200, 2, 3)};
   padding-block: ${() => ClampComponent(920, 1200, 2.5, 4)};
@@ -37,7 +43,7 @@ const HeroTextContainer = styled.div`
   color: var(--text-color);
 
   & > h1 {
-    font-weight: 650;
+    font-weight: 600;
 
     font-size: ${() => ClampComponent(920, 1200, 2.5, 4)};
 
@@ -46,6 +52,7 @@ const HeroTextContainer = styled.div`
 `;
 
 const ImageContainer = styled.div`
+  grid-row: 1 / -1;
   grid-column: 2 / -1;
   border-radius: inherit;
   max-width: 100%;

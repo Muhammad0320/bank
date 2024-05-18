@@ -39,4 +39,8 @@ export const StyledMain = styled.main`
   grid-auto-flow: row;
 
   row-gap: ${() => ClampComponent(320, 1200, 8, 15)};
+
+  & > header {
+    margin-block-start: ${() => ClampComponent(320, 1200, 8, 10)};
+  }
 `;
