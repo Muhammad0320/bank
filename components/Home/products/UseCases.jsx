@@ -116,20 +116,6 @@ const CaseCard = styled.div`
   }
 `;
 
-const AbstractContainer = styled.div`
-  position: absolute;
-
-  inset: 0;
-
-  ${props =>
-    props.position === 'alt' &&
-    css`
-      inset: unset;
-      right: 0;
-      transform: rotateY(190deg);
-    `}
-`;
-
 const AllCasesContainer = styled.div`
   display: grid;
 
@@ -173,11 +159,7 @@ function UseCases() {
         </CaseCardContainer>
 
         <CaseType>
-          <HeadingTextContainer
-            withoutGradient="For Individuals"
-            withCategory={false}
-            as="h3"
-          >
+          <HeadingTextContainer withoutGradient="For Individuals" as="h3">
             For individuals, our mortgage services pave the way to
             homeownership, and our flexible personal loans provide vital support
             during various life milestones. We also prioritize retirement
@@ -210,11 +192,7 @@ function UseCases() {
 
       <AllCasesContainer>
         <CaseType>
-          <HeadingTextContainer
-            withoutGradient="For Business"
-            withCategory={false}
-            as="h3"
-          >
+          <HeadingTextContainer withoutGradient="For Business" as="h3">
             For businesses, we empower growth with working capital solutions
             that optimize cash flow, and our tailored financing options fuel
             business expansion. Whatever your financial aspirations, YourBank is

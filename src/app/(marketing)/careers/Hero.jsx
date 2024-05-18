@@ -3,10 +3,14 @@
 import Image from 'next/image';
 import styled from 'styled-components';
 import { Text } from '../../../../components/ui/Text';
+import Dot from '/public/assets/icons/dot-lg.svg';
+
 import { ClampComponent } from '../../../../styles/clampBuilder';
 import { TextGradient } from '../../../../components/ui/TextGradient';
+import { AbstractContainer } from '../../../../components/ui/AbstractContainer';
 
 const HeroContainer = styled.header`
+  position: relative;
   background-color: var(--card-color);
 
   padding: ${() => ClampComponent(920, 1200, 1.5, 3)};
@@ -52,11 +56,14 @@ const HeroTextContainer = styled.div`
 `;
 
 const ImageContainer = styled.div`
+  position: absolute;
   grid-row: 1 / -1;
   grid-column: 2 / -1;
   border-radius: inherit;
   max-width: 100%;
   max-height: max-content;
+  object-fit: cover;
+  overflow: hidden;
 
   overflow: hidden;
 `;
@@ -64,6 +71,9 @@ const ImageContainer = styled.div`
 function CarreerHero() {
   return (
     <HeroContainer>
+      <AbstractContainer>
+        <Dot />
+      </AbstractContainer>
       <HeroTextContainer>
         <h1>
           Welcome to <TextGradient> YourBank </TextGradient> Careers!
@@ -81,7 +91,12 @@ function CarreerHero() {
       </HeroTextContainer>
 
       <ImageContainer>
-        <img src="/assets/images/career.png" alt="Carrer header hero" />
+        <Image
+          src="/assets/images/career.png"
+          fill
+          alt="Carrer header hero"
+          quality={80}
+        />
       </ImageContainer>
     </HeroContainer>
   );
