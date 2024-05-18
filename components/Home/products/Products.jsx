@@ -34,7 +34,7 @@ const ProdContainer = styled(InlineContainer)`
 function Products() {
   return (
     <SectionContainer>
-      <HeadingWrapper withGradient="Product" withoutGradient="Our">
+      <HeadingWrapper withGradient="Product" withoutGradient="Our" withCategory>
         Discover a range of comprehensive and customizable banking products at
         YourBank, <br /> designed to suit your unique financial needs and
         aspirations
