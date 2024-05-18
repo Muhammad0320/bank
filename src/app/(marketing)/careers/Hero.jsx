@@ -21,6 +21,8 @@ const HeroTextContainer = styled.div`
 
   grid-column: 1 / 3;
 
+  border-radius: 1.4rem 0 1.4rem 5rem;
+
   display: flex;
 
   flex-flow: column;
