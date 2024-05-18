@@ -7,7 +7,7 @@ export const TextGradient = styled.span`
 
   display: inline-block;
 
-  background-image: var(--primary-gradient);
+  background-image: var(--primary-gradient) !important;
 
   background-clip: text;
 
