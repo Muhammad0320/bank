@@ -54,11 +54,12 @@ function HeadingTextContainer({
   withoutGradient = '',
   order = 'normal',
   withCategory = true,
+  as,
 }) {
   return (
     <TextContainer>
       <HeadingWrapper>
-        <H2>
+        <H2 as={as || 'h2'}>
           {order === 'normal' ? (
             <>
               {withoutGradient} <TextGradient>{withGradient}</TextGradient>

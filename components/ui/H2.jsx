@@ -7,6 +7,7 @@ export const H2 = styled.h2`
     css`
       font-size: ${() => ClampComponent(320, 1200, 1.5, 2.5)};
     `}
+  font-size: ${() => ClampComponent(320, 1200, 3, 3)};
 
   font-weight: 500;
 `;
