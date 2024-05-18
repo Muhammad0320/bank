@@ -12,7 +12,10 @@ const StyledNavLink = styled(Link)`
 
   border-radius: 3.6rem;
   padding-inline: ${() => ClampComponent(320, 1200, 1.4, 2)};
-  padding-inline: ${() => ClampComponent(320, 1200, 1, 1.4)};
+
+  padding-block: ${() => ClampComponent(320, 1200, 0.8, 1.2)};
+
+  transition: background-color 350ms cubic-bezier(0.215, 0.61, 0.355, 1);
 
   &:hover,
   .active {
@@ -22,6 +25,8 @@ const StyledNavLink = styled(Link)`
 
 function NavLink({ href, children }) {
   const path = usePathname();
+
+  console.log(path);
 
   const isActive = path === href ? 'active' : '';
 

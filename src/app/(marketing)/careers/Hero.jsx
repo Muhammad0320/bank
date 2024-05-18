@@ -49,6 +49,7 @@ const ImageContainer = styled.div`
   grid-column: 2 / -1;
   border-radius: inherit;
   max-width: 100%;
+  max-height: max-content;
 
   overflow: hidden;
 `;
@@ -73,11 +74,7 @@ function CarreerHero() {
       </HeroTextContainer>
 
       <ImageContainer>
-        <Image
-          src="/public/assets/images/career.png"
-          fill
-          alt="Carrer header hero"
-        />
+        <img src="/assets/images/career.png" alt="Carrer header hero" />
       </ImageContainer>
     </HeroContainer>
   );

@@ -19,7 +19,7 @@ function NavLinks() {
         <NavLink href="/"> Home </NavLink>
       </li>
       <li>
-        <NavLink href="/career"> Career </NavLink>
+        <NavLink href="/careers"> Career </NavLink>
       </li>
       <li>
         <NavLink href="/about"> About </NavLink>

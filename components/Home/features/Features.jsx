@@ -2,9 +2,6 @@
 
 import styled from 'styled-components';
 import { ClampComponent } from '../../../styles/clampBuilder';
-
-import { TextGradient } from '../../ui/TextGradient';
-import { H2 } from '../../ui/H2';
 import Goto from '/public/assets/icons/goto.svg';
 
 import { Text } from '../../ui/Text';
