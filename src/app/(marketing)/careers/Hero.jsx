@@ -13,13 +13,15 @@ const HeroContainer = styled.header`
   position: relative;
   background-color: var(--card-color);
 
-  padding: ${() => ClampComponent(920, 1200, 1.5, 3)};
+  padding-inline: ${() => ClampComponent(920, 1200, 2, 3)};
 
   display: grid;
 
   grid-template-columns: 1fr 20rem 1.2fr;
 
   grid-template-rows: 0.9fr 0.65fr;
+
+  align-content: center;
 
   border-radius: 1.4rem;
 `;
@@ -56,7 +58,8 @@ const HeroTextContainer = styled.div`
 `;
 
 const ImageContainer = styled.div`
-  position: absolute;
+  /* position: absolute; */
+  position: relative;
   grid-row: 1 / -1;
   grid-column: 2 / -1;
   border-radius: inherit;
@@ -71,7 +74,7 @@ const ImageContainer = styled.div`
 function CarreerHero() {
   return (
     <HeroContainer>
-      <AbstractContainer>
+      <AbstractContainer position="alt">
         <Dot />
       </AbstractContainer>
       <HeroTextContainer>
@@ -93,9 +96,9 @@ function CarreerHero() {
       <ImageContainer>
         <Image
           src="/assets/images/career.png"
-          fill
           alt="Carrer header hero"
           quality={80}
+          layout="fill"
         />
       </ImageContainer>
     </HeroContainer>

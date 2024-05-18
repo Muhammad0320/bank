@@ -8,6 +8,7 @@ import { Text } from '../../ui/Text';
 import { Button } from '../../ui/Button';
 import { TextGradient } from '../../ui/TextGradient';
 import { ClampComponent } from '../../../styles/clampBuilder';
+import { AbstractContainer } from '../../ui/AbstractContainer';
 
 const CtaContainer = styled.section`
   position: relative;
@@ -22,11 +23,6 @@ const CtaContainer = styled.section`
   border-radius: 1.4rem;
 
   padding: ${() => ClampComponent(920, 1200, 2.5, 5)};
-`;
-
-const AbstractContainer = styled.div`
-  position: absolute;
-  inset: 0;
 `;
 
 const TextContainer = styled.div`

@@ -12,6 +12,7 @@ import Finance from '/public/assets/icons/finance.svg';
 import { InlineContainer } from '../../ui/InlineContiner';
 import HeadingTextContainer from '../../ui/HeadingWrapper';
 import { ClampComponent } from '../../../styles/clampBuilder';
+import { AbstractContainer } from '../../ui/AbstractContainer';
 
 const SectionContainer = styled.section`
   display: flex;
