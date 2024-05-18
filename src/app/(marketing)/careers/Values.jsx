@@ -5,16 +5,7 @@ import { SectionContainer } from '../../../../components/ui/SectionContainer';
 import { ClampComponent } from '../../../../styles/clampBuilder';
 import HeadingTextContainer from '../../../../components/ui/HeadingWrapper';
 import { Text } from '../../../../components/ui/Text';
-
-const ValuesContainerList = styled.ul`
-  display: grid;
-
-  grid-template-columns: repeat(2, 1fr);
-
-  grid-template-rows: repeat(2, 1fr);
-
-  gap: ${() => ClampComponent(320, 1200, 2.5, 3)};
-`;
+import { X4Grid } from '../../../../components/ui/4x4Grid';
 
 const ValuesItem = styled.li`
   --lightness: 20%;
@@ -60,7 +51,7 @@ function Values() {
         together to achieve our goals.
       </HeadingTextContainer>
 
-      <ValuesContainerList>
+      <X4Grid>
         <ValuesItem>
           <h3> Intergrity </h3>
           <Text color="dark">
@@ -97,7 +88,7 @@ function Values() {
             drive the future of banking.
           </Text>
         </ValuesItem>
-      </ValuesContainerList>
+      </X4Grid>
     </SectionContainer>
   );
 }
