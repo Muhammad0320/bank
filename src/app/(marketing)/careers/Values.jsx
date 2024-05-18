@@ -3,6 +3,8 @@
 import styled from 'styled-components';
 import { SectionContainer } from '../../../../components/ui/SectionContainer';
 import { ClampComponent } from '../../../../styles/clampBuilder';
+import HeadingTextContainer from '../../../../components/ui/HeadingWrapper';
+import { Text } from '../../../../components/ui/Text';
 
 const ValuesContainerList = styled.ul`
   display: grid;
@@ -35,7 +37,38 @@ const ValuesItem = styled.li`
 `;
 
 function Values() {
-  return <SectionContainer></SectionContainer>;
+  return (
+    <SectionContainer>
+      <HeadingTextContainer withGradient="Values" withoutGradient="Our">
+        At YourBank, our values form the foundation of our organization and
+        guide our actions. We believe in upholding the highest standards of
+        integrity, delivering exceptional service, and embracing innovation.
+        These values define our culture and shape the way we work together to
+        achieve our goals.
+      </HeadingTextContainer>
+
+      <ValuesContainerList>
+        <ValuesItem>
+          <h3> Intergrity </h3>
+          <Text>
+            We conduct ourselves with utmost honesty, transparency, and ethical
+            behavior. We believe in doing what is right for our customers,
+            colleagues, and stakeholders, even when faced with difficult
+            choices.
+          </Text>
+        </ValuesItem>
+
+        <ValuesItem>
+          <h3> Customer Centricity </h3>
+          <Text color="dark">
+            Our customers are at the heart of everything we do. We are dedicated
+            to understanding their needs, providing personalized solutions, and
+            delivering exceptional service that exceeds expectations.
+          </Text>
+        </ValuesItem>
+      </ValuesContainerList>
+    </SectionContainer>
+  );
 }
 
 export default Values;
