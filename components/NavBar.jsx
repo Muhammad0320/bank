@@ -9,11 +9,10 @@ import NavLinks from './NavLinks';
 import { ClampComponent } from '../styles/clampBuilder';
 
 const StyledHeading = styled.nav`
-  margin-block-end: ${() => ClampComponent(920, 1200, 4, 10)};
+  z-index: 10;
 
   display: flex;
-  position: fixed;
-  /* width: 100%; */
+
   backdrop-filter: blur(4px);
 
   justify-content: space-between;
@@ -22,7 +21,7 @@ const StyledHeading = styled.nav`
 
   padding-inline: 1.4rem;
 
-  padding-block: 1.6rem;
+  padding-block: ${() => ClampComponent(920, 1200, 1, 1.2)};
 
   border-radius: 3.6rem;
 

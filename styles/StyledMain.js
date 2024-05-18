@@ -22,6 +22,13 @@ export const StyledBody = styled.body`
   & > footer {
     grid-column: 1 / -1;
   }
+
+  & > nav {
+    grid-column: 1 / -1;
+    position: sticky;
+    width: 75%;
+    margin: 0 auto;
+  }
 `;
 
 export const StyledMain = styled.main`

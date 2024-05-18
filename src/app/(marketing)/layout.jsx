@@ -24,10 +24,8 @@ export default function RootLayout({ children }) {
           <Abstract />
         </div>
 
-        <StyledMain>
-          <NavBar />
-          {children}
-        </StyledMain>
+        <NavBar />
+        <StyledMain>{children}</StyledMain>
         <Footer />
       </StyledBody>
     </html>
