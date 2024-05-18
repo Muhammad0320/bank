@@ -27,7 +27,14 @@ const ValuesItem = styled.li`
 
   gap: ${() => ClampComponent(320, 1200, 2, 5)};
 
-  border-right: 1px solid var(--primary-color);
+  border-right: 1px solid;
+
+  border-image: linear-gradient(
+      to bottom,
+      var(--color-primary),
+      rgba(0, 0, 0, 0)
+    )
+    1 100%;
 
   & > h3 {
     font-size: ${() => ClampComponent(320, 1200, 2, 3.5)};
