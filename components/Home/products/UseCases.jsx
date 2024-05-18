@@ -176,6 +176,7 @@ function UseCases() {
           <HeadingTextContainer
             withoutGradient="For Individuals"
             withCategory={false}
+            as="h3"
           >
             For individuals, our mortgage services pave the way to
             homeownership, and our flexible personal loans provide vital support
@@ -212,6 +213,7 @@ function UseCases() {
           <HeadingTextContainer
             withoutGradient="For Business"
             withCategory={false}
+            as="h3"
           >
             For businesses, we empower growth with working capital solutions
             that optimize cash flow, and our tailored financing options fuel
