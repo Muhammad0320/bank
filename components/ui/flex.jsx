@@ -18,3 +18,11 @@ export const TinyFlex = styled.li`
 
   align-items: center;
 `;
+
+export const NormalFlex = styled.ul`
+  display: flex;
+
+  gap: ${() => ClampComponent(320, 1200, 1.5, 2.5)};
+
+  align-items: center;
+`;
