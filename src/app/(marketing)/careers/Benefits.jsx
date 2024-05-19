@@ -63,7 +63,7 @@ function Benefits() {
 
           <h4>Competitive Compensation</h4>
 
-          <Text>
+          <Text color="dark">
             We provide a competitive salary package that recognizes the skills
             and expertise of our employees. YourBank believes in rewarding
             exceptional performance and offering opportunities for financial
@@ -76,7 +76,7 @@ function Benefits() {
 
           <h4>Health and Wellness</h4>
 
-          <Text>
+          <Text color="dark">
             We prioritize the health and well-being of our employees by
             providing comprehensive medical, dental, and vision insurance plans.
             We also offer wellness programs, gym memberships, and resources to
@@ -89,7 +89,7 @@ function Benefits() {
 
           <h4>Retirement Planning</h4>
 
-          <Text>
+          <Text color="dark">
             YourBank is committed to helping employees plan for their future. We
             offer a retirement savings plan with a generous employer match to
             help them build a secure financial foundation for the long term.{' '}
@@ -101,7 +101,7 @@ function Benefits() {
 
           <h4>Work-Life Balance</h4>
 
-          <Text>
+          <Text color="dark">
             We understand the importance of maintaining a healthy work-life
             balance. YourBank offers flexible work arrangements, paid time off,
             parental leave, and other programs that support employees in
