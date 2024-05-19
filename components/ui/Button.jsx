@@ -24,7 +24,7 @@ export const Button = styled.button`
 
   width: fit-content;
 
-  font-size: ${() => ClampComponent(320, 1200, 1.2, 2)};
+  font-size: ${() => ClampComponent(320, 1200, 1.2, 1.5)};
 
   padding-inline: ${() => ClampComponent(950, 1200, 1.5, 2.2)};
 

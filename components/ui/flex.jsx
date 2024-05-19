@@ -7,6 +7,10 @@ export const SmallFlex = styled.ul`
   gap: ${() => ClampComponent(320, 1200, 0.8, 1.2)};
 
   align-items: center;
+
+  &:has(svg) svg {
+    min-width: fit-content;
+  }
 `;
 
 export const TinyFlex = styled.li`
