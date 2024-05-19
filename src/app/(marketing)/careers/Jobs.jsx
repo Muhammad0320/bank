@@ -25,11 +25,18 @@ const JobContainer = styled.ul`
 const JobContainerItem = styled.li`
   display: flex;
 
+  background-color: var(--card-color);
+
+  border-radius: 1.4rem;
   flex-flow: column;
 
   gap: ${() => ClampComponent(320, 1200, 2, 3)};
 
   padding: ${() => ClampComponent(320, 1200, 2.5, 3.5)};
+
+  & > button {
+    align-self: flex-start;
+  }
 `;
 
 const ItemSection = styled.div`
@@ -55,8 +62,8 @@ function Jobs() {
             <H3>Relationship Manager</H3>
 
             <NormalFlex type="container">
-              <Text> Location: Nigeria </Text>
-              <Text> Department: Retail Banking </Text>
+              <Text type="sm"> Location: Nigeria </Text>
+              <Text type="sm"> Department: Retail Banking </Text>
             </NormalFlex>
           </ItemSection>
 
@@ -121,8 +128,8 @@ function Jobs() {
             <H3>Risk Analyst</H3>
 
             <NormalFlex type="container">
-              <Text> Location: Nigeria </Text>
-              <Text> Department: Risk Management </Text>
+              <Text type="sm"> Location: Nigeria </Text>
+              <Text type="sm"> Department: Risk Management </Text>
             </NormalFlex>
           </ItemSection>
 
@@ -185,8 +192,8 @@ function Jobs() {
             <H3> IT Security Specialist </H3>
 
             <NormalFlex type="container">
-              <Text> Location: Nigeria </Text>
-              <Text> Department: Information Technology </Text>
+              <Text type="sm"> Location: Nigeria </Text>
+              <Text type="sm"> Department: Information Technology </Text>
             </NormalFlex>
           </ItemSection>
 

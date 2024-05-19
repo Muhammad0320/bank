@@ -16,6 +16,13 @@ export const Text = styled.p`
     `}
 
   ${props =>
+    props.type === 'sm' &&
+    css`
+      font-size: ${() => ClampComponent(920, 1200, 0.5, 1)};
+      font-weight: 300;
+    `}
+
+  ${props =>
     props.type === 'head' &&
     css`
       font-size: ${() => ClampComponent(920, 1200, 1.4, 1.8)};

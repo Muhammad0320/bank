@@ -22,9 +22,12 @@ export const Button = styled.button`
 
   color: var(--black-color);
 
+  width: fit-content;
+
   font-size: ${() => ClampComponent(320, 1200, 1.2, 2)};
 
-  padding-inline: ${() => ClampComponent(950, 1200, 1.2, 1.7)};
+  padding-inline: ${() => ClampComponent(950, 1200, 1.5, 2.2)};
+
   padding-block: ${() => ClampComponent(950, 1200, 1.1, 1.5)};
 
   transition: background-color 350ms ease-in-out;
@@ -40,10 +43,20 @@ export const Button = styled.button`
     `}
 
   ${props =>
+    props.kind === 'auth' &&
+    css`
+      background-image: none;
+
+      background-color: transparent;
+
+      color: var(--text-color);
+
+      padding-inline: ${() => ClampComponent(950, 1200, 1.2, 1.7)};
+    `}
+
+  ${props =>
     props.kind === 'sec' &&
     css`
-      width: fit-content;
-
       padding-inline: ${() => ClampComponent(950, 1200, 0.8, 1)};
       padding-block: ${() => ClampComponent(950, 1200, 0.4, 0.8)};
 

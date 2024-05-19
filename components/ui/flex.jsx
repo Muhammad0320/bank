@@ -30,9 +30,9 @@ export const NormalFlex = styled.ul`
     props.type === 'container' &&
     css`
       & > * {
-        flex: 1;
+        max-width: fit-content;
 
-        min-width: fit-content;
+        flex: 1;
 
         padding: 1rem;
 
