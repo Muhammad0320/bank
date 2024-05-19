@@ -17,15 +17,15 @@ const BenefitContainer = styled.li`
   grid-template-columns: auto 1fr;
 
   column-gap: ${() => ClampComponent(320, 1200, 1, 1.5)};
-  row-gap: ${() => ClampComponent(320, 1200, 1.5, 2.5)};
+  row-gap: ${() => ClampComponent(320, 1200, 1, 2)};
 
   grid-template-rows: auto 1fr;
 
-  box-shadow: var(--box-shadow-dark);
+  box-shadow: var(--box-shadow-light);
 
   padding: ${() => ClampComponent(320, 1200, 2, 2.5)};
 
-  border-radius: 2rem / 4rem;
+  border-radius: 5rem 2rem;
 
   & > svg {
     grid-column: 1 / 2;
@@ -33,6 +33,8 @@ const BenefitContainer = styled.li`
   }
 
   & > h4 {
+    align-self: center;
+
     grid-column: 2 / -1;
 
     font-size: ${() => ClampComponent(320, 1200, 1.2, 2)};
