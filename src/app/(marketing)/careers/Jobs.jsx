@@ -70,7 +70,7 @@ function Jobs() {
           <ItemSection>
             <H4>About this job</H4>
 
-            <Text>
+            <Text color="dark">
               As a Relationship Manager at YourBank, you will be responsible for
               developing and maintaining relationships with our valued
               customers. You will proactively identify their financial needs and
@@ -86,7 +86,7 @@ function Jobs() {
 
             <SmallFlex>
               <Breifcase />
-              <Text>
+              <Text color="dark">
                 {' '}
                 Bachelor&apos;s degree in Business, Finance, or a related field{' '}
               </Text>
@@ -94,7 +94,7 @@ function Jobs() {
 
             <SmallFlex>
               <Breifcase />
-              <Text>
+              <Text color="dark">
                 {' '}
                 Proven track record of meeting and exceeding sales target
               </Text>
@@ -102,7 +102,7 @@ function Jobs() {
 
             <SmallFlex>
               <Breifcase />
-              <Text>
+              <Text color="dark">
                 {' '}
                 Minimum of 5 yrs of experience in salesor relationship
                 management in banking industry{' '}
@@ -111,12 +111,18 @@ function Jobs() {
 
             <SmallFlex>
               <Breifcase />
-              <Text> Excellent interpersonal and negotoation skills</Text>
+              <Text color="dark">
+                {' '}
+                Excellent interpersonal and negotoation skills
+              </Text>
             </SmallFlex>
 
             <SmallFlex>
               <Breifcase />
-              <Text> Strong knowledge of banking products and services </Text>
+              <Text color="dark">
+                {' '}
+                Strong knowledge of banking products and services{' '}
+              </Text>
             </SmallFlex>
           </ItemSection>
 
@@ -136,7 +142,7 @@ function Jobs() {
           <ItemSection>
             <H4>About this job</H4>
 
-            <Text>
+            <Text color="dark">
               As a Risk Analyst at YourBank, you will play a vital role in
               identifying and assessing potential risks to our organization. You
               will analyze data, conduct risk assessments, and develop
@@ -151,7 +157,7 @@ function Jobs() {
 
             <SmallFlex>
               <Breifcase />
-              <Text>
+              <Text color="dark">
                 {' '}
                 Bachelor&apos;s degree in Finance, Econimics or a related field{' '}
               </Text>
@@ -159,7 +165,7 @@ function Jobs() {
 
             <SmallFlex>
               <Breifcase />
-              <Text>
+              <Text color="dark">
                 Minimum of 2 yrs of exprience in risk management or a similar
                 role
               </Text>
@@ -167,17 +173,23 @@ function Jobs() {
 
             <SmallFlex>
               <Breifcase />
-              <Text> Proficiency in risk analysis tools and techniques </Text>
+              <Text color="dark">
+                {' '}
+                Proficiency in risk analysis tools and techniques{' '}
+              </Text>
             </SmallFlex>
 
             <SmallFlex>
               <Breifcase />
-              <Text> Strong analytical and problem solving skills</Text>
+              <Text color="dark">
+                {' '}
+                Strong analytical and problem solving skills
+              </Text>
             </SmallFlex>
 
             <SmallFlex>
               <Breifcase />
-              <Text>
+              <Text color="dark">
                 {' '}
                 Knowledge of regulatory requirement and industry best practices
               </Text>
@@ -200,7 +212,7 @@ function Jobs() {
           <ItemSection>
             <H4>About this job</H4>
 
-            <Text>
+            <Text color="dark">
               As an IT Security Specialist at YourBank, you will be responsible
               for ensuring the security and integrity of our information
               systems. You will develop and implement security protocols,
@@ -216,7 +228,7 @@ function Jobs() {
 
             <SmallFlex>
               <Breifcase />
-              <Text>
+              <Text color="dark">
                 {' '}
                 Bachelor&apos;s degree in Computer Science, Information
                 Security, or other related fields
@@ -225,14 +237,14 @@ function Jobs() {
 
             <SmallFlex>
               <Breifcase />
-              <Text>
+              <Text color="dark">
                 Minimum of 5 yrs of expereice in IT security or a similar role
               </Text>
             </SmallFlex>
 
             <SmallFlex>
               <Breifcase />
-              <Text>
+              <Text color="dark">
                 {' '}
                 In-depth knowledge of network security protocols and
                 technologies
@@ -241,7 +253,7 @@ function Jobs() {
 
             <SmallFlex>
               <Breifcase />
-              <Text>
+              <Text color="dark">
                 {' '}
                 Familiarity with regulatory frameworks such as PCI, DSS and GDPR{' '}
               </Text>
@@ -249,7 +261,7 @@ function Jobs() {
 
             <SmallFlex>
               <Breifcase />
-              <Text>
+              <Text color="dark">
                 {' '}
                 Professional certification such as CISSP or CISM are preferred{' '}
               </Text>
