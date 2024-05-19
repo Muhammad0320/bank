@@ -12,7 +12,7 @@ const HeroContainer = styled.header`
   position: relative;
   background-color: var(--card-color);
 
-  padding: ${() => ClampComponent(920, 1200, 2, 3)};
+  padding-inline: ${() => ClampComponent(920, 1200, 2, 3)};
 
   display: grid;
 
