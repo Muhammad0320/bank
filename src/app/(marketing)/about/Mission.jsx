@@ -1,15 +1,17 @@
+'use client';
+
 import styled, { css } from 'styled-components';
-import HeadingTextContainer from '../../../../components/ui/HeadingWrapper';
-import { SectionContainer } from '../../../../components/ui/SectionContainer';
 import { ClampComponent } from '../../../../styles/clampBuilder';
 import Radial from '/public/assets/icons/radial.svg';
 import Image from 'next/image';
 import { ColumnFlex } from '../../../../components/ui/flex';
 import { H3 } from '../../../../components/ui/H2';
 import { Text } from '../../../../components/ui/Text';
+import HeadingTextContainer from '../../../../components/ui/HeadingWrapper';
+import { SectionContainer } from '../../../../components/ui/SectionContainer';
 
 const ContentContainer = styled.div`
-  display: flex;
+  display: grid;
 
   grid-template-columns: 1fr 10rem 1fr;
 
@@ -17,13 +19,17 @@ const ContentContainer = styled.div`
 
   grid-template-rows: repeat(4, 1fr);
 
-  & > div:has(p):first-child {
+  /* 
+  & > div:has(p) {
     grid-column: 2 / -1;
+    grid-row: 1.5 / 2.5;
+  
   }
 
   & > div:has(p):nth-child(2) {
     grid-column: 1 / span 2;
-  }
+    grid-row: 1 / 1;
+  } */
 `;
 
 const ImageContainer = styled.div`
@@ -116,7 +122,7 @@ function Mission() {
           />
         </ImageContainer>
 
-        <ColumnFlex>
+        <ColumnFlex style={{ gridColumn: ' 2 / span 2' }}>
           <H3> Mission </H3>
           <Text color="dark">
             At YourBank, our mission is to empower our customers to achieve
@@ -142,7 +148,7 @@ function Mission() {
           />
         </ImageContainer>
 
-        <ColumnFlex>
+        <ColumnFlex style={{ gridColumn: '1 / span 2' }}>
           <H3> Vision </H3>
           <Text color="dark">
             Our vision at YourBank is to redefine banking by creating a seamless
