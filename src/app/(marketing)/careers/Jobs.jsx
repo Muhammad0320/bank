@@ -27,6 +27,8 @@ const JobContainerItem = styled.li`
 
   background-color: var(--card-color);
 
+  border: 1px solid var(--black-color-light);
+
   border-radius: 1.4rem;
   flex-flow: column;
 

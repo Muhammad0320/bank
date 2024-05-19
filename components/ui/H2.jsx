@@ -13,12 +13,16 @@ export const H2 = styled.h2`
 `;
 
 export const H3 = styled.h3`
+  color: var(--color-white);
+
   font-size: ${() => ClampComponent(320, 1200, 2, 2.5)};
 
   font-weight: 500;
 `;
 
 export const H4 = styled.h4`
+  color: var(--color-white);
+
   font-size: ${() => ClampComponent(320, 1200, 1.5, 2)};
 
   font-weight: 500;
