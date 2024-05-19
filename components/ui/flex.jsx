@@ -13,6 +13,14 @@ export const SmallFlex = styled.ul`
   }
 `;
 
+export const ColumnFlex = styled.div`
+  display: flex;
+
+  flex-flow: column;
+
+  gap: ${() => ClampComponent(320, 1200, 0.6, 1)};
+`;
+
 export const TinyFlex = styled.li`
   display: flex;
 
