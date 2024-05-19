@@ -53,6 +53,10 @@ const HeroTextContainer = styled.div`
 
   color: var(--text-color);
 
+  & > span:first-child {
+    margin-bottom: -2rem;
+  }
+
   & > h1 {
     font-weight: 600;
 
@@ -86,7 +90,7 @@ function HeroHeader({
         <Dot />
       </AbstractContainer>
       <HeroTextContainer>
-        {greeting && <Text> {greeting} </Text>}
+        {greeting && <Text as="span"> {greeting} </Text>}
 
         <h1>
           {withoutGradient} <TextGradient> {withGradient} </TextGradient>{' '}
