@@ -1,9 +1,11 @@
 import AboutHero from './AboutHero';
+import Mission from './Mission';
 
 function About() {
   return (
     <>
       <AboutHero />
+      <Mission />
     </>
   );
 }
