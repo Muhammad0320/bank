@@ -9,11 +9,19 @@ export const Text = styled.p`
   font-size: ${() => ClampComponent(920, 1200, 1.2, 1.5)};
 
   ${props =>
+    props.type === 'head-lg' &&
+    css`
+      font-size: ${() => ClampComponent(920, 1200, 1.5, 2.2)};
+      font-weight: 500;
+    `}
+
+  ${props =>
     props.type === 'head' &&
     css`
       font-size: ${() => ClampComponent(920, 1200, 1.4, 1.8)};
       font-weight: 500;
     `}
+
 
   ${props =>
     props.color === 'dark' &&
