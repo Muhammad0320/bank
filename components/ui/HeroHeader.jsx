@@ -12,7 +12,7 @@ const HeroContainer = styled.header`
   position: relative;
   background-color: var(--card-color);
 
-  padding-inline: ${() => ClampComponent(920, 1200, 2, 3)};
+  padding: ${() => ClampComponent(920, 1200, 2, 3)};
 
   display: grid;
 
@@ -23,6 +23,12 @@ const HeroContainer = styled.header`
   align-content: center;
 
   border-radius: 1.4rem;
+
+  & > div:has(svg) {
+    position: absolute;
+    right: 0;
+    transform: rotateY(190deg);
+  }
 `;
 
 const HeroTextContainer = styled.div`
@@ -62,10 +68,7 @@ const ImageContainer = styled.div`
   grid-column: 2 / -1;
   border-radius: inherit;
   max-width: 100%;
-  max-height: max-content;
   object-fit: cover;
-  overflow: hidden;
-
   overflow: hidden;
 `;
 
