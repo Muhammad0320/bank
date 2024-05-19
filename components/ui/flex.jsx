@@ -29,14 +29,20 @@ export const NormalFlex = styled.ul`
   ${props =>
     props.type === 'container' &&
     css`
-      padding: 1rem;
+      & > * {
+        flex: 1;
 
-      justify-content: center;
+        min-width: fit-content;
 
-      background-color: var(--black-color);
+        padding: 1rem;
 
-      border: 1px solid var(--black-color-light);
+        justify-content: center;
 
-      border-radius: 3.6rem;
+        background-color: var(--black-color);
+
+        border: 1px solid var(--black-color-light);
+
+        border-radius: 3.6rem;
+      }
     `}
 `;
