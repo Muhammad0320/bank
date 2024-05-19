@@ -75,6 +75,7 @@ function HeroHeader({
   greeting,
   opt,
   children,
+  src,
 }) {
   return (
     <HeroContainer>
@@ -92,12 +93,7 @@ function HeroHeader({
       </HeroTextContainer>
 
       <ImageContainer>
-        <Image
-          src="/assets/images/career.png"
-          alt="Carrer header hero"
-          quality={80}
-          layout="fill"
-        />
+        <Image src={src} alt="Carrer header hero" quality={80} layout="fill" />
       </ImageContainer>
     </HeroContainer>
   );

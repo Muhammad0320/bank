@@ -8,6 +8,7 @@ import Dot from '/public/assets/icons/dot-lg.svg';
 import { ClampComponent } from '../../../../styles/clampBuilder';
 import { TextGradient } from '../../../../components/ui/TextGradient';
 import { AbstractContainer } from '../../../../components/ui/AbstractContainer';
+import HeroHeader from '../../../../components/ui/HeroHeader';
 
 const HeroContainer = styled.header`
   position: relative;
@@ -73,35 +74,19 @@ const ImageContainer = styled.div`
 
 function CarreerHero() {
   return (
-    <HeroContainer>
-      <AbstractContainer position="alt">
-        <Dot />
-      </AbstractContainer>
-      <HeroTextContainer>
-        <h1>
-          Welcome to <TextGradient> YourBank </TextGradient> Careers!
-        </h1>
-
-        <Text>
-          Join our team and embark on a rewarding journey in the banking
-          industry. At YourBank, we are committed to fostering a culture of
-          excellence and providing opportunities for professional growth. With a
-          focus on innovation, customer service, and integrity, we strive to
-          make a positive impact in the lives of our customers and communities.
-          Join us today and be a part of our mission to shape the future of
-          banking.
-        </Text>
-      </HeroTextContainer>
-
-      <ImageContainer>
-        <Image
-          src="/assets/images/career.png"
-          alt="Carrer header hero"
-          quality={80}
-          layout="fill"
-        />
-      </ImageContainer>
-    </HeroContainer>
+    <HeroHeader
+      withGradient="YourBank"
+      withoutGradient="Welcome to"
+      opt="Careeers"
+      src="/assets/images/career.png"
+    >
+      Join our team and embark on a rewarding journey in the banking industry.
+      At YourBank, we are committed to fostering a culture of excellence and
+      providing opportunities for professional growth. With a focus on
+      innovation, customer service, and integrity, we strive to make a positive
+      impact in the lives of our customers and communities. Join us today and be
+      a part of our mission to shape the future of banking.
+    </HeroHeader>
   );
 }
 
