@@ -30,6 +30,8 @@ function NavLink({ href, children }) {
 
   const isActive = path === href ? 'active' : '';
 
+  console.log(isActive);
+
   return (
     <StyledNavLink href={href} className={isActive}>
       {children}

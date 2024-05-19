@@ -7,7 +7,7 @@ import { ClampComponent } from '../styles/clampBuilder';
 const NavContainer = styled.ul`
   display: flex;
 
-  column-gap: ${() => ClampComponent(950, 1200, 1, 1.5)};
+  /* column-gap: ${() => ClampComponent(950, 1200, 1, 1.2)}; */
 
   font-size: ${() => ClampComponent(320, 1200, 1, 1.7)};
 `;
@@ -19,7 +19,7 @@ function NavLinks() {
         <NavLink href="/"> Home </NavLink>
       </li>
       <li>
-        <NavLink href="/careers"> Career </NavLink>
+        <NavLink href="/careers"> Careers </NavLink>
       </li>
       <li>
         <NavLink href="/about"> About </NavLink>
