@@ -37,6 +37,10 @@ export const StyledMain = styled.main`
 
   row-gap: ${() => ClampComponent(320, 1200, 8, 15)};
 
+  & > section:last-child {
+    margin-block-end: ${() => ClampComponent(320, 1200, 8, 10)};
+  }
+
   & > header {
     margin-block-start: ${() => ClampComponent(320, 1200, 8, 10)};
   }

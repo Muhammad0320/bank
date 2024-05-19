@@ -30,6 +30,9 @@ const JobContainerItem = styled.li`
   border: 1px solid var(--black-color-light);
 
   border-radius: 1.4rem;
+
+  box-shadow: var(--box-shadow-dark);
+
   flex-flow: column;
 
   gap: ${() => ClampComponent(320, 1200, 2, 3)};
