@@ -24,10 +24,7 @@ export const StyledBody = styled.body`
   }
 
   & > nav {
-    grid-column: 1 / -1;
-    position: sticky;
-    width: 75%;
-    margin: 0 auto;
+    grid-column: 2 / 3;
   }
 `;
 

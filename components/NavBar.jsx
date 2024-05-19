@@ -32,6 +32,12 @@ const HeaderButtonContainer = styled.div`
   display: flex;
 
   column-gap: 2rem;
+
+  & > * {
+    flex: 1;
+
+    min-width: fit-content;
+  }
 `;
 
 function NavBar() {
