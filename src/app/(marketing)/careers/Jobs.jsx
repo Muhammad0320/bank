@@ -74,7 +74,7 @@ function Jobs() {
               <Breifcase />
               <Text>
                 {' '}
-                Bachelor'sdegree in Business, Finance, or a related field{' '}
+                Bachelor&apos;s degree in Business, Finance, or a related field{' '}
               </Text>
             </SmallFlex>
 
@@ -82,7 +82,7 @@ function Jobs() {
               <Breifcase />
               <Text>
                 {' '}
-                Bachelor'sdegree in Business, Finance, or a related field{' '}
+                Proven track record of meeting and exceeding sales target
               </Text>
             </SmallFlex>
 
@@ -103,6 +103,142 @@ function Jobs() {
             <SmallFlex>
               <Breifcase />
               <Text> Strong knowledge of banking products and services </Text>
+            </SmallFlex>
+          </ItemSection>
+
+          <Button>Apply Now!</Button>
+        </JobContainerItem>
+
+        <JobContainerItem>
+          <ItemSection>
+            <H3>Risk Analyst</H3>
+
+            <NormalFlex type="container">
+              <Text> Location: Nigeria </Text>
+              <Text> Department: Risk Management </Text>
+            </NormalFlex>
+          </ItemSection>
+
+          <ItemSection>
+            <H4>About this job</H4>
+
+            <Text>
+              As a Risk Analyst at YourBank, you will play a vital role in
+              identifying and assessing potential risks to our organization. You
+              will analyze data, conduct risk assessments, and develop
+              strategies to mitigate risks. We are looking for detail-oriented
+              individuals with strong analytical skills and a solid
+              understanding of risk management principles.
+            </Text>
+          </ItemSection>
+
+          <ItemSection>
+            <H4> Requirement & Qualification </H4>
+
+            <SmallFlex>
+              <Breifcase />
+              <Text>
+                {' '}
+                Bachelor&apos;s degree in Finance, Econimics or a related field{' '}
+              </Text>
+            </SmallFlex>
+
+            <SmallFlex>
+              <Breifcase />
+              <Text>
+                Minimum of 2 yrs of exprience in risk management or a similar
+                role
+              </Text>
+            </SmallFlex>
+
+            <SmallFlex>
+              <Breifcase />
+              <Text> Proficiency in risk analysis tools and techniques </Text>
+            </SmallFlex>
+
+            <SmallFlex>
+              <Breifcase />
+              <Text> Strong analytical and problem solving skills</Text>
+            </SmallFlex>
+
+            <SmallFlex>
+              <Breifcase />
+              <Text>
+                {' '}
+                Knowledge of regulatory requirement and industry best practices
+              </Text>
+            </SmallFlex>
+          </ItemSection>
+
+          <Button>Apply Now!</Button>
+        </JobContainerItem>
+
+        <JobContainerItem>
+          <ItemSection>
+            <H3> IT Security Specialist </H3>
+
+            <NormalFlex type="container">
+              <Text> Location: Nigeria </Text>
+              <Text> Department: Information Technology </Text>
+            </NormalFlex>
+          </ItemSection>
+
+          <ItemSection>
+            <H4>About this job</H4>
+
+            <Text>
+              As an IT Security Specialist at YourBank, you will be responsible
+              for ensuring the security and integrity of our information
+              systems. You will develop and implement security protocols,
+              conduct vulnerability assessments, and respond to security
+              incidents. We are seeking individuals with a strong technical
+              background, knowledge of cybersecurity best practices, and a
+              commitment to maintaining the confidentiality of customer data.
+            </Text>
+          </ItemSection>
+
+          <ItemSection>
+            <H4> Requirement & Qualification </H4>
+
+            <SmallFlex>
+              <Breifcase />
+              <Text>
+                {' '}
+                Bachelor&apos;s degree in Computer Science, Information
+                Security, or other related fields
+              </Text>
+            </SmallFlex>
+
+            <SmallFlex>
+              <Breifcase />
+              <Text>
+                Minimum of 5 yrs of expereice in IT security or a similar role
+              </Text>
+            </SmallFlex>
+
+            <SmallFlex>
+              <Breifcase />
+              <Text>
+                {' '}
+                In-depth knowledge of network security protocols and
+                technologies
+              </Text>
+            </SmallFlex>
+
+            <SmallFlex>
+              <Breifcase />
+              <Text>
+                {' '}
+                Familiarity with regulatory frameworks such as PCI, DSS and GDPR{' '}
+              </Text>
+            </SmallFlex>
+
+            <SmallFlex>
+              <Breifcase />
+              <Text>
+                {' '}
+                Professional certification such as CISSP or CISM are preferred{' '}
+              </Text>
             </SmallFlex>
           </ItemSection>
 
