@@ -39,8 +39,8 @@ inherits: false;
     --card-color: hsl(0, 0%, 15%);
     --black-color: hsl(0, 0%, 10% ) ;
     --black-color-light: hsl(0, 0%, 20%);
-  
-    --color-red-light: #e5383b;
+      
+    --color-red-light: #e5383b; 
     --color-red-dark: #da1e37;
 
   
