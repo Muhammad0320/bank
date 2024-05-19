@@ -93,7 +93,7 @@ function HeroHeader({
       </HeroTextContainer>
 
       <ImageContainer>
-        <Image src={src} alt="Carrer header hero" quality={80} layout="fill" />
+        <Image src={src} alt="Carrer header hero" quality={75} layout="fill" />
       </ImageContainer>
     </HeroContainer>
   );
