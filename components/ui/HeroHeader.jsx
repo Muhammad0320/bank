@@ -40,6 +40,8 @@ const HeroTextContainer = styled.div`
 
   grid-column: 1 / 3;
 
+  /* width: 95%; */
+
   border-radius: 1.4rem 0 5rem 1.4rem;
 
   display: flex;

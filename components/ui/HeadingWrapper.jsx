@@ -12,6 +12,10 @@ export const HeadingWrapper = styled.div`
   flex-flow: column;
 
   row-gap: ${() => ClampComponent(320, 1200, 1, 2)};
+
+  & > p {
+    width: 80%;
+  }
 `;
 
 const ProductCategory = styled.div`
