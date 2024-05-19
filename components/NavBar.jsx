@@ -31,7 +31,7 @@ const StyledHeading = styled.nav`
 const HeaderButtonContainer = styled.div`
   display: flex;
 
-  column-gap: 2rem;
+  /* column-gap: 2rem; */
 
   & > * {
     flex: 1;
@@ -52,7 +52,7 @@ function NavBar() {
       <HeaderButtonContainer className="space-x-3">
         <Button kind="null">Signup</Button>
 
-        <Button>Login</Button>
+        <Button kind="auth"> Login</Button>
       </HeaderButtonContainer>
     </StyledHeading>
   );

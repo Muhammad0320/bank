@@ -45,12 +45,6 @@ export const Button = styled.button`
   ${props =>
     props.kind === 'auth' &&
     css`
-      background-image: none;
-
-      background-color: transparent;
-
-      color: var(--text-color);
-
       padding-inline: ${() => ClampComponent(950, 1200, 1.2, 1.7)};
     `}
 
