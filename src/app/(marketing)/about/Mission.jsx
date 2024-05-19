@@ -53,17 +53,22 @@ const ImageContainer = styled.div`
 
   &:first-child {
     grid-column: 1 / 2;
-    grid-row: 1 / span 2.5;
+    grid-row: 1 / span 2;
+    background-color: red;
   }
-  &:last-child {
-    grid-column: 3 / -1;
-    grid-row: 2 / span -1;
+
+  &:nth-child(2) {
+    grid-column: 3 / 4;
+
+    grid-row: 2 / span 2;
+
+    border: 5px solid red;
   }
 
   & > image {
     align-self: flex-end;
 
-    max-width: 100%;
+    max-width: 80%;
 
     height: auto;
 
