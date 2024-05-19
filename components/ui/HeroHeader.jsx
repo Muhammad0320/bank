@@ -89,7 +89,8 @@ function HeroHeader({
         {greeting && <Text> {greeting} </Text>}
 
         <h1>
-          {withoutGradient} <TextGradient> {withGradient} </TextGradient> {opt}
+          {withoutGradient} <TextGradient> {withGradient} </TextGradient>{' '}
+          {opt || ''}
         </h1>
 
         <Text color="dark">{children}</Text>
