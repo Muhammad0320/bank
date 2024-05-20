@@ -165,11 +165,11 @@ const ExchangeContainer = styled.div`
 `;
 
 const CurrencyCardContainer = styled.div`
-  height: 15rem;
-
   display: grid;
 
   grid-template-rows: 1.4fr 0.8fr;
+
+  /* padding: 2rem; */
 
   grid-template-columns: repeat(2, 1fr);
   background-color: var(--card-color);
@@ -316,7 +316,7 @@ function Header() {
             >
               <CurrencyInfo>
                 <Ngn />
-                <HeroText style={{ marginLeft: '1rem' }}> NGN </HeroText>
+                <H4 style={{ marginLeft: '1rem' }}> NGN </H4>
               </CurrencyInfo>
               <Text> Nigerian Naira </Text>
             </CurrencyInfoContainer>
@@ -326,23 +326,14 @@ function Header() {
             >
               <CurrencyInfo>
                 <Usa />
-                <HeroText style={{ marginLeft: '1rem' }}> USD </HeroText>
+                <H4 style={{ marginLeft: '1rem' }}> USD </H4>
               </CurrencyInfo>
 
-              <Text style={{ minWidth: 'fit-content' }}>
-                {' '}
-                United States Dollars{' '}
-              </Text>
+              <Text> United States Dollars </Text>
             </CurrencyInfoContainer>
 
-            <HeroText style={{ gridColumn: 1 / 2, gridRow: 2 / -1 }}>
-              {' '}
-              5,000{' '}
-            </HeroText>
-            <HeroText style={{ gridColumn: 2 / -1, gridRow: 2 / -1 }}>
-              {' '}
-              10.00{' '}
-            </HeroText>
+            <H4 style={{ gridColumn: 1 / 2, gridRow: 2 / -1 }}> 5,000 </H4>
+            <H4 style={{ gridColumn: 2 / -1, gridRow: 2 / -1 }}> 10.00 </H4>
           </CurrencyCardContainer>
 
           <Button kind="ex"> Exchange </Button>
