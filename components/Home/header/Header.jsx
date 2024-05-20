@@ -232,10 +232,10 @@ function Header() {
         </TextH1>
 
         <Text>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
-          tenetur numquam vel odio explicabo rem consequatur consequuntur ad,
-          tempore adipisci, ipsa quaerat ex non illum id vitae sed. Ipsum,
-          omnis!
+          At YourBank, our mission is to provide comprehensive banking solutions
+          that empower individuals and businesses to achieve their financial
+          goals. We are committed to delivering personalized and innovative
+          services that prioritize our customers&apos; needs.
         </Text>
 
         <Button>Open Acount</Button>
