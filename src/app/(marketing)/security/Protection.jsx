@@ -1,14 +1,13 @@
-import { X4Grid } from '../../../../components/ui/4x4Grid';
 import Sec1 from '/public/assets/icons/sec1.svg';
 import Sec2 from '/public/assets/icons/sec2.svg';
 import Sec3 from '/public/assets/icons/sec3.svg';
 import Sec4 from '/public/assets/icons/sec4.svg';
-
-import { Card } from '../../../../components/ui/Card';
-import HeadingTextContainer from '../../../../components/ui/HeadingWrapper';
-import { SectionContainer } from '../../../../components/ui/SectionContainer';
 import { H4 } from '../../../../components/ui/H2';
 import { Text } from '../../../../components/ui/Text';
+import { Card } from '../../../../components/ui/Card';
+import { X4Grid } from '../../../../components/ui/4x4Grid';
+import HeadingTextContainer from '../../../../components/ui/HeadingWrapper';
+import { SectionContainer } from '../../../../components/ui/SectionContainer';
 
 function Protection() {
   return (
