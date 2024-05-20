@@ -81,7 +81,7 @@ const HeroContainer = styled(FancyBorder)`
   max-width: 30dvw;
 
   display: grid;
-  grid-template-rows: auto 1fr auto 0.9fr auto;
+  grid-template-rows: repeat(2, 1fr);
 
   row-gap: ${() => ClampComponent(920, 1200, 1, 2.5)};
 `;
@@ -134,7 +134,7 @@ const TxnDetails = styled.div`
 `;
 
 const TxnCardContainer = styled.div`
-  grid-row: 2 / 3;
+  grid-row: 1 / 2;
 
   display: flex;
 
@@ -149,9 +149,17 @@ const CardContentContainer = styled.div`
   flex-flow: column;
 `;
 
-const CurrencyCardContainer = styled.div`
-  grid-row: 3 / 4;
+const ExchangeContainer = styled.div`
+  grid-row: 2 / -1;
 
+  display: flex;
+
+  flex-flow: column;
+
+  gap: ${() => ClampComponent(320, 1200, 1.3, 2)};
+`;
+
+const CurrencyCardContainer = styled.div`
   height: 15rem;
 
   display: grid;
@@ -292,40 +300,45 @@ function Header() {
           </TxnCard>
         </TxnCardContainer>
 
-        <H4> Money Exchange</H4>
+        <ExchangeContainer>
+          <H4> Money Exchange</H4>
+          <CurrencyCardContainer>
+            <CurrencyInfoContainer
+              style={{ gridColumn: 1 / 2, gridRow: 1 / 2 }}
+            >
+              <CurrencyInfo>
+                <Ngn />
+                <HeroText style={{ marginLeft: '1rem' }}> NGN </HeroText>
+              </CurrencyInfo>
+              <Text> Nigerian Naira </Text>
+            </CurrencyInfoContainer>
 
-        <CurrencyCardContainer>
-          <CurrencyInfoContainer style={{ gridColumn: 1 / 2, gridRow: 1 / 2 }}>
-            <CurrencyInfo>
-              <Ngn />
-              <HeroText style={{ marginLeft: '1rem' }}> NGN </HeroText>
-            </CurrencyInfo>
-            <Text> Nigerian Naira </Text>
-          </CurrencyInfoContainer>
+            <CurrencyInfoContainer
+              style={{ gridColumn: 2 / -1, gridRow: 1 / 2 }}
+            >
+              <CurrencyInfo>
+                <Usa />
+                <HeroText style={{ marginLeft: '1rem' }}> USD </HeroText>
+              </CurrencyInfo>
 
-          <CurrencyInfoContainer style={{ gridColumn: 2 / -1, gridRow: 1 / 2 }}>
-            <CurrencyInfo>
-              <Usa />
-              <HeroText style={{ marginLeft: '1rem' }}> USD </HeroText>
-            </CurrencyInfo>
+              <Text style={{ minWidth: 'fit-content' }}>
+                {' '}
+                United States Dollars{' '}
+              </Text>
+            </CurrencyInfoContainer>
 
-            <Text style={{ minWidth: 'fit-content' }}>
+            <HeroText style={{ gridColumn: 1 / 2, gridRow: 2 / -1 }}>
               {' '}
-              United States Dollars{' '}
-            </Text>
-          </CurrencyInfoContainer>
+              5,000{' '}
+            </HeroText>
+            <HeroText style={{ gridColumn: 2 / -1, gridRow: 2 / -1 }}>
+              {' '}
+              10.00{' '}
+            </HeroText>
+          </CurrencyCardContainer>
 
-          <HeroText style={{ gridColumn: 1 / 2, gridRow: 2 / -1 }}>
-            {' '}
-            5,000{' '}
-          </HeroText>
-          <HeroText style={{ gridColumn: 2 / -1, gridRow: 2 / -1 }}>
-            {' '}
-            10.00{' '}
-          </HeroText>
-        </CurrencyCardContainer>
-
-        <Button kind="ex"> Exchange </Button>
+          <Button kind="ex"> Exchange </Button>
+        </ExchangeContainer>
       </HeroContainer>
     </StyledHeader>
   );
