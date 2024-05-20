@@ -140,7 +140,7 @@ function Mission() {
           </Text>
         </ColumnFlex>
 
-        <ImageContainer>
+        <ImageContainer style={{ gridColumn: '3 / 4 ' }}>
           <AbstractContainer>
             <Radial />
           </AbstractContainer>
@@ -153,7 +153,7 @@ function Mission() {
           />
         </ImageContainer>
 
-        <ColumnFlex style={{ gridColumn: '1 / span 2' }}>
+        <ColumnFlex style={{ gridColumn: '1 / span 2', gridRow: '2 / span 2' }}>
           <H3> Vision </H3>
           <Text color="dark">
             Our vision at YourBank is to redefine banking by creating a seamless
