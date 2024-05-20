@@ -256,9 +256,9 @@ function Header() {
         </>
         <IncomeCard />
         <SupportedCurrency />
-        <HeroText> Your Transations </HeroText>
 
         <TxnCardContainer>
+          <HeroText> Your Transations </HeroText>
           <TxnCard>
             <IconContainer>
               {' '}
