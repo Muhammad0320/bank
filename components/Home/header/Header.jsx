@@ -133,6 +133,14 @@ const TxnDetails = styled.div`
   justify-content: space-between;
 `;
 
+const TxnContainer = styled.div`
+  display: flex;
+
+  flex-flow: column;
+
+  gap: ${() => ClampComponent(920, 1200, 1.4, 2.5)};
+`;
+
 const TxnCardContainer = styled.div`
   grid-row: 1 / 2;
 
@@ -257,48 +265,51 @@ function Header() {
         <IncomeCard />
         <SupportedCurrency />
 
-        <TxnCardContainer>
-          <HeroText> Your Transations </HeroText>
-          <TxnCard>
-            <IconContainer>
-              {' '}
-              <Stroke />{' '}
-            </IconContainer>
-            <CardContentContainer>
-              <Text> Transaction </Text>
-              <TxnDetails>
-                <span> Max Schwartz </span>
-                <span> -$89.00 </span>
-              </TxnDetails>
-            </CardContentContainer>
-          </TxnCard>
-          <TxnCard>
-            <IconContainer>
-              {' '}
-              <Stroke />{' '}
-            </IconContainer>
-            <CardContentContainer>
-              <Text> Transaction </Text>
-              <TxnDetails>
-                <span> Kevin Powell </span>
-                <span> -$120.00 </span>
-              </TxnDetails>
-            </CardContentContainer>
-          </TxnCard>{' '}
-          <TxnCard>
-            <IconContainer>
-              {' '}
-              <Stroke />{' '}
-            </IconContainer>
-            <CardContentContainer>
-              <Text> Transaction </Text>
-              <TxnDetails>
-                <span> Jeff Delaney </span>
-                <span> -$180.00 </span>
-              </TxnDetails>
-            </CardContentContainer>
-          </TxnCard>
-        </TxnCardContainer>
+        <TxnContainer>
+          <H4> Your Transations </H4>
+
+          <TxnCardContainer>
+            <TxnCard>
+              <IconContainer>
+                {' '}
+                <Stroke />{' '}
+              </IconContainer>
+              <CardContentContainer>
+                <Text> Transaction </Text>
+                <TxnDetails>
+                  <span> Max Schwartz </span>
+                  <span> -$89.00 </span>
+                </TxnDetails>
+              </CardContentContainer>
+            </TxnCard>
+            <TxnCard>
+              <IconContainer>
+                {' '}
+                <Stroke />{' '}
+              </IconContainer>
+              <CardContentContainer>
+                <Text> Transaction </Text>
+                <TxnDetails>
+                  <span> Kevin Powell </span>
+                  <span> -$120.00 </span>
+                </TxnDetails>
+              </CardContentContainer>
+            </TxnCard>{' '}
+            <TxnCard>
+              <IconContainer>
+                {' '}
+                <Stroke />{' '}
+              </IconContainer>
+              <CardContentContainer>
+                <Text> Transaction </Text>
+                <TxnDetails>
+                  <span> Jeff Delaney </span>
+                  <span> -$180.00 </span>
+                </TxnDetails>
+              </CardContentContainer>
+            </TxnCard>
+          </TxnCardContainer>
+        </TxnContainer>
 
         <ExchangeContainer>
           <H4> Money Exchange</H4>
