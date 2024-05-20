@@ -1,16 +1,14 @@
 'use client';
 
-import styled from 'styled-components';
 import Work from '/public/assets/icons/work.svg';
 import Health from '/public/assets/icons/health.svg';
 import Retire from '/public/assets/icons/retire.svg';
+import { Card } from '../../../../components/ui/Card';
 import { Text } from '../../../../components/ui/Text';
 import Compete from '/public/assets/icons/compete.svg';
 import { X4Grid } from '../../../../components/ui/4x4Grid';
-import { ClampComponent } from '../../../../styles/clampBuilder';
 import HeadingTextContainer from '../../../../components/ui/HeadingWrapper';
 import { SectionContainer } from '../../../../components/ui/SectionContainer';
-import { Card } from '../../../../components/ui/Card';
 
 function Benefits() {
   return (

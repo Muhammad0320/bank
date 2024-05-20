@@ -14,9 +14,10 @@ import SupportedCurrency from './SupportedCurrency';
 import { IconContainer } from '../../ui/IconContainer';
 import { ClampComponent } from '../../../styles/clampBuilder';
 import { TextGradient } from '../../ui/TextGradient';
+import { H4 } from '../../ui/H2';
 
 const StyledHeader = styled.header`
-  margin-block-start: ${() => ClampComponent(920, 1200, 7, 10)};
+  /* margin-block-start: ${() => ClampComponent(920, 1200, 7, 10)}; */
 
   display: grid;
 
@@ -76,23 +77,21 @@ const HeroContainer = styled(FancyBorder)`
   background-color: var(--black-color);
   grid-column: 2 / -1;
 
-  max-height: 75dvh;
+  max-height: auto;
   max-width: 30dvw;
 
   display: grid;
-  grid-template-rows: auto 1fr auto 0.9fr 4rem;
+  grid-template-rows: auto 1fr auto 0.9fr auto;
 
   row-gap: ${() => ClampComponent(920, 1200, 1, 2.5)};
-
-  border-radius: 1.4rem;
-
-  border: 1px solid green;
 `;
 
 const HeroText = styled.div`
   font-size: ${() => ClampComponent(920, 1200, 1.5, 2)};
 
   color: var(--text-color);
+
+  max-height: max-content;
 `;
 
 const TxnCard = styled.div`
@@ -293,7 +292,7 @@ function Header() {
           </TxnCard>
         </TxnCardContainer>
 
-        <HeroText>Money Exchange</HeroText>
+        <H4> Money Exchange</H4>
 
         <CurrencyCardContainer>
           <CurrencyInfoContainer style={{ gridColumn: 1 / 2, gridRow: 1 / 2 }}>
@@ -309,7 +308,11 @@ function Header() {
               <Usa />
               <HeroText style={{ marginLeft: '1rem' }}> USD </HeroText>
             </CurrencyInfo>
-            <Text> United States Dollars </Text>
+
+            <Text style={{ minWidth: 'fit-content' }}>
+              {' '}
+              United States Dollars{' '}
+            </Text>
           </CurrencyInfoContainer>
 
           <HeroText style={{ gridColumn: 1 / 2, gridRow: 2 / -1 }}>
