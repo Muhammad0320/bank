@@ -10,17 +10,7 @@ import Breifcase from '/public/assets/icons/breifcase.svg';
 import { NormalFlex, SmallFlex } from '../../../../components/ui/flex';
 import { Text } from '../../../../components/ui/Text';
 import { Button } from '../../../../components/ui/Button';
-
-const JobContainer = styled.ul`
-  display: grid;
-
-  /* grid-template-columns: repeat(auto-fit, minmax(min(70rem, 100%), 1fr)); */
-  grid-template-columns: repeat(2, 1fr);
-
-  /* grid-template-rows: auto; */
-
-  gap: ${() => ClampComponent(320, 1200, 1.8, 2.5)};
-`;
+import { GridContainer } from '../../../../components/ui/Grid';
 
 const JobContainerItem = styled.li`
   display: flex;
@@ -61,7 +51,7 @@ function Jobs() {
         part of shaping a brighter future in the banking industry
       </HeadingTextContainer>
 
-      <JobContainer>
+      <GridContainer>
         <JobContainerItem>
           <ItemSection>
             <H3>Relationship Manager</H3>
@@ -275,7 +265,7 @@ function Jobs() {
 
           <Button>Apply Now!</Button>
         </JobContainerItem>
-      </JobContainer>
+      </GridContainer>
     </SectionContainer>
   );
 }
