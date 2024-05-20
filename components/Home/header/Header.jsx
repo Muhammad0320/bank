@@ -17,8 +17,6 @@ import { TextGradient } from '../../ui/TextGradient';
 import { H4 } from '../../ui/H2';
 
 const StyledHeader = styled.header`
-  /* margin-block-start: ${() => ClampComponent(920, 1200, 7, 10)}; */
-
   display: grid;
 
   grid-template-columns: repeat(2, 1fr);
@@ -77,13 +75,12 @@ const HeroContainer = styled(FancyBorder)`
   background-color: var(--black-color);
   grid-column: 2 / -1;
 
-  max-height: auto;
-  max-width: 30dvw;
+  /* max-width: 30dvw; */
+
+  max-width: 85%;
 
   display: grid;
   grid-template-rows: repeat(2, 1fr);
-
-  row-gap: ${() => ClampComponent(920, 1200, 1, 2.5)};
 `;
 
 const HeroText = styled.div`
