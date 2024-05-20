@@ -20,7 +20,7 @@ export const FancyBorder = styled.div`
     content: '';
     position: absolute;
 
-    inset: -0.1rem;
+    inset: -0.2rem;
 
     z-index: -1;
 
