@@ -218,10 +218,20 @@ const CurrencyCardContainer = styled.div`
 const CurrencyInfoContainer = styled.div`
   display: flex;
 
+  /* padding: 8px; */
+
   flex-flow: column;
-  row-gap: 1rem;
+  gap: 8px;
 
   justify-content: center;
+
+  flex-wrap: nowrap;
+
+  & > * {
+    flex: 1;
+
+    min-width: fit-content;
+  }
 `;
 
 const CurrencyInfo = styled.div`
