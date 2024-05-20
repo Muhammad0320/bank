@@ -10,43 +10,7 @@ import { X4Grid } from '../../../../components/ui/4x4Grid';
 import { ClampComponent } from '../../../../styles/clampBuilder';
 import HeadingTextContainer from '../../../../components/ui/HeadingWrapper';
 import { SectionContainer } from '../../../../components/ui/SectionContainer';
-
-const BenefitContainer = styled.li`
-  display: grid;
-
-  grid-template-columns: auto 1fr;
-
-  column-gap: ${() => ClampComponent(320, 1200, 1, 1.5)};
-  row-gap: ${() => ClampComponent(320, 1200, 1, 2)};
-
-  grid-template-rows: auto 1fr;
-
-  box-shadow: var(--box-shadow-light);
-
-  padding: ${() => ClampComponent(320, 1200, 2, 2.5)};
-
-  border-radius: 5rem 2rem;
-
-  & > svg {
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
-  }
-
-  & > h4 {
-    align-self: center;
-
-    grid-column: 2 / -1;
-
-    font-size: ${() => ClampComponent(320, 1200, 1.2, 2)};
-
-    color: var(--text-color);
-  }
-
-  & > p {
-    grid-column: 1 / -1;
-    grid-row: 2 / -1;
-  }
-`;
+import { Card } from '../../../../components/ui/Card';
 
 function Benefits() {
   return (
@@ -58,7 +22,7 @@ function Benefits() {
       </HeadingTextContainer>
 
       <X4Grid>
-        <BenefitContainer>
+        <Card>
           <Compete />
 
           <h4>Competitive Compensation</h4>
@@ -69,9 +33,9 @@ function Benefits() {
             exceptional performance and offering opportunities for financial
             growth.{' '}
           </Text>
-        </BenefitContainer>
+        </Card>
 
-        <BenefitContainer>
+        <Card>
           <Health />
 
           <h4>Health and Wellness</h4>
@@ -82,9 +46,9 @@ function Benefits() {
             We also offer wellness programs, gym memberships, and resources to
             support a healthy lifestyle.{' '}
           </Text>
-        </BenefitContainer>
+        </Card>
 
-        <BenefitContainer>
+        <Card>
           <Retire />
 
           <h4>Retirement Planning</h4>
@@ -94,9 +58,9 @@ function Benefits() {
             offer a retirement savings plan with a generous employer match to
             help them build a secure financial foundation for the long term.{' '}
           </Text>
-        </BenefitContainer>
+        </Card>
 
-        <BenefitContainer>
+        <Card>
           <Work />
 
           <h4>Work-Life Balance</h4>
@@ -107,7 +71,7 @@ function Benefits() {
             parental leave, and other programs that support employees in
             managing their personal and professional commitments.{' '}
           </Text>
-        </BenefitContainer>
+        </Card>
       </X4Grid>
     </SectionContainer>
   );
