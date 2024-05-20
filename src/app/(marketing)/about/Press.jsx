@@ -89,7 +89,7 @@ function Press() {
           </ImageContainer>
 
           <ColumnFlex>
-            <H4>
+            <H4 type="sm">
               YourBank Expands Branch Network with Opening of New Location in
               Abuja.
             </H4>
@@ -121,7 +121,7 @@ function Press() {
           </ImageContainer>
 
           <ColumnFlex>
-            <H4>
+            <H4 type="sm">
               YourBank Partners with Local Nonprofit to Support Financial
               Education Initiatives
             </H4>
@@ -154,7 +154,7 @@ function Press() {
           </ImageContainer>
 
           <ColumnFlex>
-            <H4>
+            <H4 type="sm">
               YourBank Launches Sustainable Banking Initiative to Promote
               Environmental Responsibility.
             </H4>
