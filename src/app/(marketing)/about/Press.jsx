@@ -57,7 +57,7 @@ function Press() {
           </ImageContainer>
 
           <ColumnFlex>
-            <H4>
+            <H4 type="sm">
               YourBank Launches New Rewards Program to Enhance Customer Loyalty
               and Satisfaction
             </H4>

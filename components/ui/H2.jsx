@@ -26,4 +26,10 @@ export const H4 = styled.h4`
   font-size: ${() => ClampComponent(320, 1200, 1.5, 2)};
 
   font-weight: 500;
+
+  ${props =>
+    props.type === 'sm' &&
+    css`
+      font-size: ${() => ClampComponent(320, 1200, 1.2, 1.7)};
+    `}
 `;
