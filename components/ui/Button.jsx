@@ -24,9 +24,9 @@ export const Button = styled.button`
 
   width: fit-content;
 
-  font-size: ${() => ClampComponent(320, 1200, 1.2, 1.5)};
+  font-size: ${() => ClampComponent(320, 1200, 1.4, 1.8)};
 
-  padding-inline: ${() => ClampComponent(950, 1200, 1.5, 2.2)};
+  padding-inline: ${() => ClampComponent(950, 1200, 1.5, 2.5)};
 
   padding-block: ${() => ClampComponent(950, 1200, 1.1, 1.5)};
 
@@ -45,7 +45,7 @@ export const Button = styled.button`
   ${props =>
     props.kind === 'auth' &&
     css`
-      padding-inline: ${() => ClampComponent(950, 1200, 1.2, 1.7)};
+      padding-block: ${() => ClampComponent(950, 1200, 0.4, 0.8)};
     `}
 
   ${props =>

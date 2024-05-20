@@ -31,8 +31,6 @@ const StyledHeading = styled.nav`
 const HeaderButtonContainer = styled.div`
   display: flex;
 
-  /* column-gap: 2rem; */
-
   & > * {
     flex: 1;
 
@@ -49,7 +47,7 @@ function NavBar() {
 
       <NavLinks />
 
-      <HeaderButtonContainer className="space-x-3">
+      <HeaderButtonContainer>
         <Button kind="null">Signup</Button>
 
         <Button kind="auth"> Login</Button>
