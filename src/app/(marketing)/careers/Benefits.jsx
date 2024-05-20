@@ -16,7 +16,7 @@ function Benefits() {
       <HeadingTextContainer withGradient="Benefits" withoutGradient="Our">
         At YourBank, we value our employees and are dedicated to their
         well-being and success. We offer a comprehensive range of benefits{' '}
-        <br /> designed to support their personal and professional growth.
+        designed to support their personal and professional growth.
       </HeadingTextContainer>
 
       <X4Grid>

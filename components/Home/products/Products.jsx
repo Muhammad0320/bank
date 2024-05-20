@@ -36,8 +36,7 @@ function Products() {
     <SectionContainer>
       <HeadingWrapper withGradient="Product" withoutGradient="Our" withCategory>
         Discover a range of comprehensive and customizable banking products at
-        YourBank, <br /> designed to suit your unique financial needs and
-        aspirations
+        YourBank, designed to suit your unique financial needs and aspirations
       </HeadingWrapper>
       <ContentContainer>
         <ProdContainer>

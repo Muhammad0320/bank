@@ -111,8 +111,7 @@ function Features() {
       <HeadingTextContainer withoutGradient="Our" withGradient="Features">
         Experience a host of powerful features at YourBank, including seamless
         online banking, secure transactions, and personalized financial
-        insights, all <br />
-        designed to enhance your banking experience
+        insights, all designed to enhance your banking experience
       </HeadingTextContainer>
       <ContentContainer>
         <SideBar>
