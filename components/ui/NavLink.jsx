@@ -18,7 +18,7 @@ const StyledNavLink = styled(Link)`
   transition: background-color 350ms cubic-bezier(0.215, 0.61, 0.355, 1);
 
   &:hover,
-  .active {
+  &.active {
     background-color: var(--card-color);
   }
 `;
