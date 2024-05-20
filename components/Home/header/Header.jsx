@@ -71,7 +71,7 @@ const AbstractContainer = styled.div`
 const HeroContainer = styled(FancyBorder)`
   position: relative;
 
-  padding: ${() => ClampComponent(320, 1200, 2, 3.5)};
+  padding: ${() => ClampComponent(320, 1200, 1.5, 3)};
   background-color: var(--black-color);
   grid-column: 2 / -1;
 
@@ -81,6 +81,8 @@ const HeroContainer = styled(FancyBorder)`
 
   display: grid;
   grid-template-rows: repeat(2, 1fr);
+
+  gap: -10rem;
 `;
 
 const HeroText = styled.div`
@@ -107,12 +109,12 @@ const TxnCard = styled.div`
 
   border: 1px solid hsl(0, 0%, 11%);
 
-  z-index: 100;
+  z-index: 5;
 
   &:nth-child(2) {
     opacity: 0.65;
     margin-top: -2rem;
-    z-index: 10;
+    z-index: 4;
     width: 90%;
   }
 
