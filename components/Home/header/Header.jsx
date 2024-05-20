@@ -220,6 +220,8 @@ const CurrencyInfoContainer = styled.div`
 
   /* padding: 8px; */
 
+  padding: ${() => ClampComponent(920, 1200, 0.8, 1.2)};
+
   flex-flow: column;
   gap: 8px;
 
@@ -227,10 +229,8 @@ const CurrencyInfoContainer = styled.div`
 
   flex-wrap: nowrap;
 
-  & > * {
-    flex: 1;
-
-    min-width: fit-content;
+  & > p {
+    font-size: ${() => ClampComponent(920, 1200, 1, 1.4)};
   }
 `;
 
