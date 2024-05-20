@@ -18,6 +18,12 @@ const ItemCotainer = styled.li`
   padding: ${() => ClampComponent(920, 1200, 1.5, 2.5)};
 
   gap: ${() => ClampComponent(920, 1200, 2, 3)};
+
+  background-color: var(--card-color);
+
+  border: 1px solid var(--black-color-light);
+
+  border-radius: 1.4rem;
 `;
 
 const ImageContainer = styled.div`
