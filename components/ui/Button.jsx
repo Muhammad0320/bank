@@ -22,7 +22,7 @@ export const Button = styled.button`
 
   color: var(--black-color);
 
-  width: fit-content;
+  /* width: fit-content; */
 
   font-size: ${() => ClampComponent(320, 1200, 1.4, 1.8)};
 

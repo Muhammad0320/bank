@@ -81,8 +81,6 @@ const HeroContainer = styled(FancyBorder)`
 
   display: grid;
   grid-template-rows: repeat(2, 1fr);
-
-  gap: -10rem;
 `;
 
 const HeroText = styled.div`
@@ -138,6 +136,13 @@ const TxnContainer = styled.div`
   flex-flow: column;
 
   gap: ${() => ClampComponent(920, 1200, 1.4, 2.5)};
+
+  margin-bottom: -10rem;
+
+  & > button {
+    align-self: stretch;
+    justify-content: stretch;
+  }
 `;
 
 const TxnCardContainer = styled.div`
