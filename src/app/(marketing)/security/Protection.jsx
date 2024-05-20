@@ -1,3 +1,5 @@
+'use client';
+
 import Sec1 from '/public/assets/icons/sec1.svg';
 import Sec2 from '/public/assets/icons/sec2.svg';
 import Sec3 from '/public/assets/icons/sec3.svg';
