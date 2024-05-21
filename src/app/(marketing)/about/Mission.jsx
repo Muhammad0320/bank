@@ -34,7 +34,7 @@ const FigureContainer = styled.div`
   gap: ${() => ClampComponent(920, 1200, 1.5, 2.5)};
 
   &:first-child {
-    margin-top: -2rem;
+    margin-bottom: -5rem;
   }
 
   &:last-child {
