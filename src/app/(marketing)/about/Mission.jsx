@@ -29,12 +29,16 @@ const ContentContainer = styled.div`
 const FigureContainer = styled.div`
   display: grid;
 
-  grid-template-columns: 1.2fr 1fr 1fr;
+  grid-template-columns: 1.3fr 1fr 1fr;
 
   gap: ${() => ClampComponent(920, 1200, 1.5, 2.5)};
 
+  &:first-child {
+    margin-top: -2rem;
+  }
+
   &:last-child {
-    grid-template-columns: 1fr 1.2fr;
+    grid-template-columns: 1fr 1fr 1.3fr;
   }
 `;
 
