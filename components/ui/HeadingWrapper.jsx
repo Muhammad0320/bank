@@ -13,7 +13,7 @@ export const HeadingWrapper = styled.div`
 
   row-gap: ${() => ClampComponent(320, 1200, 1, 2)};
 
-  width: 70%;
+  width: 75%;
 `;
 
 const ProductCategory = styled.div`

@@ -96,6 +96,8 @@ const CaseCard = styled.div`
 
   border: 1px solid var(--black-color-light);
 
+  box-shadow: var(--box-shadow-light);
+
   &:first-child {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
