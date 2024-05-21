@@ -31,7 +31,7 @@ const ContentContainer = styled.div`
 
   gap: ${() => ClampComponent(320, 1200, 1.5, 3)};
 
-  & > ul {
+  & > ul:last-child {
     border-block: 1px solid var(--black-color-light);
 
     padding-block: ${() => ClampComponent(920, 1200, 1, 2)};
