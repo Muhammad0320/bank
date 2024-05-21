@@ -32,7 +32,7 @@ const StyledTextContainer = styled.div`
   row-gap: 2rem;
 
   &:last-child {
-    align-items: flex-start;
+    align-items: self-start;
   }
 `;
 

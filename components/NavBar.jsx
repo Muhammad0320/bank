@@ -15,6 +15,10 @@ const StyledHeading = styled.nav`
 
   backdrop-filter: blur(4px);
 
+  /* position: fixed; */
+
+  /* width: 100%; */
+
   justify-content: space-between;
   margin-inline: 1.5rem;
   align-items: center;
@@ -30,6 +34,8 @@ const StyledHeading = styled.nav`
 
 const HeaderButtonContainer = styled.div`
   display: flex;
+
+  flex-wrap: nowrap;
 
   & > * {
     flex: 1;
