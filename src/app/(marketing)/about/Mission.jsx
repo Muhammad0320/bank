@@ -54,15 +54,6 @@ const ImageContainer = styled.div`
   &:first-child {
     grid-column: 1 / 2;
     grid-row: 1 / span 2;
-    background-color: red;
-  }
-
-  &:nth-child(2) {
-    grid-column: 3 / 4;
-
-    grid-row: 2 / span 2;
-
-    border: 5px solid red;
   }
 
   & > image {
@@ -127,7 +118,7 @@ function Mission() {
           />
         </ImageContainer>
 
-        <ColumnFlex style={{ gridColumn: ' 2 / span 2' }}>
+        <ColumnFlex style={{ gridColumn: '2 / span 2' }}>
           <H3> Mission </H3>
           <Text color="dark">
             At YourBank, our mission is to empower our customers to achieve
@@ -140,7 +131,7 @@ function Mission() {
           </Text>
         </ColumnFlex>
 
-        <ImageContainer style={{ gridColumn: '3 / 4 ' }}>
+        <ImageContainer style={{ gridColumn: '3 / 4', gridRow: '2 / -1' }}>
           <AbstractContainer>
             <Radial />
           </AbstractContainer>
@@ -153,7 +144,7 @@ function Mission() {
           />
         </ImageContainer>
 
-        <ColumnFlex style={{ gridColumn: '1 / span 2', gridRow: '2 / span 2' }}>
+        <ColumnFlex style={{ gridColumn: '1 / span 2', gridRow: '3 / span 2' }}>
           <H3> Vision </H3>
           <Text color="dark">
             Our vision at YourBank is to redefine banking by creating a seamless
