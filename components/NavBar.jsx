@@ -37,11 +37,11 @@ const HeaderButtonContainer = styled.div`
 
   flex-wrap: nowrap;
 
-  & > * {
+  /* & > * {
     flex: 1;
 
     min-width: fit-content;
-  }
+  } */
 `;
 
 function NavBar() {
