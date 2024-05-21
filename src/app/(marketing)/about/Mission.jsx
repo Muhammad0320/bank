@@ -29,15 +29,21 @@ const ContentContainer = styled.div`
 const FigureContainer = styled.div`
   display: grid;
 
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1.2fr 1fr 1fr;
 
   gap: ${() => ClampComponent(920, 1200, 1.5, 2.5)};
+
+  &:last-child {
+    grid-template-columns: 1fr 1.2fr;
+  }
 `;
 
 const ImageContainer = styled.div`
   position: relative;
 
   /* translate: 0 4rem; */
+
+  height: 100%;
 
   background-color: var(--card-color);
 
