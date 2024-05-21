@@ -7,7 +7,7 @@ import { ClampComponent } from '../styles/clampBuilder';
 const NavContainer = styled.ul`
   display: flex;
 
-  /* column-gap: ${() => ClampComponent(950, 1200, 1, 1.2)}; */
+  column-gap: ${() => ClampComponent(950, 1200, 1, 1.2)};
 
   font-size: ${() => ClampComponent(320, 1200, 1, 1.7)};
 `;

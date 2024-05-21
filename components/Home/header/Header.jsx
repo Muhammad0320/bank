@@ -29,10 +29,11 @@ const StyledTextContainer = styled.div`
 
   flex-flow: column;
   grid-column: 1 / 2;
-  row-gap: 2rem;
+  gap: ${() => ClampComponent(920, 1200, 2, 3)};
 
-  &:last-child {
+  & > button {
     align-items: self-start;
+    width: fit-content;
   }
 `;
 
