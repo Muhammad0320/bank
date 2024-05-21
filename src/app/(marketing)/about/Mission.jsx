@@ -11,13 +11,7 @@ import HeadingTextContainer from '../../../../components/ui/HeadingWrapper';
 import { SectionContainer } from '../../../../components/ui/SectionContainer';
 
 const ContentContainer = styled.div`
-  display: grid;
-
-  grid-template-columns: 1fr 10rem 1fr;
-
-  gap: 1rem;
-
-  grid-template-rows: repeat(4, 1fr);
+  height: 100dvh;
 
   /* 
   & > div:has(p) {
@@ -32,10 +26,22 @@ const ContentContainer = styled.div`
   } */
 `;
 
+const FigureContainer = styled.div`
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: ${() => ClampComponent(920, 1200, 1.5, 2.5)};
+`;
+
 const ImageContainer = styled.div`
   position: relative;
 
+  /* translate: 0 4rem; */
+
   background-color: var(--card-color);
+
+  overflow: hidden;
 
   border: 1px solid var(--black-color-light);
 
@@ -51,38 +57,53 @@ const ImageContainer = styled.div`
 
   align-items: center;
 
-  &:first-child {
-    grid-column: 1 / 2;
-    grid-row: 1 / span 2;
-  }
-
-  & > image {
+  & > img {
+    z-index: 10;
     align-self: flex-end;
 
-    max-width: 80%;
+    aspect-ratio: 1 2;
+
+    /* max-width: 90%; */
 
     height: auto;
 
     object-fit: cover;
 
+    translate: 0 1rem;
+
     /* border-radius: 2rem 2rem 0 0; */
   }
+
+  grid-column: 1 / 2;
 
   &::after {
     position: absolute;
 
     content: '';
 
-    width: 2px;
+    z-index: 2;
+
+    width: 3px;
 
     height: 40%;
 
     background-image: var(--primary-gradient);
 
-    top: 50%;
+    top: 35%;
 
     right: 0;
   }
+
+  ${props =>
+    props.type === '2nd' &&
+    css`
+      grid-column: 3 / -1;
+
+      &::after {
+        left: 0;
+        right: auto;
+      }
+    `}
 `;
 
 const AbstractContainer = styled.div`
@@ -92,6 +113,11 @@ const AbstractContainer = styled.div`
   left: 50%;
 
   translate: -50% -50%;
+  z-index: 1;
+
+  & > svg {
+    scale: 1 0.9;
+  }
 `;
 
 function Mission() {
@@ -105,58 +131,66 @@ function Mission() {
       </HeadingTextContainer>
 
       <ContentContainer>
-        <ImageContainer>
-          <AbstractContainer>
-            <Radial />
-          </AbstractContainer>
+        <FigureContainer>
+          <ImageContainer>
+            <AbstractContainer>
+              <Radial />
+            </AbstractContainer>
 
-          <Image
-            src="/assets/images/mission.png"
-            alt="A plant growing from coins"
-            quality={75}
-            layout="fill"
-          />
-        </ImageContainer>
+            <img
+              src="/assets/images/mission.png"
+              alt="A plant growing from coins"
+            />
+          </ImageContainer>
 
-        <ColumnFlex style={{ gridColumn: '2 / span 2' }}>
-          <H3> Mission </H3>
-          <Text color="dark">
-            At YourBank, our mission is to empower our customers to achieve
-            financial success. We are dedicated to delivering innovative banking
-            solutions that cater to their unique needs. Through personalized
-            services, expert guidance, and cutting-edge technology, we aim to
-            build strong, lasting relationships with our customers. Our mission
-            is to be their trusted partner, helping them navigate their
-            financial journey and realize their dreams.
-          </Text>
-        </ColumnFlex>
+          <ColumnFlex style={{ gridColumn: '2 / -1' }} type="center">
+            <H3> Mission </H3>
+            <Text color="dark">
+              At YourBank, our mission is to empower our customers to achieve
+              financial success. We are dedicated to delivering innovative
+              banking solutions that cater to their unique needs. Through
+              personalized services, expert guidance, and cutting-edge
+              technology, we aim to build strong, lasting relationships with our
+              customers. Our mission is to be their trusted partner, helping
+              them navigate their financial journey and realize their dreams.
+            </Text>
+          </ColumnFlex>
+        </FigureContainer>
 
-        <ImageContainer style={{ gridColumn: '3 / 4', gridRow: '2 / -1' }}>
-          <AbstractContainer>
-            <Radial />
-          </AbstractContainer>
+        <FigureContainer>
+          <ImageContainer type="2nd">
+            <AbstractContainer>
+              <Radial />
+            </AbstractContainer>
 
-          <Image
+            {/* <Image
             src="/assets/images/vision.png"
             alt="A Human Eye"
             quality={75}
             layout="fill"
-          />
-        </ImageContainer>
+          /> */}
 
-        <ColumnFlex style={{ gridColumn: '1 / span 2', gridRow: '3 / span 2' }}>
-          <H3> Vision </H3>
-          <Text color="dark">
-            Our vision at YourBank is to redefine banking by creating a seamless
-            and personalized experience for our customers. We envision a future
-            where banking is accessible, transparent, and tailored to individual
-            preferences. Through continuous innovation and collaboration, we
-            strive to be at the forefront of the industry, setting new standards
-            for customer-centric banking. Our vision is to be the preferred
-            financial institution, known for our unwavering commitment to
-            excellence, trust, and customer satisfaction.
-          </Text>
-        </ColumnFlex>
+            <img src="/assets/images/vision.png" alt="A Human Eye" />
+          </ImageContainer>
+
+          <ColumnFlex
+            style={{ gridColumn: '1 / 3', gridRow: '1 / 2' }}
+            type="center"
+          >
+            <H3> Vision </H3>
+            <Text color="dark">
+              Our vision at YourBank is to redefine banking by creating a
+              seamless and personalized experience for our customers. We
+              envision a future where banking is accessible, transparent, and
+              tailored to individual preferences. Through continuous innovation
+              and collaboration, we strive to be at the forefront of the
+              industry, setting new standards for customer-centric banking. Our
+              vision is to be the preferred financial institution, known for our
+              unwavering commitment to excellence, trust, and customer
+              satisfaction.
+            </Text>
+          </ColumnFlex>
+        </FigureContainer>
       </ContentContainer>
     </SectionContainer>
   );

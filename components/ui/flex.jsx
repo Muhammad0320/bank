@@ -19,6 +19,12 @@ export const ColumnFlex = styled.div`
   flex-flow: column;
 
   gap: ${() => ClampComponent(320, 1200, 0.6, 1)};
+
+  ${props =>
+    props.type === 'center' &&
+    css`
+      justify-content: center;
+    `}
 `;
 
 export const TinyFlex = styled.li`
