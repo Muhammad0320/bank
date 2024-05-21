@@ -23,5 +23,6 @@ export const IconContainer = styled.span`
       height: 3rem;
 
       width: 3rem;
+      cursor: pointer;
     `}
 `;

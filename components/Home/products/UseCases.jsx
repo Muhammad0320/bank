@@ -128,7 +128,7 @@ const AllCasesContainer = styled.div`
 function UseCases() {
   return (
     <SectionContainer>
-      <HeadingTextContainer withoutGradient="Use Cases">
+      <HeadingTextContainer withGradient="Use Cases">
         At YourBank, we cater to the diverse needs of individuals and businesses
         alike, offering a wide range of financial solutions
       </HeadingTextContainer>
