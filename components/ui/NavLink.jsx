@@ -5,7 +5,7 @@ import styled from 'styled-components';
 import { usePathname } from 'next/navigation';
 import { ClampComponent } from '../../styles/clampBuilder';
 
-const StyledNavLink = styled(Link)`
+const StyledNavLink = styled.li`
   font-size: ${() => ClampComponent(320, 1200, 1.3, 2.2)};
 
   color: var(--text-color);
@@ -58,11 +58,9 @@ function NavLink({ href, children }) {
 
   const isActive = path === href ? 'active' : '';
 
-  console.log(isActive);
-
   return (
-    <StyledNavLink href={href} className={isActive}>
-      {children}
+    <StyledNavLink className={isActive}>
+      <Link href={href}> {children} </Link>
     </StyledNavLink>
   );
 }

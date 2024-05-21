@@ -15,18 +15,13 @@ const NavContainer = styled.ul`
 function NavLinks() {
   return (
     <NavContainer>
-      <li>
-        <NavLink href="/"> Home </NavLink>
-      </li>
-      <li>
-        <NavLink href="/careers"> Careers </NavLink>
-      </li>
-      <li>
-        <NavLink href="/about"> About </NavLink>
-      </li>
-      <li>
-        <NavLink href="/security"> Security </NavLink>
-      </li>
+      <NavLink href="/"> Home </NavLink>
+
+      <NavLink href="/careers"> Careers </NavLink>
+
+      <NavLink href="/about"> About </NavLink>
+
+      <NavLink href="/security"> Security </NavLink>
     </NavContainer>
   );
 }
