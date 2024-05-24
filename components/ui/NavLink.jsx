@@ -10,6 +10,8 @@ const StyledNavLink = styled.li`
 
   color: var(--text-color);
 
+  position: relative;
+
   border-radius: 3.6rem;
   padding-inline: ${() => ClampComponent(320, 1200, 1.4, 2)};
 
@@ -17,12 +19,21 @@ const StyledNavLink = styled.li`
 
   transition:
     background-color 350ms cubic-bezier(0.215, 0.61, 0.355, 1),
-    opacity 300ms ease-in-out;
+    opacity 300ms ease-in-out,
+    scale 300ms ease-out;
 
   &::after {
+    position: absolute;
+
+    left: 0;
+
+    content: '';
+
+    bottom: 0;
+
     width: 100%;
 
-    height: 1px;
+    height: 2px;
 
     background-image: var(--primary-gradient);
 
@@ -41,7 +52,15 @@ const StyledNavLink = styled.li`
   }
 
   &:not(:hover) {
-    opacity: 0.8;
+    opacity: 0.5;
+  }
+
+  &:hover {
+    &:not(:hover) {
+      opacity: 0.5;
+
+      scale: 0.8;
+    }
   }
 
   &:hover + &::after {
