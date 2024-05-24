@@ -11,7 +11,10 @@ import Footer from '../../../components/Home/footer/Footer.jsx';
 const lexend = Lexend({ subsets: ['latin'] });
 
 export const metadata = {
-  title: 'YourBank | Home',
+  title: {
+    template: '%s | YourBank ',
+    default: 'Welcome | YourBank',
+  },
   description: 'Empowering your financial journey',
 };
 
