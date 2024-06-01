@@ -22,6 +22,8 @@ const CtaContainer = styled.section`
 
   border-radius: 1.4rem;
 
+  isolation: isolate;
+
   padding: ${() => ClampComponent(920, 1200, 2.5, 5)};
 `;
 
@@ -38,7 +40,7 @@ const TextContainer = styled.div`
 function Cta() {
   return (
     <CtaContainer>
-      <AbstractContainer>
+      <AbstractContainer style={{ zIndex: '-1' }}>
         <Dot />
       </AbstractContainer>
 
