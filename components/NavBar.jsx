@@ -8,6 +8,7 @@ import styled from 'styled-components';
 import { Button } from './ui/Button';
 import NavLinks from './NavLinks';
 import { ClampComponent } from '../styles/clampBuilder';
+import Link from 'next/link';
 
 const StyledHeading = styled.nav`
   z-index: 10;
@@ -48,9 +49,12 @@ const HeaderButtonContainer = styled.div`
 function NavBar() {
   return (
     <StyledHeading>
-      <div
+      <Link
+        href={'/'}
         style={{
           position: 'relative',
+          width: '13.5rem',
+          height: '3.5rem',
         }}
       >
         <Image
@@ -60,7 +64,7 @@ function NavBar() {
           priority
           style={{ objectFit: 'cover' }}
         />
-      </div>
+      </Link>
 
       <NavLinks />
 
