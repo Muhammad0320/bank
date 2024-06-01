@@ -3,6 +3,7 @@
 import Image from 'next/image';
 
 import Hamburger from '/public/assets/icons/hamburger.svg';
+import Logo from '/public/assets/images/logo.png';
 import styled from 'styled-components';
 import { Button } from './ui/Button';
 import NavLinks from './NavLinks';
@@ -47,8 +48,18 @@ const HeaderButtonContainer = styled.div`
 function NavBar() {
   return (
     <StyledHeading>
-      <div style={{ position: 'relative', maxWidth: 'fit-content' }}>
-        <img src="/assets/images/logo.png" alt="YourBank Logo " />
+      <div
+        style={{
+          position: 'relative',
+        }}
+      >
+        <Image
+          src={Logo}
+          alt="YourBank Logo "
+          fill
+          priority
+          style={{ objectFit: 'cover' }}
+        />
       </div>
 
       <NavLinks />
