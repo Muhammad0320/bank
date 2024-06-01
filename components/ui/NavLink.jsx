@@ -45,23 +45,17 @@ const StyledNavLink = styled.li`
   }
 
   &:hover::after,
-  &.active {
-    /* background-color: var(--card-color); */
-
+  &.active::after {
     scale: 1 1;
   }
 
-  /* &:not(:hover) {
-    opacity: 0.5;
-  } */
+  /* &:not(:has(:hover)) {
+    opacity: 0.1;
 
-  &:hover {
-    &:not(:hover) {
-      opacity: 0.5;
+     scale: 0.8; 
+  } 
 
-      /* scale: 0.8; */
-    }
-  }
+*/
 
   &:hover + &::after {
     translate: -100%;
@@ -76,6 +70,8 @@ function NavLink({ href, children }) {
   const path = usePathname();
 
   const isActive = path === href ? 'active' : '';
+
+  console.log(isActive);
 
   return (
     <StyledNavLink className={isActive}>
