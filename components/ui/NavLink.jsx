@@ -40,8 +40,8 @@ const StyledNavLink = styled.li`
     scale: 0 1;
 
     transition:
-      scale 250ms,
-      translate 350ms;
+      scale 300ms 300ms,
+      translate 500ms 200ms;
   }
 
   &:hover::after,
@@ -51,15 +51,15 @@ const StyledNavLink = styled.li`
     scale: 1 1;
   }
 
-  &:not(:hover) {
+  /* &:not(:hover) {
     opacity: 0.5;
-  }
+  } */
 
   &:hover {
     &:not(:hover) {
       opacity: 0.5;
 
-      scale: 0.8;
+      /* scale: 0.8; */
     }
   }
 

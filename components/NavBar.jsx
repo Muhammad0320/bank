@@ -47,7 +47,7 @@ const HeaderButtonContainer = styled.div`
 function NavBar() {
   return (
     <StyledHeading>
-      <div>
+      <div style={{ position: 'relative', maxWidth: 'fit-content' }}>
         <img src="/assets/images/logo.png" alt="YourBank Logo " />
       </div>
 
